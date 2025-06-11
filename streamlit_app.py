@@ -6,9 +6,13 @@ and manages page routing based on authentication status.
 """
 
 import streamlit as st
-import os
 from services.auth_service import login_page
+import os
 
+# Use forward slashes for paths to ensure compatibility with Docker
+parent_dir = os.path.dirname(os.path.abspath(__file__))
+logo_path = os.path.join(parent_dir, "static", "images", "seekliyab-banner-f.png")
+css_path = os.path.join(parent_dir, "static", "styles.css")
 
 def configure_app():
     """
@@ -21,11 +25,11 @@ def configure_app():
         page_title="SeekLiyab", 
         layout="wide", 
         initial_sidebar_state="collapsed", 
-        page_icon="app/static/images/seekliyab-logo.png"
+        page_icon=logo_path
     )
 
     # Load custom CSS
-    with open("static/styles.css") as css:
+    with open(css_path) as css:
         st.markdown(f'<style>{css.read()}</style>', unsafe_allow_html=True)
 
 

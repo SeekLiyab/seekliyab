@@ -15,6 +15,10 @@ from utils.helpers import (
     render_implementation_tab
 )
 
+import os
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+data_path = os.path.join(root_dir, "model-development", "data", "raw_data.csv")
+
 # Main Title
 st.markdown("""
 <div class="main-title">
@@ -28,7 +32,7 @@ st.markdown("""
 @st.cache_data
 def load_dataset():
     """Load and preprocess dataset for analysis"""
-    raw_df = load_and_prepare_data(r"model-development\data\raw_data.csv")
+    raw_df = load_and_prepare_data(data_path)
     X_train, X_val, X_test, y_train, y_val, y_test = split_data(raw_df)
     df_train_merged, df_val_merged, df_test_merged = create_merged_datasets(
         X_train, X_val, X_test, y_train, y_val, y_test

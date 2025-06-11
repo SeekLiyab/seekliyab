@@ -46,7 +46,7 @@ def login_page():
     with login_col:
         login_container = st.container(border=False, key='login_container')
         with login_container:
-            st.image("static/images/seekliyab-banner-f.png", use_container_width=True)
+            st.image("app/static/images/seekliyab-banner-f.png", use_container_width=True)
             
             login_form = st.form(key="login_form", border=False)
             with login_form:

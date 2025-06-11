@@ -23,7 +23,7 @@ def create_area_selection(area_name, column):
     """
     with column.container(border=True):
         area_click = streamlit_image_coordinates(
-            "static/images/seekliyab-banner-f.png", 
+            "app/static/images/seekliyab-banner-f.png", 
             key=f"area{area_name.split()[-1]}", 
             use_column_width=True
         )

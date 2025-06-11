@@ -10,9 +10,9 @@ from streamlit_image_coordinates import streamlit_image_coordinates
 from components.footer import display_footer
 import os
 
-# Use forward slashes for paths to ensure compatibility with Docker
-parent_dir = os.path.dirname(os.path.abspath(__file__))
-logo_path = os.path.join(parent_dir, "static", "images", "seekliyab-banner-f.png")
+# Get the root directory (go up one level from the current file's directory)
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+logo_path = os.path.join(root_dir, "static", "images", "seekliyab-banner-f.png")
 
 def create_area_selection(area_name, column):
     """

@@ -10,8 +10,8 @@ from components.footer import display_footer
 import os
 
 # Use forward slashes for paths to ensure compatibility with Docker
-parent_dir = os.path.dirname(os.path.abspath(__file__))
-logo_path = os.path.join(parent_dir, "static", "images", "seekliyab-banner-f.png")
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+logo_path = os.path.join(root_dir, "static", "images", "seekliyab-banner-f.png")
 
 def login_page():
     """

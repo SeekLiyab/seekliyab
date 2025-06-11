@@ -8,7 +8,11 @@ areas of the building to view their current fire detection status.
 import streamlit as st
 from streamlit_image_coordinates import streamlit_image_coordinates
 from components.footer import display_footer
+import os
 
+# Use forward slashes for paths to ensure compatibility with Docker
+parent_dir = os.path.dirname(os.path.abspath(__file__))
+logo_path = os.path.join(parent_dir, "static", "images", "seekliyab-banner-f.png")
 
 def create_area_selection(area_name, column):
     """
@@ -23,7 +27,7 @@ def create_area_selection(area_name, column):
     """
     with column.container(border=True):
         area_click = streamlit_image_coordinates(
-            "./static/images/seekliyab-banner-f.png", 
+            logo_path, 
             key=f"area{area_name.split()[-1]}", 
             use_column_width=True
         )

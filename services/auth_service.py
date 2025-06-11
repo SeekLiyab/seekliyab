@@ -7,6 +7,11 @@ This module handles user authentication, including login, logout, and access con
 import streamlit as st
 import time
 from components.footer import display_footer
+import os
+
+# Use forward slashes for paths to ensure compatibility with Docker
+parent_dir = os.path.dirname(os.path.abspath(__file__))
+logo_path = os.path.join(parent_dir, "static", "images", "seekliyab-banner-f.png")
 
 def login_page():
     """
@@ -46,7 +51,7 @@ def login_page():
     with login_col:
         login_container = st.container(border=False, key='login_container')
         with login_container:
-            st.image("./static/images/seekliyab-banner-f.png", use_container_width=True)
+            st.image(logo_path, use_container_width=True)
             
             login_form = st.form(key="login_form", border=False)
             with login_form:

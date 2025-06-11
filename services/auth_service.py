@@ -1,8 +1,27 @@
+"""
+Authentication service for the SeekLiyab application.
+
+This module handles user authentication, including login, logout, and access control.
+"""
+
 import streamlit as st
 import time
 from components.footer import display_footer
 
 def login_page():
+    """
+    Render the application login page with options for admin and visitor access.
+    
+    This function manages:
+    - Authentication state checking
+    - Authorized email validation
+    - Admin login form
+    - Visitor access button
+    - User feedback for invalid credentials
+    
+    Returns:
+        None: The page is rendered directly to the Streamlit app.
+    """
     # Check if authentication is required first
     if "auth_required" in st.session_state and st.session_state.auth_required:
         # Clear the flag to prevent infinite loops
@@ -53,6 +72,15 @@ def login_page():
 
 @st.dialog("Access Confirmation")
 def show_google_login():
+    """
+    Display a dialog prompting the user to confirm Google authentication.
+    
+    This dialog appears after successful username/password validation to 
+    require additional Google account authentication for admin access.
+    
+    Returns:
+        None: The dialog is rendered directly in the Streamlit app.
+    """
     st.write("To protect the integrity of the fire data of the institution, you need to log in to the college account to access admin account.")
     if st.button("Proceed with Google Login", type="primary"):
         # Set flag and close dialog

@@ -1,35 +1,49 @@
+"""
+Visitor interface for the SeekLiyab fire detection system.
+
+This module provides a visual interface for visitors to select different
+areas of the building to view their current fire detection status.
+"""
+
 import streamlit as st
 from streamlit_image_coordinates import streamlit_image_coordinates
 from components.footer import display_footer
 
 
+def create_area_selection(area_name, column):
+    """
+    Create an interactive area selection container.
+    
+    Parameters:
+        area_name (str): The name of the area to create selection for
+        column (streamlit.delta_generator.DeltaGenerator): The column to render in
+        
+    Returns:
+        None: The component is rendered directly to the Streamlit interface
+    """
+    with column.container(border=True):
+        area_click = streamlit_image_coordinates(
+            "static/images/seekliyab-banner-f.png", 
+            key=f"area{area_name.split()[-1]}", 
+            use_column_width=True
+        )
+        
+        if area_click:
+            # Store the area in session state before switching pages
+            st.session_state.selected_area = area_name
+            # Update query params
+            st.query_params["area"] = area_name
+            # Switch to dashboard page
+            st.switch_page("interfaces/dashboard.py")
+
+
+# Create a three-column layout for area selection
 area_1_col, area_2_col, area_3_col = st.columns(3)
 
-# Container for Area 1
-with area_1_col.container(border=True):
-    area_1_click = streamlit_image_coordinates("static/images/seekliyab-banner-f.png", key="area1", use_column_width=True)
-    if area_1_click:
-        # Store the area in session state before switching pages
-        st.session_state.selected_area = "Area 1"
-        # Update query params
-        st.query_params["area"] = "Area 1"
-        # Switch to dashboard page
-        st.switch_page("interfaces/dashboard.py")
+# Create area selection components for each area
+create_area_selection("Area 1", area_1_col)
+create_area_selection("Area 2", area_2_col)
+create_area_selection("Area 3", area_3_col)
 
-# Container for Area 2
-with area_2_col.container(border=True):
-    area_2_click = streamlit_image_coordinates("static/images/seekliyab-banner-f.png", key="area2", use_column_width=True)
-    if area_2_click:
-        st.session_state.selected_area = "Area 2"
-        st.query_params["area"] = "Area 2"
-        st.switch_page("interfaces/dashboard.py")
-
-# Container for Area 3
-with area_3_col.container(border=True):
-    area_3_click = streamlit_image_coordinates("static/images/seekliyab-banner-f.png", key="area3", use_column_width=True)
-    if area_3_click:
-        st.session_state.selected_area = "Area 3"
-        st.query_params["area"] = "Area 3"
-        st.switch_page("interfaces/dashboard.py")
-
+# Display footer component
 display_footer()

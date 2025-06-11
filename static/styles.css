@@ -1,150 +1,1079 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+:root {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f8f5f5;
+  --accent-color: #800000;
+  --accent-hover: #600000;
+  --accent-light: #ffecec;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --success: #28a745;
+  --warning: #ffc107;
+  --error: #dc3545;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Styles */
 body * {
-    font-family: 'Poppins', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
+  color: var(--text-primary);
 }
 
-/* Hide hamburger menu */
+/* Hide Streamlit UI elements */
 #MainMenu {visibility: hidden;}
-
-/* Hide sidebar completely */
-[data-testid="collapsedControl"] {
-    display: none
-}
-/* Hide top right options menu */
+[data-testid="collapsedControl"] {display: none;}
 .stAppDeployButton {display: none;}
-
-/* Hide fullscreen button */
 [data-testid="stElementToolbar"] {display: none;}
-
-/* Hide 'Made with Streamlit' footer */
 footer {visibility: hidden;}
-
-/* Hide image expansion/zoom options */
 img {cursor: default !important;}
 .stImage > div > img {pointer-events: none;}
-
-/* Hide any other header buttons */
 header button {display: none;}
-
-div[data-testid="stButton"] {
-    margin-top: 0px;
-}
-
-/* Hide the page navigation pills if they exist */
 div[data-testid="stPageNavButtonContainer"] {display: none;}
+[data-testid="stHeader"] {display: none !important;}
 
-/* Optional: Remove the header's space completely*/
-[data-testid="stHeader"] {
-    display: none !important;
+/* Animation Keyframes */
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
+@keyframes pulse {
+  0% {opacity: 0.6;}
+  50% {opacity: 0.8;}
+  100% {opacity: 0.6;}
+}
 
+@keyframes shimmer {
+  0% {background-position: -100% 0;}
+  100% {background-position: 200% 0;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Apply light theme to Streamlit interface */
+.stApp {
+  background: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Style horizontal rules */
 div[data-testid="stElementContainer"] hr {
-    margin: 5px;  /* Equal vertical margins (15px top and bottom), 40px horizontal */
-    margin-top: 0px;  /* Reduce default bottom margin of the form button */
-    width: auto;
-    background: #F3E7E7;
-    border-top: 1px solid #d3d3d3;  /* Match Streamlit's default style */
+  margin: 5px;
+  margin-top: 0px;
+  width: auto;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(128, 0, 0, 0.2), transparent);
 }
 
+/* Container Styling with Light Mode Effects */
 .st-key-login_container {
-    box-shadow: 0 2px 12px 0 #cfc9c2;
-    border-radius: 10px;
-    padding: 15px 15px 15px 15px;
-    background: #F3E7E7;
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.1);
+  padding: 25px;
+  border: 1px solid rgba(128, 0, 0, 0.08);
+  transition: var(--transition-normal);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.st-key-login_container:hover {
+  box-shadow: 0 6px 16px rgba(128, 0, 0, 0.15);
 }
 
 [class*="st-key-feed_container"] {
-    box-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075),
-      0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075),
-      0 16px 16px hsl(0deg 0% 0% / 0.075)
-    ;
-    border-radius: 10px;
-    padding: 40px 40px 40px 40px;
-    background: #F3E7E7;
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  border: 1px solid rgba(128, 0, 0, 0.05);
+  transition: var(--transition-normal);
+  animation: fadeIn 0.8s ease-out;
 }
 
+/* Data Science Project Containers */
+[class*="st-key-data_acquisition"] {
+  background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  border-left: 4px solid var(--accent-color);
+  box-shadow: 0 2px 8px rgba(128, 0, 0, 0.1);
+  margin: 15px 0;
+  transition: var(--transition-normal);
+}
 
+[class*="st-key-eda_container"] {
+  background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  border-left: 4px solid #4B8BFF;
+  box-shadow: 0 2px 8px rgba(75, 139, 255, 0.1);
+  margin: 15px 0;
+  transition: var(--transition-normal);
+}
 
+[class*="st-key-data_cleaning"] {
+  background: linear-gradient(135deg, #f0fff0 0%, #ffffff 100%);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  border-left: 4px solid var(--success);
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.1);
+  margin: 15px 0;
+  transition: var(--transition-normal);
+}
 
-.stPopoverBody {
-    max-width: 300px !important; /* Match the width above */
-    width: 300px !important;
+[class*="st-key-preprocessing"] {
+  background: linear-gradient(135deg, #fff8f0 0%, #ffffff 100%);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  border-left: 4px solid #FFB84B;
+  box-shadow: 0 2px 8px rgba(255, 184, 75, 0.1);
+  margin: 15px 0;
+  transition: var(--transition-normal);
+}
+
+[class*="st-key-model_pipeline"] {
+  background: linear-gradient(135deg, #f5f0ff 0%, #ffffff 100%);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  border-left: 4px solid #9c27b0;
+  box-shadow: 0 2px 8px rgba(156, 39, 176, 0.1);
+  margin: 15px 0;
+  transition: var(--transition-normal);
+}
+
+/* Feature and Target Description Tables */
+[class*="st-key-features_table"] {
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  border: 1px solid rgba(128, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin: 10px 0;
+}
+
+[class*="st-key-target_table"] {
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  border: 1px solid rgba(75, 139, 255, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin: 10px 0;
+}
+
+/* Button Styling with Light Mode Effects */
+.stButton > button {
+  background: var(--accent-color) !important;
+  color: white !important;
+  font-weight: 500 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 0.6em 1.2em !important;
+  box-shadow: 0 2px 4px rgba(128, 0, 0, 0.2) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: var(--transition-normal) !important;
+  transform: translateY(0) !important;
+}
+
+.stButton > button > div {
+  color: white !important;
+}
+
+.stButton > button > p {
+  color: white !important;
+}
+
+.stButton > button:hover {
+  background: var(--accent-hover) !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 8px rgba(128, 0, 0, 0.25) !important;
+}
+
+.stButton > button:hover * {
+  color: white !important;
+}
+
+.stButton > button:active {
+  transform: translateY(1px) !important;
+  box-shadow: 0 1px 2px rgba(128, 0, 0, 0.2) !important;
+}
+
+/* Force white text on specific Streamlit components */
+.stButton button,
+.stButton button p,
+.stButton button span,
+.stButton button div,
+.stDownloadButton button,
+.stDownloadButton button p,
+.stDownloadButton button span,
+.stDownloadButton button div,
+.stFileUploader button,
+.stFileUploader button p,
+.stFileUploader button span,
+.stFileUploader button div {
+  color: white !important;
+}
+
+/* Text Input Styling with Light Mode Effects */
+.stTextInput > div > div > input {
+  background: #ffffff !important;
+  border: 1px solid rgba(128, 0, 0, 0.2) !important;
+  border-radius: 8px !important;
+  color: var(--text-primary) !important;
+  padding: 0.75rem 1rem !important;
+  transition: var(--transition-normal) !important;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  caret-color: var(--accent-color) !important;
+}
+
+.stTextInput > div > div > input:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 2px rgba(128, 0, 0, 0.1) !important;
+}
+
+.stTextInput > div > div > input::placeholder {
+  color: rgba(102, 102, 102, 0.5) !important;
+}
+
+/* Selectbox Styling with Light Mode Effects */
+.stSelectbox > div > div > div {
+  background: #ffffff !important;
+  border: 1px solid rgba(128, 0, 0, 0.2) !important;
+  border-radius: 8px !important;
+  color: var(--text-primary) !important;
+  transition: var(--transition-normal) !important;
+}
+
+.stSelectbox > div > div > div:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 2px rgba(128, 0, 0, 0.1) !important;
+}
+
+.stSelectbox > div > div > div[data-baseweb="select"] > div {
+  background-color: transparent !important;
+}
+
+/* Style the dropdown icon */
+.stSelectbox [data-testid="stMarkdownContainer"] ~ div svg {
+  color: var(--accent-color) !important;
+  transition: transform 0.3s ease;
+}
+
+.stSelectbox:focus-within [data-testid="stMarkdownContainer"] ~ div svg {
+  transform: rotate(180deg);
+}
+
+/* Additional Elements Styling */
+.stCheckbox > div > label > div[role="checkbox"] {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(128, 0, 0, 0.3) !important;
+  transition: var(--transition-normal) !important;
+}
+
+.stCheckbox > div > label > div[role="checkbox"][aria-checked="true"] {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+/* Success, Warning, Error Colors */
+.stSuccess > div {
+  background-color: rgba(40, 167, 69, 0.1) !important;
+  border: 1px solid rgba(40, 167, 69, 0.3) !important;
+  color: #28a745 !important;
+  border-radius: 8px !important;
+}
+
+.stWarning > div {
+  background-color: rgba(255, 193, 7, 0.1) !important;
+  border: 1px solid rgba(255, 193, 7, 0.3) !important;
+  color: #ffc107 !important;
+  border-radius: 8px !important;
+}
+
+.stError > div {
+  background-color: rgba(220, 53, 69, 0.1) !important;
+  border: 1px solid rgba(220, 53, 69, 0.3) !important;
+  color: #dc3545 !important;
+  border-radius: 8px !important;
+}
+
+/* Enhanced DataFrames and Charts Styling */
+[data-testid="stDataFrameGlideDataEditor"] {
+  background: #ffffff !important;
+  border: 1px solid rgba(128, 0, 0, 0.1) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  margin: 15px 0 !important;
+  transition: var(--transition-normal) !important;
+}
+
+[data-testid="stDataFrameGlideDataEditor"]:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Dataframe Table Styling */
+[data-testid="stDataFrameGlideDataEditor"] [data-testid="stTable"] {
+  background-color: transparent !important;
+  color: var(--text-primary) !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Header Styling */
+[data-testid="stDataFrameGlideDataEditor"] th,
+[data-testid="stDataFrameGlideDataEditor"] .stDataFrameGlideDataEditor th {
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-hover) 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  border: none !important;
+  padding: 12px 16px !important;
+  text-align: center !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10 !important;
+}
+
+/* Cell Styling */
+[data-testid="stDataFrameGlideDataEditor"] td,
+[data-testid="stDataFrameGlideDataEditor"] .stDataFrameGlideDataEditor td {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid rgba(128, 0, 0, 0.08) !important;
+  border-right: 1px solid rgba(128, 0, 0, 0.05) !important;
+  color: var(--text-secondary) !important;
+  padding: 10px 16px !important;
+  font-size: 0.85rem !important;
+  text-align: center !important;
+  transition: background-color 0.2s ease !important;
+}
+
+/* Row Hover Effects */
+[data-testid="stDataFrameGlideDataEditor"] tr:hover td {
+  background-color: rgba(128, 0, 0, 0.02) !important;
+}
+
+/* Alternating Row Colors */
+[data-testid="stDataFrameGlideDataEditor"] tr:nth-child(even) td {
+  background-color: rgba(248, 245, 245, 0.3) !important;
+}
+
+[data-testid="stDataFrameGlideDataEditor"] tr:nth-child(even):hover td {
+  background-color: rgba(128, 0, 0, 0.04) !important;
+}
+
+/* First Column (Index/Label) Styling */
+[data-testid="stDataFrameGlideDataEditor"] td:first-child,
+[data-testid="stDataFrameGlideDataEditor"] th:first-child {
+  font-weight: 600 !important;
+  background-color: rgba(128, 0, 0, 0.05) !important;
+  border-right: 2px solid rgba(128, 0, 0, 0.1) !important;
+}
+
+/* Numeric Cell Styling */
+[data-testid="stDataFrameGlideDataEditor"] td[data-type="number"] {
+  font-family: 'Courier New', monospace !important;
+  font-weight: 500 !important;
+  color: var(--accent-color) !important;
+}
+
+/* Scrollbar Styling for DataFrames */
+[data-testid="stDataFrameGlideDataEditor"] ::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+[data-testid="stDataFrameGlideDataEditor"] ::-webkit-scrollbar-track {
+  background: rgba(128, 0, 0, 0.05) !important;
+  border-radius: 4px !important;
+}
+
+[data-testid="stDataFrameGlideDataEditor"] ::-webkit-scrollbar-thumb {
+  background: rgba(128, 0, 0, 0.3) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+[data-testid="stDataFrameGlideDataEditor"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 0, 0, 0.5) !important;
+}
+
+/* DataFrame Container Wrapper */
+.stDataFrame {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Special Styling for Statistics Tables */
+[data-testid="stDataFrameGlideDataEditor"][data-table-type="statistics"] th {
+  background: linear-gradient(135deg, #4B8BFF 0%, #3a7bd5 100%) !important;
+}
+
+/* Special Styling for Class Distribution Tables */
+[data-testid="stDataFrameGlideDataEditor"][data-table-type="distribution"] th {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+}
+
+/* Responsive DataFrame Styling */
+@media (max-width: 768px) {
+  [data-testid="stDataFrameGlideDataEditor"] th,
+  [data-testid="stDataFrameGlideDataEditor"] td {
+    padding: 8px 12px !important;
+    font-size: 0.8rem !important;
   }
-
-/* Optional: Adjust the form button's bottom margin to fine-tune spacing */
-div[data-testid="stFormSubmitButton"] {
-    margin-bottom: 0px;  /* Reduce default bottom margin of the form button */
-}
-/* Optional: Adjust the visitor button's top margin to fine-tune spacing */
-div[data-testid="stButton"] {
-    margin-top: 0px;  /* Reduce default top margin of the visitor button */
+  
+  [data-testid="stDataFrameGlideDataEditor"] {
+    margin: 10px 0 !important;
+  }
 }
 
-.st-key-login_container {
-    box-shadow: 0 2px 12px 0 #cfc9c2;
-    border-radius: 10px;
-    padding: 20px 20px 20px 20px;
-    background: #ffffff;
+/* Loading State Styling */
+[data-testid="stDataFrameGlideDataEditor"][aria-busy="true"] {
+  opacity: 0.7 !important;
+  pointer-events: none !important;
 }
 
+[data-testid="stDataFrameGlideDataEditor"][aria-busy="true"]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Enhanced Table Border Styling */
+[data-testid="stDataFrameGlideDataEditor"] table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Remove default Streamlit table styling conflicts */
+[data-testid="stDataFrameGlideDataEditor"] .stTable {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Special styling for project tables */
+.project-dataframe [data-testid="stDataFrameGlideDataEditor"] {
+  border: 2px solid rgba(128, 0, 0, 0.15) !important;
+  box-shadow: 0 6px 20px rgba(128, 0, 0, 0.1) !important;
+}
+
+.project-dataframe [data-testid="stDataFrameGlideDataEditor"]:hover {
+  border-color: rgba(128, 0, 0, 0.25) !important;
+  box-shadow: 0 8px 25px rgba(128, 0, 0, 0.15) !important;
+}
+
+/* Tabs Styling */
+.stTabs [data-baseweb="tab-list"] {
+  background-color: var(--accent-color) !important;
+  border-radius: 10px !important;
+  padding: 0.25rem !important;
+  gap: 0.5rem !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+  background-color: transparent !important;
+  border-radius: 8px !important;
+  color: black !important;
+  padding: 0.5rem 1rem !important;
+  transition: var(--transition-fast) !important;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+  background-color: rgb(151, 83, 83) !important;
+  color: black !important;
+  font-weight: 500 !important;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] * {
+  color: white !important;
+}
+
+.stTabs [data-baseweb="tab-panel"] {
+  background-color: transparent !important;
+  padding: 1rem 0.5rem !important;
+}
+
+/* Expander Styling */
+.stExpander {
+  border: 1px solid rgba(128, 0, 0, 0.1) !important;
+  border-radius: 10px !important;
+  background-color: #ffffff !important;
+  transition: var(--transition-normal) !important;
+}
+
+.stExpander:hover {
+  background-color: #f8f5f5 !important;
+}
+
+.stExpander > details > summary {
+  padding: 0.75rem 1rem !important;
+  transition: var(--transition-fast) !important;
+  border-radius: 9px !important;
+}
+
+.stExpander > details > summary:hover {
+  background-color: rgba(128, 0, 0, 0.05) !important;
+}
+
+.stExpander > details > summary:focus {
+  box-shadow: 0 0 0 2px rgba(128, 0, 0, 0.1) !important;
+}
+
+.stExpander > details > summary > div > div > p {
+  color: var(--text-primary) !important;
+  font-weight: 500 !important;
+}
+
+.stExpander > details[open] > div {
+  padding: 0.75rem 1rem !important;
+  border-top: 1px solid rgba(128, 0, 0, 0.05) !important;
+}
+
+/* Metric Styling */
+[data-testid="stMetric"] {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid rgba(128, 0, 0, 0.05);
+  transition: var(--transition-normal);
+}
+
+[data-testid="stMetric"]:hover {
+  background: #f8f5f5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+[data-testid="stMetric"] label {
+  color: var(--text-secondary) !important;
+  font-weight: 400 !important;
+}
+
+[data-testid="stMetric"] [data-testid="stMetricValue"] {
+  color: var(--accent-color) !important;
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+}
+
+[data-testid="stMetricDelta"] {
+  font-size: 0.875rem !important;
+}
+
+/* Footer Styling */
 .footer-container {
-    /* background-color: #F9B233; Gold background color */
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
 }
+
 .logo-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
 }
+
 .logo-container img {
-    height: 50px;
-    width: auto;
+  height: 50px;
+  width: auto;
+  transition: var(--transition-normal);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
 }
+
+.logo-container img:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1));
+}
+
 .footer-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 5px 0;
-    color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: var(--accent-color);
 }
+
 .footer-subtitle {
-    font-size: 18px;
-    margin: 5px 0;
-    color: #000;
+  font-size: 18px;
+  margin: 5px 0;
+  color: var(--text-primary);
 }
+
 .footer-college {
-    font-size: 16px;
-    margin: 5px 0 10px 0;
-    color: #000;
+  font-size: 16px;
+  margin: 5px 0 10px 0;
+  color: var(--text-secondary);
 }
+
 .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
 }
+
 .footer-links a {
-    color: #000;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: var(--transition-fast);
+  position: relative;
 }
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: var(--transition-normal);
+  transform: translateX(-50%);
+}
+
 .footer-links a:hover {
-    background-color: rgba(0,0,0,0.1);
-    text-decoration: underline;
+  color: var(--accent-color);
+  background-color: rgba(128, 0, 0, 0.05);
 }
+
+.footer-links a:hover::after {
+  width: 80%;
+}
+
 .footer-copyright {
-    font-size: 14px;
-    color: #544c4c;
-    margin-top: 10px;
+  font-size: 14px;
+  color: #888888;
+  margin-top: 10px;
+}
+
+/* Ensure main content can grow */
+.stApp > div:first-child {
+  flex: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .st-key-login_container, [class*="st-key-feed_container"] {
+    padding: 15px;
+  }
+  
+  .stTextInput > div > div > input {
+    padding: 0.5rem 0.75rem !important;
+  }
+  
+  .stButton > button {
+    padding: 0.5em 1em;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+  .stButton > button:active {
+    transform: scale(0.98);
+    background: var(--accent-hover);
+  }
+  
+  [data-testid="stMetric"]:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Ensure white text on any maroon background components */
+[style*="background-color: rgb(128, 0, 0)"],
+[style*="background-color: #800000"],
+[style*="background: rgb(128, 0, 0)"],
+[style*="background: #800000"] {
+  color: rgb(0, 0, 0) !important;
+}
+
+[style*="background-color: rgb(128, 0, 0)"] *,
+[style*="background-color: #800000"] *,
+[style*="background: rgb(128, 0, 0)"] *,
+[style*="background: #800000"] * {
+  color: rgb(0, 0, 0) !important;
+}
+
+/* Additional component styles with maroon backgrounds */
+.stDownloadButton > button,
+.stFileUploader > button {
+  color: rgb(0, 0, 0) !important;
+}
+
+.stDownloadButton > button *,
+.stFileUploader > button * {
+  color: white !important;
+}
+
+/* Radio and Checkbox selected states */
+.stRadio > div[role="radiogroup"] > label > div[data-baseweb="radio"] > div:first-child[aria-checked="true"] {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.stCheckbox > div > label > div[role="checkbox"][aria-checked="true"] {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+/* Progress bar and slider components */
+.stProgress > div > div > div {
+  background-color: var(--accent-color) !important;
+}
+
+[data-baseweb="slider"] [data-testid="stThumbValue"] {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+/* Multi-select dropdown selections */
+[data-baseweb="multi-select"] [data-baseweb="tag"] {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+/* Selected pagination */
+.stPagination [data-testid="stPageButton"][aria-selected="true"] {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+/* Additional maroon background elements */
+[data-testid="StyledLinkIconContainer"] {
+  color: white !important;
+}
+
+/* Additional aggressive targeting for any button elements */
+button[kind="primary"],
+button[data-baseweb="button"] {
+  color: white !important;
+}
+
+button[kind="primary"] *,
+button[data-baseweb="button"] * {
+  color: white !important;
+}
+
+/* Strong selector to override any text within buttons */
+button, 
+button *, 
+.stButton button *, 
+div[data-testid="StyledLinkIconContainer"] *,
+button p,
+button span,
+button div {
+  color: white !important;
+}
+
+/* Specific targeting for Streamlit button text */
+.css-1offfwp p,       /* Targeting button text specifically */
+.css-1offfwp span,
+.css-1offfwp div {
+  color: white !important;
+}
+
+/* Try various known Streamlit CSS classes that might affect buttons */
+.css-1x8cf1d,         /* Known Streamlit button classes */
+.css-1offfwp, 
+.css-qbe2hs,
+.css-1aumxhk {
+  color: white !important;
+}
+
+.css-1x8cf1d *,
+.css-1offfwp *,
+.css-qbe2hs *,
+.css-1aumxhk * {
+  color: white !important;
+}
+
+/* Override any text styles that might be applied */
+.stButton button[style*="color"],
+.stDownloadButton button[style*="color"],
+.stFileUploader button[style*="color"] {
+  color: rgb(0, 0, 0) !important;
+}
+
+/* Make sure SVG icons in buttons are also white */
+.stButton svg,
+.stButton path,
+.stDownloadButton svg,
+.stDownloadButton path,
+.stFileUploader svg,
+.stFileUploader path {
+  fill: white !important;
+  color: white !important;
+}
+
+/* Force default Streamlit primary buttons to have white text */
+button.st-de,
+button.st-df,
+button.st-dg,
+button.st-c9,
+button.st-ca,
+button.st-cb,
+button.st-cc {
+  color: white !important;
+}
+
+button.st-de *,
+button.st-df *,
+button.st-dg *,
+button.st-c9 *,
+button.st-ca *,
+button.st-cb *,
+button.st-cc * {
+  color: white !important;
+}
+
+/* Project Page Specific Styles */
+.main-title {
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+.main-title h1 {
+  color: black !important;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main-title h3 {
+  color: var(--accent-color) !important;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.main-title p {
+  color: rgba(8, 7, 7, 0.8) !important;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.section-header {
+  background: linear-gradient(135deg, rgba(128, 0, 0, 0.05) 0%, rgba(128, 0, 0, 0.02) 100%);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--accent-color);
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  color: var(--accent-color) !important;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.academic-note {
+  background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+  border: 1px solid rgba(75, 139, 255, 0.2);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(75, 139, 255, 0.1);
+  position: relative;
+}
+
+.academic-note::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1.2rem;
+}
+
+.academic-note strong {
+  color: #4B8BFF;
+  font-weight: 600;
+}
+
+.methodology-box {
+  background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+  border: 1px solid rgba(128, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(128, 0, 0, 0.1);
+}
+
+.methodology-box h4 {
+  color: var(--accent-color) !important;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(128, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+.methodology-box ol {
+  margin-left: 20px;
+}
+
+.methodology-box li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.methodology-box ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Enhanced Table Styling for Project Page */
+.project-table {
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(128, 0, 0, 0.1);
+}
+
+/* Statistics Display Cards */
+.stat-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 10px 0;
+  border-left: 4px solid var(--accent-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: var(--transition-normal);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Code Block Styling for Project */
+.stCode {
+  background: #f8f9fa !important;
+  border: 1px solid rgba(128, 0, 0, 0.1) !important;
+  border-radius: var(--border-radius) !important;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Research Context Styling */
+.research-context {
+  background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+  border: 1px solid rgba(75, 139, 255, 0.1);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.research-context::before {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+}
+
+/* Data Quality Indicators */
+.quality-indicator {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 2px;
+}
+
+.quality-good {
+  background: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+  border: 1px solid rgba(40, 167, 69, 0.2);
+}
+
+.quality-warning {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+  border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.quality-error {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+  border: 1px solid rgba(220, 53, 69, 0.2);
+}
+
+/* Enhanced Tab Styling for Project */
+.project-tabs .stTabs [data-baseweb="tab-list"] {
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-hover) 100%);
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(128, 0, 0, 0.2);
+}
+
+.project-tabs .stTabs [data-baseweb="tab"] {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: var(--transition-fast);
+}
+
+.project-tabs .stTabs [data-baseweb="tab"][aria-selected="true"] {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--accent-color) !important;
+  font-weight: 600;
+}
+
+/* Responsive Design for Project Page */
+@media (max-width: 768px) {
+  .main-title h1 {
+    font-size: 2rem;
+  }
+  
+  .main-title h3 {
+    font-size: 1.2rem;
+  }
+  
+  .section-header {
+    padding: 15px;
+  }
+  
+  .methodology-box,
+  .academic-note,
+  .research-context {
+    padding: 15px;
+  }
 }

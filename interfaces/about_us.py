@@ -10,11 +10,11 @@ with feed_col:
 
     # Team members data structure for better maintainability
     team_members = [
-        {"name": "Billon, Ashlyn Paula I.", "image": "static/images/seekliyab-logo.png", "role": "Electrical Engineering"},
-        {"name": "Caringal, Jamilah S.", "image": "static/images/seekliyab-logo.png", "role": "Electrical Engineering"},
-        {"name": "Datu, Dexter Daniel E.", "image": "static/images/seekliyab-logo.png", "role": "Electrical Engineering"},
-        {"name": "Mazo, Franscine Marie O.", "image": "static/images/seekliyab-logo.png", "role": "Electrical Engineering"},
-        {"name": "San Juan, Adrian C.", "image": "static/images/seekliyab-logo.png", "role": "Electrical Engineering"}
+        {"name": "Billon, Ashlyn Paula I.", "image": "./static/images/seekliyab-logo.png", "role": "Electrical Engineering"},
+        {"name": "Caringal, Jamilah S.", "image": "./static/images/seekliyab-logo.png", "role": "Electrical Engineering"},
+        {"name": "Datu, Dexter Daniel E.", "image": "./static/images/seekliyab-logo.png", "role": "Electrical Engineering"},
+        {"name": "Mazo, Franscine Marie O.", "image": "./static/images/seekliyab-logo.png", "role": "Electrical Engineering"},
+        {"name": "San Juan, Adrian C.", "image": "./static/images/seekliyab-logo.png", "role": "Electrical Engineering"}
     ]
 
     # Create responsive columns - 3 columns on larger screens, fewer on smaller screens

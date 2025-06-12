@@ -148,6 +148,55 @@ def user_management_section():
     except Exception as e:
         st.error(f"An error occurred in user management: {str(e)}")
 
+def emergency_contacts_section():
+    """Handle emergency contact management section of the admin interface."""
+    try:
+        # Display current emergency numbers
+        if hasattr(st.secrets, 'emergency_contacts') and hasattr(st.secrets.emergency_contacts, 'emergency_numbers'):
+            numbers_df = pd.DataFrame({"Contact Number": st.secrets.emergency_contacts.emergency_numbers})
+            if not numbers_df.empty:
+                st.dataframe(numbers_df, use_container_width=True)
+            else:
+                st.info("No emergency contacts found in the system.")
+        else:
+            st.warning("Emergency contacts configuration not found.")
+
+        col1, col2 = st.columns(2)
+        with col1:
+            st.subheader("Add Number")
+            new_number = st.text_input("Contact number", key="new_emergency_number")
+            add_number = st.button("Add Number", key="add_emergency_number_btn")
+            if add_number:
+                if not new_number:
+                    st.error("Please enter a contact number.")
+                elif new_number in st.secrets.emergency_contacts.emergency_numbers:
+                    st.warning(f"Number {new_number} already exists.")
+                else:
+                    try:
+                        st.secrets.emergency_contacts.emergency_numbers.append(new_number)
+                        st.success(f"Number {new_number} added successfully.")
+                    except Exception as e:
+                        st.error(f"Failed to add number: {str(e)}")
+        with col2:
+            st.subheader("Remove Number")
+            delete_number = st.text_input("Number to remove", key="delete_emergency_number")
+            if delete_number:
+                if delete_number not in st.secrets.emergency_contacts.emergency_numbers:
+                    st.error(f"Number {delete_number} not found.")
+                else:
+                    confirm = st.checkbox(f"Confirm deletion of {delete_number}", key="confirm_delete_emergency_number")
+                    delete_confirmed = st.button("Delete Number", key="delete_emergency_number_btn")
+                    if delete_confirmed and confirm:
+                        try:
+                            st.secrets.emergency_contacts.emergency_numbers.remove(delete_number)
+                            st.success(f"Number {delete_number} removed successfully.")
+                        except Exception as e:
+                            st.error(f"Failed to remove number: {str(e)}")
+                    elif delete_confirmed and not confirm:
+                        st.warning("Please confirm deletion by checking the box.")
+    except Exception as e:
+        st.error(f"An error occurred in emergency contacts management: {str(e)}")
+
 def sensor_data_visualization():
     """Handle sensor data visualization section."""
     st.subheader("Real-time Sensor Data")
@@ -249,28 +298,17 @@ def render_admin_interface():
     and content sections for system management.
     """
     # Main header with app styling
-    st.title("SeekLiyab Fire Detection System")
-    st.header("Admin Dashboard")
-    
-    # System status indicators
-    status_col1, status_col2, status_col3, status_col4 = st.columns(4)
-    with status_col1:
-        st.success("System Active")
-    with status_col2:
-        st.info(f"Last Update: {datetime.now().strftime('%H:%M:%S')}")
-    with status_col3:
-        st.info(f"Active Sensors: {random.randint(10, 20)}")
-    with status_col4:
-        if random.random() > 0.8:  # Occasionally show a warning for demo
-            st.warning("1 Sensor Offline")
-        else:
-            st.success("All Sensors Online")
+    st.title("SeekLiyab Fire Monitoring Platform")
     
     # Main content in tabs
     tab1, tab2, tab3 = st.tabs(["User Management", "Sensor Data", "Database"])
     
     with tab1:
-        user_management_section()
+        user_col, emergency_col = st.columns(2)
+        with user_col:  
+            user_management_section()
+        with emergency_col:
+            emergency_contacts_section()
         
     with tab2:
         sensor_data_visualization()
@@ -278,9 +316,31 @@ def render_admin_interface():
     with tab3:
         database_export_section()
 
-# Configure sidebar with logout button
-st.sidebar.title("Admin Controls")
-st.sidebar.button("Log out", key="logout", on_click=st.logout, use_container_width=True)
+# Configure sidebar with enhanced visuals and info
+with st.sidebar:
+    st.markdown("""
+    <div style='text-align:center; margin-bottom: 1.5em;'>
+        <img src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' width='80' style='border-radius:50%; box-shadow:0 2px 8px rgba(128,0,0,0.12); margin-bottom:0.5em;'>
+        <h2 style='color:#800000; margin-bottom:0.2em;'>Admin Panel</h2>
+        <p style='color:#666; font-size:1em; margin-bottom:0.5em;'>Welcome, Administrator!</p>
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("---")
+    st.markdown("**System Quick Stats:**")
+    st.metric("Active Sensors", random.randint(10, 20))
+    st.metric("Areas Monitored", 3)
+    st.metric("Last Update", datetime.now().strftime('%b %d, %Y %I:%M %p'))
+    st.markdown("---")
+    st.markdown("**How to use the Admin Panel:**")
+    st.markdown("""
+    - **User Management:** Add or remove admin users who can access the system.
+    - **Emergency Contacts:** Manage the phone numbers that will receive fire alerts.
+    - **Sensor Data:** View and analyze real-time and historical sensor readings for all areas.
+    - **Database:** Export all sensor and configuration data as a CSV file for backup or analysis.
+    - **Log out:** Securely exit the admin dashboard.
+    """)
+    st.markdown("---")
+    st.button("Log out", key="logout", on_click=st.logout, use_container_width=True)
 
 # Render the main interface
 render_admin_interface()

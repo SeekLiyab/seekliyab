@@ -1,0 +1,2612 @@
+temperature_reading,air_quality_reading,carbon_monoxide_reading,smoke_reading,label,predicted_label,risk_level,fire_probability,alert_required,prediction_correct
+24.0,293,275,189,non fire,non fire,LOW,0.0,False,True
+24.0,295,228,192,non fire,non fire,LOW,0.0,False,True
+24.0,275,224,194,non fire,non fire,LOW,0.0033333333333333335,False,True
+24.0,291,277,188,non fire,non fire,LOW,0.0,False,True
+24.0,235,176,183,non fire,non fire,LOW,0.0,False,True
+24.0,295,223,227,non fire,non fire,LOW,0.0,False,True
+24.0,259,222,189,non fire,non fire,LOW,0.0,False,True
+24.0,306,203,190,non fire,non fire,LOW,0.0,False,True
+24.0,290,219,190,non fire,non fire,LOW,0.0,False,True
+24.0,293,230,161,non fire,non fire,LOW,0.0,False,True
+24.0,299,225,189,non fire,non fire,LOW,0.0,False,True
+24.0,282,240,220,non fire,non fire,LOW,0.0,False,True
+24.0,295,208,189,non fire,non fire,LOW,0.0,False,True
+24.0,289,178,192,non fire,non fire,LOW,0.0,False,True
+24.0,293,208,199,non fire,non fire,LOW,0.0,False,True
+24.0,335,235,228,non fire,non fire,LOW,0.0,False,True
+24.0,293,208,188,non fire,non fire,LOW,0.0,False,True
+24.0,303,200,182,non fire,non fire,LOW,0.0,False,True
+24.0,289,227,205,non fire,non fire,LOW,0.0,False,True
+24.0,320,224,187,non fire,non fire,LOW,0.0,False,True
+24.0,166,224,186,non fire,non fire,LOW,0.0,False,True
+24.0,275,230,188,non fire,non fire,LOW,0.0,False,True
+24.0,293,221,196,non fire,non fire,LOW,0.0,False,True
+24.0,290,197,208,non fire,non fire,LOW,0.0,False,True
+24.0,288,231,122,non fire,non fire,LOW,0.0,False,True
+23.94,292,364,181,non fire,non fire,LOW,0.0033333333333333335,False,True
+24.0,315,227,178,non fire,non fire,LOW,0.0,False,True
+24.0,273,225,193,non fire,non fire,LOW,0.0,False,True
+24.0,307,287,208,non fire,non fire,LOW,0.04,False,True
+24.0,326,265,228,non fire,non fire,LOW,0.0,False,True
+24.0,291,176,191,non fire,non fire,LOW,0.0,False,True
+24.0,300,225,183,non fire,non fire,LOW,0.0,False,True
+24.0,295,224,208,non fire,non fire,LOW,0.0,False,True
+24.0,289,224,158,non fire,non fire,LOW,0.0,False,True
+24.0,310,222,191,non fire,non fire,LOW,0.0,False,True
+24.0,163,220,193,non fire,non fire,LOW,0.0,False,True
+24.0,289,176,175,non fire,non fire,LOW,0.0,False,True
+24.0,298,227,191,non fire,non fire,LOW,0.0,False,True
+24.0,295,236,209,non fire,non fire,LOW,0.0,False,True
+24.0,298,211,59,non fire,non fire,LOW,0.0,False,True
+24.0,323,224,193,non fire,non fire,LOW,0.0,False,True
+24.0,293,238,189,non fire,non fire,LOW,0.0,False,True
+24.0,282,231,163,non fire,non fire,LOW,0.0,False,True
+24.0,290,215,194,non fire,non fire,LOW,0.0,False,True
+24.06,240,220,189,non fire,non fire,LOW,0.0,False,True
+24.0,291,224,186,non fire,non fire,LOW,0.0,False,True
+24.0,293,217,208,non fire,non fire,LOW,0.0,False,True
+24.0,304,221,168,non fire,non fire,LOW,0.0,False,True
+24.0,293,208,293,non fire,non fire,LOW,0.0,False,True
+24.0,292,233,174,non fire,non fire,LOW,0.0,False,True
+24.0,283,218,189,non fire,non fire,LOW,0.0,False,True
+24.06,297,231,191,non fire,non fire,LOW,0.0,False,True
+24.06,341,229,189,non fire,non fire,LOW,0.0,False,True
+24.0,338,218,211,non fire,non fire,LOW,0.0,False,True
+24.0,316,109,195,non fire,non fire,LOW,0.0,False,True
+24.06,269,220,191,non fire,non fire,LOW,0.0,False,True
+24.0,291,223,191,non fire,non fire,LOW,0.0,False,True
+24.06,294,223,178,non fire,non fire,LOW,0.0,False,True
+24.06,289,224,48,non fire,non fire,LOW,0.0,False,True
+24.0,292,226,176,non fire,non fire,LOW,0.0,False,True
+24.0,289,133,190,non fire,non fire,LOW,0.0,False,True
+24.0,274,277,183,non fire,non fire,LOW,0.013333333333333334,False,True
+24.06,291,221,139,non fire,non fire,LOW,0.0,False,True
+24.0,242,225,194,non fire,non fire,LOW,0.0,False,True
+24.0,293,235,187,non fire,non fire,LOW,0.0,False,True
+24.06,289,237,192,non fire,non fire,LOW,0.0,False,True
+24.0,272,225,146,non fire,non fire,LOW,0.0,False,True
+24.0,298,276,191,non fire,non fire,LOW,0.0,False,True
+24.0,287,240,229,non fire,non fire,LOW,0.0,False,True
+24.06,290,224,179,non fire,non fire,LOW,0.0,False,True
+24.0,283,224,183,non fire,non fire,LOW,0.0,False,True
+24.0,290,226,84,non fire,non fire,LOW,0.0,False,True
+24.06,290,194,162,non fire,non fire,LOW,0.0,False,True
+24.06,317,228,193,non fire,non fire,LOW,0.0,False,True
+24.06,297,223,192,non fire,non fire,LOW,0.0,False,True
+24.0,287,223,177,non fire,non fire,LOW,0.0,False,True
+24.0,281,227,186,non fire,non fire,LOW,0.0,False,True
+24.0,288,237,64,non fire,non fire,LOW,0.0,False,True
+24.0,285,223,187,non fire,non fire,LOW,0.0,False,True
+24.0,305,218,161,non fire,non fire,LOW,0.0,False,True
+24.0,291,197,162,non fire,non fire,LOW,0.0,False,True
+24.0,292,273,181,non fire,non fire,LOW,0.0,False,True
+24.0,289,247,179,non fire,non fire,LOW,0.0,False,True
+24.0,288,219,183,non fire,non fire,LOW,0.0,False,True
+24.0,300,227,191,non fire,non fire,LOW,0.0,False,True
+23.94,209,223,230,non fire,non fire,LOW,0.0,False,True
+23.94,273,222,177,non fire,non fire,LOW,0.0,False,True
+23.94,262,226,192,non fire,non fire,LOW,0.0,False,True
+24.0,260,225,182,non fire,non fire,LOW,0.0,False,True
+23.94,301,227,183,non fire,non fire,LOW,0.0,False,True
+24.0,301,256,194,non fire,non fire,LOW,0.0,False,True
+24.0,304,226,198,non fire,non fire,LOW,0.0,False,True
+24.0,317,233,294,non fire,non fire,LOW,0.0,False,True
+24.0,320,226,242,non fire,non fire,LOW,0.0,False,True
+24.0,321,226,213,non fire,non fire,LOW,0.0,False,True
+24.0,309,222,223,non fire,non fire,LOW,0.0,False,True
+23.94,316,227,222,non fire,non fire,LOW,0.0,False,True
+24.0,319,224,211,non fire,non fire,LOW,0.0,False,True
+23.94,323,245,208,non fire,non fire,LOW,0.0,False,True
+24.0,347,240,205,non fire,non fire,LOW,0.0,False,True
+24.0,317,208,199,non fire,non fire,LOW,0.0,False,True
+23.94,317,225,189,non fire,non fire,LOW,0.0,False,True
+23.94,336,193,218,non fire,non fire,LOW,0.0,False,True
+23.94,319,219,206,non fire,non fire,LOW,0.0,False,True
+23.94,315,240,208,non fire,non fire,LOW,0.0,False,True
+23.94,313,221,206,non fire,non fire,LOW,0.0,False,True
+24.0,309,271,201,non fire,non fire,LOW,0.0,False,True
+24.0,339,225,208,non fire,non fire,LOW,0.0,False,True
+24.0,310,222,193,non fire,non fire,LOW,0.0,False,True
+23.94,307,218,203,non fire,non fire,LOW,0.0,False,True
+23.94,304,227,213,non fire,non fire,LOW,0.0,False,True
+23.94,311,225,198,non fire,non fire,LOW,0.0,False,True
+24.0,314,223,196,non fire,non fire,LOW,0.0,False,True
+24.0,311,219,196,non fire,non fire,LOW,0.0,False,True
+24.0,304,226,195,non fire,non fire,LOW,0.0,False,True
+23.94,304,228,193,non fire,non fire,LOW,0.0,False,True
+23.94,304,223,198,non fire,non fire,LOW,0.0,False,True
+24.0,307,228,197,non fire,non fire,LOW,0.0,False,True
+24.0,310,222,194,non fire,non fire,LOW,0.0,False,True
+23.94,308,227,198,non fire,non fire,LOW,0.0,False,True
+24.0,306,221,192,non fire,non fire,LOW,0.0,False,True
+23.94,304,222,198,non fire,non fire,LOW,0.0,False,True
+23.94,306,225,194,non fire,non fire,LOW,0.0,False,True
+24.0,307,221,197,non fire,non fire,LOW,0.0,False,True
+24.0,304,225,202,non fire,non fire,LOW,0.0,False,True
+24.0,304,227,192,non fire,non fire,LOW,0.0,False,True
+24.0,304,225,195,non fire,non fire,LOW,0.0,False,True
+24.0,303,221,195,non fire,non fire,LOW,0.0,False,True
+24.0,305,221,194,non fire,non fire,LOW,0.0,False,True
+24.0,304,218,191,non fire,non fire,LOW,0.0,False,True
+24.0,304,231,196,non fire,non fire,LOW,0.0,False,True
+24.0,304,228,193,non fire,non fire,LOW,0.0,False,True
+24.0,303,222,192,non fire,non fire,LOW,0.0,False,True
+24.0,301,222,195,non fire,non fire,LOW,0.0,False,True
+24.0,301,228,199,non fire,non fire,LOW,0.0,False,True
+24.0,304,219,191,non fire,non fire,LOW,0.0,False,True
+24.0,303,225,196,non fire,non fire,LOW,0.0,False,True
+24.0,304,227,193,non fire,non fire,LOW,0.0,False,True
+24.0,299,219,194,non fire,non fire,LOW,0.0,False,True
+24.0,301,225,194,non fire,non fire,LOW,0.0,False,True
+24.0,299,224,190,non fire,non fire,LOW,0.0,False,True
+24.0,303,226,186,non fire,non fire,LOW,0.0,False,True
+24.0,303,221,191,non fire,non fire,LOW,0.0,False,True
+24.0,299,221,193,non fire,non fire,LOW,0.0,False,True
+24.0,297,223,193,non fire,non fire,LOW,0.0,False,True
+24.0,301,223,197,non fire,non fire,LOW,0.0,False,True
+24.0,302,224,191,non fire,non fire,LOW,0.0,False,True
+24.0,304,221,194,non fire,non fire,LOW,0.0,False,True
+24.0,301,226,193,non fire,non fire,LOW,0.0,False,True
+24.0,304,226,194,non fire,non fire,LOW,0.0,False,True
+23.94,304,223,190,non fire,non fire,LOW,0.0,False,True
+24.0,299,227,191,non fire,non fire,LOW,0.0,False,True
+24.0,302,229,195,non fire,non fire,LOW,0.0,False,True
+24.0,300,224,192,non fire,non fire,LOW,0.0,False,True
+23.94,295,222,186,non fire,non fire,LOW,0.0,False,True
+23.94,298,229,192,non fire,non fire,LOW,0.0,False,True
+23.94,302,224,188,non fire,non fire,LOW,0.0,False,True
+23.94,302,222,192,non fire,non fire,LOW,0.0,False,True
+23.88,301,223,191,non fire,non fire,LOW,0.0,False,True
+23.94,299,214,193,non fire,non fire,LOW,0.0,False,True
+23.94,294,223,194,non fire,non fire,LOW,0.0,False,True
+23.94,302,219,189,non fire,non fire,LOW,0.0,False,True
+23.94,299,225,192,non fire,non fire,LOW,0.0,False,True
+23.94,299,224,191,non fire,non fire,LOW,0.0,False,True
+23.94,297,222,192,non fire,non fire,LOW,0.0,False,True
+23.94,293,226,191,non fire,non fire,LOW,0.0,False,True
+23.94,295,221,188,non fire,non fire,LOW,0.0,False,True
+23.88,294,222,192,non fire,non fire,LOW,0.0,False,True
+23.94,295,225,192,non fire,non fire,LOW,0.0,False,True
+23.94,297,223,191,non fire,non fire,LOW,0.0,False,True
+23.88,293,219,193,non fire,non fire,LOW,0.0,False,True
+23.94,294,214,186,non fire,non fire,LOW,0.0,False,True
+23.94,295,218,186,non fire,non fire,LOW,0.0,False,True
+23.88,290,222,191,non fire,non fire,LOW,0.0,False,True
+23.94,295,223,194,non fire,non fire,LOW,0.0,False,True
+23.88,296,223,189,non fire,non fire,LOW,0.0,False,True
+23.94,290,221,191,non fire,non fire,LOW,0.0,False,True
+23.94,298,224,192,non fire,non fire,LOW,0.0,False,True
+23.88,287,223,192,non fire,non fire,LOW,0.0,False,True
+23.88,289,222,191,non fire,non fire,LOW,0.0,False,True
+23.94,291,221,189,non fire,non fire,LOW,0.0,False,True
+23.94,297,215,193,non fire,non fire,LOW,0.0,False,True
+23.88,298,224,195,non fire,non fire,LOW,0.0,False,True
+23.88,291,219,194,non fire,non fire,LOW,0.0,False,True
+23.94,296,224,191,non fire,non fire,LOW,0.0,False,True
+23.94,295,220,192,non fire,non fire,LOW,0.0,False,True
+23.94,289,223,192,non fire,non fire,LOW,0.0,False,True
+23.94,292,219,191,non fire,non fire,LOW,0.0,False,True
+23.94,293,221,192,non fire,non fire,LOW,0.0,False,True
+23.88,291,229,187,non fire,non fire,LOW,0.0,False,True
+23.94,294,224,191,non fire,non fire,LOW,0.0,False,True
+23.88,293,216,192,non fire,non fire,LOW,0.0,False,True
+23.88,286,228,192,non fire,non fire,LOW,0.0,False,True
+23.88,294,221,190,non fire,non fire,LOW,0.0,False,True
+23.88,294,219,192,non fire,non fire,LOW,0.0,False,True
+23.88,293,224,194,non fire,non fire,LOW,0.0,False,True
+23.88,291,218,191,non fire,non fire,LOW,0.0,False,True
+23.88,294,224,191,non fire,non fire,LOW,0.0,False,True
+23.88,296,222,194,non fire,non fire,LOW,0.0,False,True
+23.88,296,223,192,non fire,non fire,LOW,0.0,False,True
+23.88,301,225,184,non fire,non fire,LOW,0.0,False,True
+23.88,291,225,193,non fire,non fire,LOW,0.0,False,True
+23.88,294,218,186,non fire,non fire,LOW,0.0,False,True
+23.88,295,224,192,non fire,non fire,LOW,0.0,False,True
+23.88,295,220,194,non fire,non fire,LOW,0.0,False,True
+23.94,293,222,189,non fire,non fire,LOW,0.0,False,True
+23.94,293,226,192,non fire,non fire,LOW,0.0,False,True
+23.88,295,224,189,non fire,non fire,LOW,0.0,False,True
+23.94,297,222,195,non fire,non fire,LOW,0.0,False,True
+23.94,288,223,190,non fire,non fire,LOW,0.0,False,True
+23.94,290,222,191,non fire,non fire,LOW,0.0,False,True
+23.94,284,224,190,non fire,non fire,LOW,0.0,False,True
+23.88,291,219,192,non fire,non fire,LOW,0.0,False,True
+23.94,293,215,187,non fire,non fire,LOW,0.0,False,True
+23.94,287,221,187,non fire,non fire,LOW,0.0,False,True
+23.88,294,222,190,non fire,non fire,LOW,0.0,False,True
+23.88,295,224,186,non fire,non fire,LOW,0.0,False,True
+23.88,291,220,193,non fire,non fire,LOW,0.0,False,True
+23.88,294,222,190,non fire,non fire,LOW,0.0,False,True
+23.88,295,222,189,non fire,non fire,LOW,0.0,False,True
+23.88,289,227,190,non fire,non fire,LOW,0.0,False,True
+23.88,292,221,192,non fire,non fire,LOW,0.0,False,True
+23.88,294,218,190,non fire,non fire,LOW,0.0,False,True
+23.88,289,217,196,non fire,non fire,LOW,0.0,False,True
+23.88,293,227,191,non fire,non fire,LOW,0.0,False,True
+23.88,294,219,188,non fire,non fire,LOW,0.0,False,True
+23.88,291,224,192,non fire,non fire,LOW,0.0,False,True
+23.88,293,226,195,non fire,non fire,LOW,0.0,False,True
+23.88,293,223,192,non fire,non fire,LOW,0.0,False,True
+23.88,293,218,191,non fire,non fire,LOW,0.0,False,True
+23.88,291,225,190,non fire,non fire,LOW,0.0,False,True
+23.88,293,223,192,non fire,non fire,LOW,0.0,False,True
+23.88,293,221,192,non fire,non fire,LOW,0.0,False,True
+23.88,291,218,182,non fire,non fire,LOW,0.0,False,True
+23.88,290,219,187,non fire,non fire,LOW,0.0,False,True
+23.88,291,224,187,non fire,non fire,LOW,0.0,False,True
+23.88,291,221,196,non fire,non fire,LOW,0.0,False,True
+23.81,291,219,194,non fire,non fire,LOW,0.0,False,True
+23.88,288,219,192,non fire,non fire,LOW,0.0,False,True
+23.88,289,225,192,non fire,non fire,LOW,0.0,False,True
+23.88,291,225,192,non fire,non fire,LOW,0.0,False,True
+23.94,292,217,189,non fire,non fire,LOW,0.0,False,True
+23.88,294,223,189,non fire,non fire,LOW,0.0,False,True
+23.81,292,223,190,non fire,non fire,LOW,0.0,False,True
+23.88,295,215,193,non fire,non fire,LOW,0.0,False,True
+23.88,291,219,192,non fire,non fire,LOW,0.0,False,True
+23.81,286,227,187,non fire,non fire,LOW,0.0,False,True
+23.88,289,220,192,non fire,non fire,LOW,0.0,False,True
+23.88,289,226,187,non fire,non fire,LOW,0.0,False,True
+23.81,284,222,189,non fire,non fire,LOW,0.0,False,True
+23.81,292,228,189,non fire,non fire,LOW,0.0,False,True
+23.81,288,220,192,non fire,non fire,LOW,0.0,False,True
+23.81,283,219,190,non fire,non fire,LOW,0.0,False,True
+23.88,291,222,190,non fire,non fire,LOW,0.0,False,True
+23.88,292,219,191,non fire,non fire,LOW,0.0,False,True
+23.88,294,215,187,non fire,non fire,LOW,0.0,False,True
+23.88,291,224,192,non fire,non fire,LOW,0.0,False,True
+23.81,289,218,186,non fire,non fire,LOW,0.0,False,True
+23.88,290,226,191,non fire,non fire,LOW,0.0,False,True
+23.81,289,221,187,non fire,non fire,LOW,0.0,False,True
+23.88,288,222,193,non fire,non fire,LOW,0.0,False,True
+23.88,288,224,191,non fire,non fire,LOW,0.0,False,True
+23.88,291,221,189,non fire,non fire,LOW,0.0,False,True
+23.88,291,222,187,non fire,non fire,LOW,0.0,False,True
+23.88,292,218,187,non fire,non fire,LOW,0.0,False,True
+23.88,290,218,192,non fire,non fire,LOW,0.0,False,True
+23.81,289,217,187,non fire,non fire,LOW,0.0,False,True
+23.88,289,225,187,non fire,non fire,LOW,0.0,False,True
+23.88,287,221,193,non fire,non fire,LOW,0.0,False,True
+23.88,290,215,190,non fire,non fire,LOW,0.0,False,True
+23.88,291,217,192,non fire,non fire,LOW,0.0,False,True
+23.88,293,222,189,non fire,non fire,LOW,0.0,False,True
+23.88,294,221,191,non fire,non fire,LOW,0.0,False,True
+23.88,290,217,189,non fire,non fire,LOW,0.0,False,True
+23.88,288,221,190,non fire,non fire,LOW,0.0,False,True
+23.88,293,220,191,non fire,non fire,LOW,0.0,False,True
+23.81,279,208,177,non fire,non fire,LOW,0.0,False,True
+23.88,287,220,192,non fire,non fire,LOW,0.0,False,True
+23.88,293,226,189,non fire,non fire,LOW,0.0,False,True
+23.88,286,222,190,non fire,non fire,LOW,0.0,False,True
+23.81,291,222,192,non fire,non fire,LOW,0.0,False,True
+23.81,294,219,193,non fire,non fire,LOW,0.0,False,True
+23.81,294,221,194,non fire,non fire,LOW,0.0,False,True
+23.88,291,223,187,non fire,non fire,LOW,0.0,False,True
+23.88,286,222,188,non fire,non fire,LOW,0.0,False,True
+23.88,292,221,192,non fire,non fire,LOW,0.0,False,True
+23.88,286,222,192,non fire,non fire,LOW,0.0,False,True
+23.88,288,209,189,non fire,non fire,LOW,0.0,False,True
+23.88,288,225,192,non fire,non fire,LOW,0.0,False,True
+23.88,291,222,190,non fire,non fire,LOW,0.0,False,True
+23.88,288,217,194,non fire,non fire,LOW,0.0,False,True
+23.88,286,217,186,non fire,non fire,LOW,0.0,False,True
+23.88,287,220,192,non fire,non fire,LOW,0.0,False,True
+23.88,291,225,182,non fire,non fire,LOW,0.0,False,True
+23.88,292,215,187,non fire,non fire,LOW,0.0,False,True
+23.88,286,225,189,non fire,non fire,LOW,0.0,False,True
+23.88,287,209,187,non fire,non fire,LOW,0.0,False,True
+23.88,287,217,193,non fire,non fire,LOW,0.0,False,True
+23.88,281,223,193,non fire,non fire,LOW,0.0,False,True
+23.88,293,219,194,non fire,non fire,LOW,0.0,False,True
+23.81,288,222,186,non fire,non fire,LOW,0.0,False,True
+23.88,289,220,187,non fire,non fire,LOW,0.0,False,True
+23.88,291,224,191,non fire,non fire,LOW,0.0,False,True
+23.88,293,223,192,non fire,non fire,LOW,0.0,False,True
+23.88,288,227,193,non fire,non fire,LOW,0.0,False,True
+23.88,289,222,191,non fire,non fire,LOW,0.0,False,True
+23.88,290,215,189,non fire,non fire,LOW,0.0,False,True
+23.88,290,221,187,non fire,non fire,LOW,0.0,False,True
+23.88,287,222,190,non fire,non fire,LOW,0.0,False,True
+23.88,288,217,189,non fire,non fire,LOW,0.0,False,True
+23.88,290,217,192,non fire,non fire,LOW,0.0,False,True
+23.81,285,214,192,non fire,non fire,LOW,0.0,False,True
+23.81,288,222,194,non fire,non fire,LOW,0.0,False,True
+23.81,288,226,185,non fire,non fire,LOW,0.0,False,True
+23.88,286,223,193,non fire,non fire,LOW,0.0,False,True
+23.81,288,222,187,non fire,non fire,LOW,0.0,False,True
+23.81,290,222,187,non fire,non fire,LOW,0.0,False,True
+23.81,289,214,197,non fire,non fire,LOW,0.0,False,True
+23.81,292,218,194,non fire,non fire,LOW,0.0,False,True
+23.81,289,222,183,non fire,non fire,LOW,0.0,False,True
+23.81,290,215,189,non fire,non fire,LOW,0.0,False,True
+23.81,288,223,190,non fire,non fire,LOW,0.0,False,True
+23.88,292,225,192,non fire,non fire,LOW,0.0,False,True
+23.81,289,219,192,non fire,non fire,LOW,0.0,False,True
+23.88,283,221,190,non fire,non fire,LOW,0.0,False,True
+23.81,290,222,190,non fire,non fire,LOW,0.0,False,True
+23.81,290,221,192,non fire,non fire,LOW,0.0,False,True
+23.81,291,225,192,non fire,non fire,LOW,0.0,False,True
+23.81,284,217,188,non fire,non fire,LOW,0.0,False,True
+23.81,287,221,194,non fire,non fire,LOW,0.0,False,True
+23.81,291,219,189,non fire,non fire,LOW,0.0,False,True
+23.88,290,225,186,non fire,non fire,LOW,0.0,False,True
+23.88,288,220,190,non fire,non fire,LOW,0.0,False,True
+23.88,289,221,193,non fire,non fire,LOW,0.0,False,True
+23.88,294,224,187,non fire,non fire,LOW,0.0,False,True
+23.88,289,218,192,non fire,non fire,LOW,0.0,False,True
+23.88,288,224,189,non fire,non fire,LOW,0.0,False,True
+23.88,296,222,195,non fire,non fire,LOW,0.0,False,True
+23.94,291,226,191,non fire,non fire,LOW,0.0,False,True
+23.88,288,222,195,non fire,non fire,LOW,0.0,False,True
+23.88,297,224,197,non fire,non fire,LOW,0.0,False,True
+24.0,289,221,192,non fire,non fire,LOW,0.0,False,True
+24.0,290,223,192,non fire,non fire,LOW,0.0,False,True
+24.0,291,223,191,non fire,non fire,LOW,0.0,False,True
+24.0,294,224,195,non fire,non fire,LOW,0.0,False,True
+23.94,291,222,193,non fire,non fire,LOW,0.0,False,True
+24.0,299,224,194,non fire,non fire,LOW,0.0,False,True
+24.0,298,217,192,non fire,non fire,LOW,0.0,False,True
+24.06,294,224,190,non fire,non fire,LOW,0.0,False,True
+24.06,298,221,190,non fire,non fire,LOW,0.0,False,True
+24.06,297,223,189,non fire,non fire,LOW,0.0,False,True
+24.06,293,222,193,non fire,non fire,LOW,0.0,False,True
+24.06,294,226,191,non fire,non fire,LOW,0.0,False,True
+24.13,295,218,192,non fire,non fire,LOW,0.0,False,True
+24.06,295,222,192,non fire,non fire,LOW,0.0,False,True
+24.13,295,222,192,non fire,non fire,LOW,0.0,False,True
+24.06,294,222,195,non fire,non fire,LOW,0.0,False,True
+24.13,295,227,189,non fire,non fire,LOW,0.0,False,True
+24.13,302,225,195,non fire,non fire,LOW,0.0,False,True
+24.13,295,218,193,non fire,non fire,LOW,0.0,False,True
+24.13,294,223,192,non fire,non fire,LOW,0.0,False,True
+24.13,299,224,192,non fire,non fire,LOW,0.0,False,True
+24.13,294,224,190,non fire,non fire,LOW,0.0,False,True
+24.19,299,227,193,non fire,non fire,LOW,0.0,False,True
+24.13,298,223,193,non fire,non fire,LOW,0.0,False,True
+24.19,298,223,192,non fire,non fire,LOW,0.0,False,True
+24.19,297,229,192,non fire,non fire,LOW,0.0,False,True
+24.19,296,223,194,non fire,non fire,LOW,0.0,False,True
+24.19,295,223,201,non fire,non fire,LOW,0.0,False,True
+24.19,291,216,189,non fire,non fire,LOW,0.0,False,True
+24.19,298,223,192,non fire,non fire,LOW,0.0,False,True
+24.25,294,225,191,non fire,non fire,LOW,0.0,False,True
+24.19,298,221,192,non fire,non fire,LOW,0.0,False,True
+24.19,295,223,190,non fire,non fire,LOW,0.0,False,True
+24.25,291,222,192,non fire,non fire,LOW,0.0,False,True
+24.25,295,223,195,non fire,non fire,LOW,0.0,False,True
+24.25,296,224,192,non fire,non fire,LOW,0.0,False,True
+24.25,292,228,191,non fire,non fire,LOW,0.0,False,True
+24.19,299,227,192,non fire,non fire,LOW,0.0,False,True
+24.25,301,223,193,non fire,non fire,LOW,0.0,False,True
+24.25,299,222,190,non fire,non fire,LOW,0.0,False,True
+24.25,295,221,197,non fire,non fire,LOW,0.0,False,True
+24.25,299,225,192,non fire,non fire,LOW,0.0,False,True
+24.31,293,223,191,non fire,non fire,LOW,0.0,False,True
+24.31,291,224,190,non fire,non fire,LOW,0.0,False,True
+24.31,295,225,192,non fire,non fire,LOW,0.0,False,True
+24.31,300,230,193,non fire,non fire,LOW,0.0,False,True
+24.31,299,223,192,non fire,non fire,LOW,0.0,False,True
+24.31,301,228,194,non fire,non fire,LOW,0.0,False,True
+24.38,303,227,192,non fire,non fire,LOW,0.0,False,True
+24.31,296,225,190,non fire,non fire,LOW,0.0,False,True
+24.38,300,229,191,non fire,non fire,LOW,0.0,False,True
+24.38,300,238,193,non fire,non fire,LOW,0.0,False,True
+24.38,300,225,193,non fire,non fire,LOW,0.0,False,True
+24.44,298,226,190,non fire,non fire,LOW,0.0,False,True
+24.44,304,224,189,non fire,non fire,LOW,0.0,False,True
+24.44,299,229,191,non fire,non fire,LOW,0.0,False,True
+24.44,299,226,195,non fire,non fire,LOW,0.0,False,True
+24.44,304,230,188,non fire,non fire,LOW,0.0,False,True
+24.44,297,225,191,non fire,non fire,LOW,0.0,False,True
+24.5,304,230,195,non fire,non fire,LOW,0.0,False,True
+24.5,303,223,192,non fire,non fire,LOW,0.0,False,True
+24.44,304,225,192,non fire,non fire,LOW,0.0,False,True
+24.5,304,227,195,non fire,non fire,LOW,0.0,False,True
+24.5,301,225,192,non fire,non fire,LOW,0.0,False,True
+24.5,299,223,192,non fire,non fire,LOW,0.0,False,True
+24.5,300,227,190,non fire,non fire,LOW,0.0,False,True
+24.5,302,230,192,non fire,non fire,LOW,0.0,False,True
+24.56,301,227,191,non fire,non fire,LOW,0.0,False,True
+24.5,299,228,198,non fire,non fire,LOW,0.0,False,True
+24.56,302,226,194,non fire,non fire,LOW,0.0,False,True
+24.56,294,231,192,non fire,non fire,LOW,0.0,False,True
+24.5,304,223,186,non fire,non fire,LOW,0.0,False,True
+24.56,301,225,193,non fire,non fire,LOW,0.0,False,True
+24.5,299,224,192,non fire,non fire,LOW,0.0,False,True
+24.5,298,219,192,non fire,non fire,LOW,0.0,False,True
+24.56,299,227,196,non fire,non fire,LOW,0.0,False,True
+24.56,299,225,192,non fire,non fire,LOW,0.0,False,True
+24.56,302,223,191,non fire,non fire,LOW,0.0,False,True
+24.56,302,223,194,non fire,non fire,LOW,0.0,False,True
+24.56,303,229,194,non fire,non fire,LOW,0.0,False,True
+24.56,304,223,195,non fire,non fire,LOW,0.0,False,True
+24.56,304,233,189,non fire,non fire,LOW,0.0,False,True
+24.56,304,226,197,non fire,non fire,LOW,0.0,False,True
+24.63,304,230,192,non fire,non fire,LOW,0.0,False,True
+24.63,301,226,192,non fire,non fire,LOW,0.0,False,True
+24.63,304,227,192,non fire,non fire,LOW,0.0,False,True
+24.63,303,234,194,non fire,non fire,LOW,0.0,False,True
+24.63,306,231,193,non fire,non fire,LOW,0.0,False,True
+24.63,304,230,189,non fire,non fire,LOW,0.0,False,True
+24.56,302,229,192,non fire,non fire,LOW,0.0,False,True
+24.63,303,227,192,non fire,non fire,LOW,0.0,False,True
+24.63,302,227,197,non fire,non fire,LOW,0.0,False,True
+24.63,304,223,192,non fire,non fire,LOW,0.0,False,True
+24.63,303,226,192,non fire,non fire,LOW,0.0,False,True
+24.63,303,222,192,non fire,non fire,LOW,0.0,False,True
+24.63,304,221,196,non fire,non fire,LOW,0.0,False,True
+24.63,305,222,194,non fire,non fire,LOW,0.0,False,True
+24.63,305,228,195,non fire,non fire,LOW,0.0,False,True
+24.63,279,202,176,non fire,non fire,LOW,0.0,False,True
+24.69,300,210,192,non fire,non fire,LOW,0.0,False,True
+24.69,297,208,186,non fire,non fire,LOW,0.0,False,True
+24.69,302,210,192,non fire,non fire,LOW,0.0,False,True
+24.69,306,214,194,non fire,non fire,LOW,0.0,False,True
+24.69,292,201,182,non fire,non fire,LOW,0.0,False,True
+24.69,304,211,188,non fire,non fire,LOW,0.0,False,True
+24.69,315,215,193,non fire,non fire,LOW,0.0,False,True
+24.75,320,225,195,non fire,non fire,LOW,0.0,False,True
+24.75,312,226,195,non fire,non fire,LOW,0.0,False,True
+24.75,311,228,197,non fire,non fire,LOW,0.0,False,True
+24.75,307,232,195,non fire,non fire,LOW,0.0,False,True
+24.75,309,229,198,non fire,non fire,LOW,0.0,False,True
+24.75,309,226,194,non fire,non fire,LOW,0.0,False,True
+24.81,312,226,198,non fire,non fire,LOW,0.0,False,True
+24.81,307,226,193,non fire,non fire,LOW,0.0,False,True
+24.81,304,227,197,non fire,non fire,LOW,0.0,False,True
+24.81,309,230,196,non fire,non fire,LOW,0.0,False,True
+24.81,304,226,193,non fire,non fire,LOW,0.0,False,True
+24.81,304,231,192,non fire,non fire,LOW,0.0,False,True
+24.81,304,230,195,non fire,non fire,LOW,0.0,False,True
+24.75,304,226,196,non fire,non fire,LOW,0.0,False,True
+24.81,304,224,193,non fire,non fire,LOW,0.0,False,True
+24.75,304,227,193,non fire,non fire,LOW,0.0,False,True
+24.81,304,226,193,non fire,non fire,LOW,0.0,False,True
+24.81,304,226,195,non fire,non fire,LOW,0.0,False,True
+24.75,306,227,193,non fire,non fire,LOW,0.0,False,True
+24.81,307,223,195,non fire,non fire,LOW,0.0,False,True
+24.75,305,230,193,non fire,non fire,LOW,0.0,False,True
+24.75,304,228,198,non fire,non fire,LOW,0.0,False,True
+24.75,304,226,193,non fire,non fire,LOW,0.0,False,True
+24.75,305,226,197,non fire,non fire,LOW,0.0,False,True
+24.75,306,230,197,non fire,non fire,LOW,0.0,False,True
+24.75,305,223,193,non fire,non fire,LOW,0.0,False,True
+24.75,297,213,186,non fire,non fire,LOW,0.0,False,True
+24.75,304,221,198,non fire,non fire,LOW,0.0,False,True
+24.75,304,223,197,non fire,non fire,LOW,0.0,False,True
+24.81,303,213,187,non fire,non fire,LOW,0.0,False,True
+24.75,293,208,181,non fire,non fire,LOW,0.0,False,True
+24.81,315,224,194,non fire,non fire,LOW,0.0,False,True
+24.81,305,235,189,non fire,non fire,LOW,0.0,False,True
+24.81,311,224,193,non fire,non fire,LOW,0.0,False,True
+24.81,310,221,192,non fire,non fire,LOW,0.0,False,True
+24.81,302,211,184,non fire,non fire,LOW,0.0,False,True
+24.81,298,208,181,non fire,non fire,LOW,0.0,False,True
+24.81,303,213,190,non fire,non fire,LOW,0.0,False,True
+24.75,305,211,189,non fire,non fire,LOW,0.0,False,True
+24.75,304,210,192,non fire,non fire,LOW,0.0,False,True
+24.75,299,209,183,non fire,non fire,LOW,0.0,False,True
+24.75,310,219,192,non fire,non fire,LOW,0.0,False,True
+24.81,312,221,195,non fire,non fire,LOW,0.0,False,True
+24.81,309,218,192,non fire,non fire,LOW,0.0,False,True
+24.75,292,205,176,non fire,non fire,LOW,0.0,False,True
+24.75,304,212,191,non fire,non fire,LOW,0.0,False,True
+24.75,301,209,187,non fire,non fire,LOW,0.0,False,True
+24.69,306,211,190,non fire,non fire,LOW,0.0,False,True
+24.69,303,209,191,non fire,non fire,LOW,0.0,False,True
+24.69,303,214,189,non fire,non fire,LOW,0.0,False,True
+24.69,304,215,189,non fire,non fire,LOW,0.0,False,True
+24.69,305,209,187,non fire,non fire,LOW,0.0,False,True
+24.69,291,200,178,non fire,non fire,LOW,0.0,False,True
+24.69,304,209,189,non fire,non fire,LOW,0.0,False,True
+24.69,319,219,192,non fire,non fire,LOW,0.0,False,True
+24.69,306,208,186,non fire,non fire,LOW,0.0,False,True
+24.69,309,215,188,non fire,non fire,LOW,0.0,False,True
+24.69,317,217,187,non fire,non fire,LOW,0.0,False,True
+24.69,301,211,181,non fire,non fire,LOW,0.0,False,True
+24.69,304,213,186,non fire,non fire,LOW,0.0,False,True
+24.63,303,209,181,non fire,non fire,LOW,0.0,False,True
+24.69,304,210,185,non fire,non fire,LOW,0.0,False,True
+24.69,304,213,189,non fire,non fire,LOW,0.0,False,True
+24.69,304,210,188,non fire,non fire,LOW,0.0,False,True
+24.69,303,208,185,non fire,non fire,LOW,0.0,False,True
+24.69,305,217,182,non fire,non fire,LOW,0.0,False,True
+24.69,304,208,183,non fire,non fire,LOW,0.0,False,True
+24.69,304,207,186,non fire,non fire,LOW,0.0,False,True
+24.69,309,219,191,non fire,non fire,LOW,0.0,False,True
+24.69,303,211,191,non fire,non fire,LOW,0.0,False,True
+24.69,309,215,190,non fire,non fire,LOW,0.0,False,True
+24.69,286,201,176,non fire,non fire,LOW,0.0,False,True
+24.69,304,208,184,non fire,non fire,LOW,0.0,False,True
+24.75,310,213,191,non fire,non fire,LOW,0.0,False,True
+24.75,314,214,191,non fire,non fire,LOW,0.0,False,True
+24.69,311,209,185,non fire,non fire,LOW,0.0,False,True
+24.69,309,211,182,non fire,non fire,LOW,0.0,False,True
+24.69,304,209,187,non fire,non fire,LOW,0.0,False,True
+24.69,311,212,191,non fire,non fire,LOW,0.0,False,True
+24.69,318,219,189,non fire,non fire,LOW,0.0,False,True
+24.69,325,225,195,non fire,non fire,LOW,0.0,False,True
+24.69,304,209,186,non fire,non fire,LOW,0.0,False,True
+24.69,314,217,187,non fire,non fire,LOW,0.0,False,True
+24.63,318,219,193,non fire,non fire,LOW,0.0,False,True
+24.63,318,222,191,non fire,non fire,LOW,0.0,False,True
+24.63,313,220,194,non fire,non fire,LOW,0.0,False,True
+24.69,320,222,191,non fire,non fire,LOW,0.0,False,True
+24.63,334,233,202,non fire,non fire,LOW,0.0,False,True
+24.63,330,239,202,non fire,non fire,LOW,0.0,False,True
+24.69,325,237,208,non fire,non fire,LOW,0.0,False,True
+24.69,325,240,205,non fire,non fire,LOW,0.0,False,True
+24.69,331,243,206,non fire,non fire,LOW,0.0,False,True
+24.69,322,240,204,non fire,non fire,LOW,0.0,False,True
+24.63,331,245,209,non fire,non fire,LOW,0.0,False,True
+24.88,304,223,197,non fire,non fire,LOW,0.0,False,True
+24.94,304,226,193,non fire,non fire,LOW,0.0,False,True
+27.31,436,219,240,non fire,non fire,LOW,0.0,False,True
+27.75,399,245,227,non fire,non fire,LOW,0.0,False,True
+27.81,374,247,221,non fire,non fire,LOW,0.0,False,True
+27.63,361,241,211,non fire,non fire,LOW,0.0,False,True
+27.56,347,247,210,non fire,non fire,LOW,0.0,False,True
+27.56,336,247,209,non fire,non fire,LOW,0.0,False,True
+27.44,326,249,205,non fire,non fire,LOW,0.0,False,True
+27.25,324,241,198,non fire,non fire,LOW,0.0,False,True
+27.25,324,240,202,non fire,non fire,LOW,0.0,False,True
+27.13,317,239,202,non fire,non fire,LOW,0.0,False,True
+26.94,311,240,195,non fire,non fire,LOW,0.0,False,True
+26.94,318,240,198,non fire,non fire,LOW,0.0,False,True
+27.0,309,240,196,non fire,non fire,LOW,0.0,False,True
+26.88,314,237,199,non fire,non fire,LOW,0.0,False,True
+26.81,304,239,193,non fire,non fire,LOW,0.0,False,True
+26.69,309,236,193,non fire,non fire,LOW,0.0,False,True
+26.75,307,239,194,non fire,non fire,LOW,0.0,False,True
+26.63,307,240,199,non fire,non fire,LOW,0.0,False,True
+26.63,306,236,197,non fire,non fire,LOW,0.0,False,True
+26.5,311,240,198,non fire,non fire,LOW,0.0,False,True
+26.44,305,235,192,non fire,non fire,LOW,0.0,False,True
+26.38,305,240,199,non fire,non fire,LOW,0.0,False,True
+26.31,304,234,193,non fire,non fire,LOW,0.0,False,True
+26.31,304,234,197,non fire,non fire,LOW,0.0,False,True
+26.25,307,232,193,non fire,non fire,LOW,0.0,False,True
+26.19,304,235,194,non fire,non fire,LOW,0.0,False,True
+26.19,304,232,194,non fire,non fire,LOW,0.0,False,True
+26.19,303,231,196,non fire,non fire,LOW,0.0,False,True
+26.13,304,236,197,non fire,non fire,LOW,0.0,False,True
+26.06,302,231,191,non fire,non fire,LOW,0.0,False,True
+26.06,304,239,193,non fire,non fire,LOW,0.0,False,True
+25.94,297,234,191,non fire,non fire,LOW,0.0,False,True
+26.0,298,233,192,non fire,non fire,LOW,0.0,False,True
+25.94,303,235,196,non fire,non fire,LOW,0.0,False,True
+25.88,304,234,193,non fire,non fire,LOW,0.0,False,True
+25.75,273,160,208,non fire,non fire,LOW,0.0,False,True
+25.69,341,176,198,non fire,non fire,LOW,0.0,False,True
+25.69,370,200,210,non fire,non fire,LOW,0.0,False,True
+25.69,373,240,228,non fire,non fire,LOW,0.0,False,True
+25.63,371,251,215,non fire,non fire,LOW,0.0,False,True
+25.56,347,241,208,non fire,non fire,LOW,0.0,False,True
+25.5,247,249,209,non fire,non fire,LOW,0.0,False,True
+25.44,366,247,202,non fire,non fire,LOW,0.0,False,True
+25.44,354,253,204,non fire,non fire,LOW,0.0,False,True
+25.5,360,249,206,non fire,non fire,LOW,0.0,False,True
+25.44,315,246,226,non fire,non fire,LOW,0.0,False,True
+25.44,285,250,205,non fire,non fire,LOW,0.0,False,True
+25.44,298,245,198,non fire,non fire,LOW,0.0,False,True
+25.44,299,240,210,non fire,non fire,LOW,0.0,False,True
+25.38,348,236,198,non fire,non fire,LOW,0.0,False,True
+25.38,298,268,198,non fire,non fire,LOW,0.0033333333333333335,False,True
+25.31,369,234,192,non fire,non fire,LOW,0.0,False,True
+25.38,295,237,197,non fire,non fire,LOW,0.0,False,True
+25.38,304,240,249,non fire,non fire,LOW,0.0,False,True
+25.31,295,238,188,non fire,non fire,LOW,0.0,False,True
+25.31,285,240,191,non fire,non fire,LOW,0.0,False,True
+25.31,291,237,192,non fire,non fire,LOW,0.0,False,True
+25.25,304,336,187,non fire,non fire,LOW,0.0,False,True
+25.25,298,311,190,non fire,non fire,LOW,0.0,False,True
+25.25,294,258,192,non fire,non fire,LOW,0.0,False,True
+25.31,297,229,190,non fire,non fire,LOW,0.0,False,True
+25.38,298,228,193,non fire,non fire,LOW,0.0,False,True
+25.5,279,233,196,non fire,non fire,LOW,0.0,False,True
+25.44,298,219,176,non fire,non fire,LOW,0.0,False,True
+25.69,301,226,191,non fire,non fire,LOW,0.0,False,True
+26.06,299,227,204,non fire,non fire,LOW,0.0,False,True
+26.44,304,226,191,non fire,non fire,LOW,0.0,False,True
+26.56,298,218,195,non fire,non fire,LOW,0.0,False,True
+26.56,304,229,186,non fire,non fire,LOW,0.0,False,True
+26.5,318,213,176,non fire,non fire,LOW,0.0,False,True
+26.56,295,231,192,non fire,non fire,LOW,0.0,False,True
+26.69,305,238,181,non fire,non fire,LOW,0.0,False,True
+26.88,295,203,208,non fire,non fire,LOW,0.0,False,True
+27.06,287,229,182,non fire,non fire,LOW,0.0,False,True
+27.06,297,240,202,non fire,non fire,LOW,0.0,False,True
+27.06,304,230,190,non fire,non fire,LOW,0.0,False,True
+27.06,305,213,165,non fire,non fire,LOW,0.0,False,True
+27.0,208,208,176,non fire,non fire,LOW,0.0,False,True
+26.94,302,230,194,non fire,non fire,LOW,0.0,False,True
+26.81,287,228,178,non fire,non fire,LOW,0.0,False,True
+26.75,387,219,194,non fire,non fire,LOW,0.0,False,True
+26.75,293,234,176,non fire,non fire,LOW,0.0,False,True
+26.63,240,229,199,non fire,non fire,LOW,0.0,False,True
+26.63,282,227,187,non fire,non fire,LOW,0.0,False,True
+26.63,295,226,191,non fire,non fire,LOW,0.0,False,True
+26.56,295,229,199,non fire,non fire,LOW,0.0,False,True
+26.5,300,230,141,non fire,non fire,LOW,0.0,False,True
+26.5,303,226,192,non fire,non fire,LOW,0.0,False,True
+26.44,304,236,157,non fire,non fire,LOW,0.0,False,True
+26.44,306,208,191,non fire,non fire,LOW,0.0,False,True
+26.38,301,227,166,non fire,non fire,LOW,0.0,False,True
+26.38,288,237,191,non fire,non fire,LOW,0.0,False,True
+26.31,298,225,173,non fire,non fire,LOW,0.0,False,True
+26.38,303,226,187,non fire,non fire,LOW,0.0,False,True
+26.31,298,226,183,non fire,non fire,LOW,0.0,False,True
+26.31,299,222,187,non fire,non fire,LOW,0.0,False,True
+26.25,300,233,192,non fire,non fire,LOW,0.0,False,True
+26.19,299,317,192,non fire,non fire,LOW,0.0,False,True
+26.19,298,213,181,non fire,non fire,LOW,0.0,False,True
+26.19,298,230,182,non fire,non fire,LOW,0.0,False,True
+26.13,303,230,185,non fire,non fire,LOW,0.0,False,True
+26.13,303,230,194,non fire,non fire,LOW,0.0,False,True
+26.06,384,222,167,non fire,non fire,LOW,0.0,False,True
+26.06,306,227,187,non fire,non fire,LOW,0.0,False,True
+26.0,295,241,3,non fire,non fire,LOW,0.0,False,True
+26.19,285,231,109,non fire,non fire,LOW,0.0,False,True
+26.5,300,226,196,non fire,non fire,LOW,0.0,False,True
+26.81,339,237,197,non fire,non fire,LOW,0.0,False,True
+27.06,310,176,192,non fire,non fire,LOW,0.0,False,True
+27.13,301,226,191,non fire,non fire,LOW,0.0,False,True
+27.19,294,230,190,non fire,non fire,LOW,0.0,False,True
+27.63,283,208,173,non fire,non fire,LOW,0.0,False,True
+27.75,301,219,202,non fire,non fire,LOW,0.0,False,True
+27.88,303,227,192,non fire,non fire,LOW,0.0,False,True
+27.88,304,229,189,non fire,non fire,LOW,0.0,False,True
+27.88,303,203,192,non fire,non fire,LOW,0.0,False,True
+27.75,307,228,192,non fire,non fire,LOW,0.0,False,True
+27.75,304,240,193,non fire,non fire,LOW,0.0,False,True
+27.94,302,238,192,non fire,non fire,LOW,0.0,False,True
+28.13,302,230,197,non fire,non fire,LOW,0.0,False,True
+28.38,301,183,195,non fire,non fire,LOW,0.0,False,True
+28.5,302,230,192,non fire,non fire,LOW,0.0,False,True
+28.56,309,235,190,non fire,non fire,LOW,0.0,False,True
+28.75,304,221,144,non fire,non fire,LOW,0.0,False,True
+28.88,304,229,236,non fire,non fire,LOW,0.0,False,True
+29.06,307,188,180,non fire,non fire,LOW,0.0,False,True
+29.13,304,234,189,non fire,non fire,LOW,0.0,False,True
+29.19,304,125,197,non fire,non fire,LOW,0.0,False,True
+29.19,291,238,185,non fire,non fire,LOW,0.0,False,True
+25.69,287,212,96,non fire,non fire,LOW,0.0,False,True
+25.63,302,224,190,non fire,non fire,LOW,0.0,False,True
+25.56,297,225,187,non fire,non fire,LOW,0.0,False,True
+25.63,290,236,208,non fire,non fire,LOW,0.0,False,True
+25.5,290,123,182,non fire,non fire,LOW,0.0,False,True
+25.5,279,224,187,non fire,non fire,LOW,0.0,False,True
+25.5,292,225,190,non fire,non fire,LOW,0.0,False,True
+41.56,247,341,224,fire,fire,CRITICAL,0.74,True,True
+41.63,269,347,247,fire,fire,HIGH,0.6033333333333334,True,True
+41.69,292,358,278,fire,fire,HIGH,0.69,True,True
+41.88,319,367,311,fire,fire,CRITICAL,0.8766666666666667,True,True
+41.94,310,368,304,fire,fire,CRITICAL,0.74,True,True
+42.0,314,368,301,fire,fire,CRITICAL,0.8333333333333334,True,True
+42.06,320,371,322,fire,fire,CRITICAL,0.8166666666666667,True,True
+42.0,325,374,317,fire,maybe fire,MEDIUM,0.38333333333333336,False,False
+42.0,416,404,426,fire,fire,CRITICAL,0.8266666666666667,True,True
+42.0,418,407,432,fire,fire,CRITICAL,0.8933333333333333,True,True
+42.06,432,418,453,fire,fire,CRITICAL,0.8833333333333333,True,True
+42.06,435,416,461,fire,fire,CRITICAL,0.8833333333333333,True,True
+42.19,440,422,462,fire,fire,CRITICAL,0.88,True,True
+42.13,441,426,464,fire,fire,CRITICAL,0.9066666666666666,True,True
+42.31,474,435,498,fire,fire,CRITICAL,0.9333333333333333,True,True
+42.5,466,436,489,fire,fire,CRITICAL,0.9366666666666666,True,True
+42.56,475,443,487,fire,fire,CRITICAL,0.9733333333333334,True,True
+42.56,470,442,469,fire,fire,CRITICAL,0.98,True,True
+42.75,534,460,550,fire,fire,HIGH,0.6866666666666666,True,True
+43.0,591,477,622,fire,fire,HIGH,0.67,True,True
+43.38,675,511,727,fire,fire,CRITICAL,0.94,True,True
+43.63,625,511,671,fire,fire,CRITICAL,0.94,True,True
+43.88,635,519,682,fire,fire,CRITICAL,0.9633333333333334,True,True
+43.75,597,507,642,fire,fire,CRITICAL,0.9366666666666666,True,True
+43.81,602,511,644,fire,fire,CRITICAL,0.9266666666666666,True,True
+44.13,658,531,709,fire,fire,CRITICAL,0.96,True,True
+44.19,651,537,689,fire,fire,CRITICAL,0.99,True,True
+44.5,691,551,727,fire,fire,CRITICAL,0.97,True,True
+44.5,740,570,788,fire,fire,CRITICAL,0.9933333333333333,True,True
+44.69,688,565,733,fire,fire,CRITICAL,0.9933333333333333,True,True
+44.75,693,567,732,fire,fire,CRITICAL,0.9933333333333333,True,True
+44.75,766,583,816,fire,fire,CRITICAL,0.98,True,True
+44.88,807,596,855,fire,fire,CRITICAL,0.9933333333333333,True,True
+44.88,827,609,896,fire,fire,CRITICAL,1.0,True,True
+45.06,809,609,873,fire,fire,CRITICAL,0.9933333333333333,True,True
+45.25,764,600,823,fire,fire,CRITICAL,0.9966666666666667,True,True
+45.38,778,597,829,fire,fire,CRITICAL,1.0,True,True
+45.88,782,597,842,fire,fire,CRITICAL,1.0,True,True
+46.38,764,599,833,fire,fire,CRITICAL,1.0,True,True
+47.5,717,592,768,fire,fire,CRITICAL,1.0,True,True
+47.69,770,595,821,fire,fire,CRITICAL,0.9966666666666667,True,True
+48.31,752,599,801,fire,fire,CRITICAL,1.0,True,True
+49.5,795,614,851,fire,fire,CRITICAL,1.0,True,True
+49.81,784,620,866,fire,fire,CRITICAL,1.0,True,True
+49.81,890,641,976,fire,fire,CRITICAL,1.0,True,True
+50.56,777,623,834,fire,fire,CRITICAL,1.0,True,True
+51.13,743,615,795,fire,fire,CRITICAL,1.0,True,True
+51.31,674,601,715,fire,fire,CRITICAL,1.0,True,True
+51.75,657,593,694,fire,fire,CRITICAL,1.0,True,True
+51.69,646,592,659,fire,fire,CRITICAL,1.0,True,True
+51.75,628,586,650,fire,fire,CRITICAL,0.98,True,True
+51.44,654,587,672,fire,fire,CRITICAL,0.9966666666666667,True,True
+51.31,700,605,756,fire,fire,CRITICAL,1.0,True,True
+52.31,753,613,816,fire,fire,CRITICAL,1.0,True,True
+52.63,733,605,799,fire,fire,CRITICAL,1.0,True,True
+52.38,739,611,801,fire,fire,CRITICAL,1.0,True,True
+52.19,736,622,797,fire,fire,CRITICAL,1.0,True,True
+52.44,745,622,810,fire,fire,CRITICAL,1.0,True,True
+52.56,851,656,944,fire,fire,CRITICAL,1.0,True,True
+53.31,840,656,926,fire,fire,CRITICAL,1.0,True,True
+53.69,772,641,848,fire,fire,CRITICAL,1.0,True,True
+53.38,690,621,759,fire,fire,CRITICAL,1.0,True,True
+53.5,661,607,720,fire,fire,CRITICAL,0.9966666666666667,True,True
+54.0,806,638,884,fire,fire,CRITICAL,0.9966666666666667,True,True
+53.94,755,635,831,fire,fire,CRITICAL,1.0,True,True
+55.19,759,640,832,fire,fire,CRITICAL,1.0,True,True
+55.19,739,639,796,fire,fire,CRITICAL,1.0,True,True
+56.31,729,641,777,fire,fire,CRITICAL,1.0,True,True
+56.13,746,645,790,fire,fire,CRITICAL,1.0,True,True
+57.0,738,646,801,fire,fire,CRITICAL,1.0,True,True
+57.94,687,633,743,fire,fire,CRITICAL,1.0,True,True
+58.88,652,624,718,fire,fire,CRITICAL,1.0,True,True
+59.13,632,613,677,fire,fire,CRITICAL,0.9933333333333333,True,True
+61.19,645,615,703,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.06,625,606,679,fire,fire,CRITICAL,1.0,True,True
+63.25,625,606,691,fire,fire,CRITICAL,1.0,True,True
+65.25,572,592,616,fire,fire,CRITICAL,0.9833333333333333,True,True
+66.56,565,587,599,fire,fire,CRITICAL,0.9366666666666666,True,True
+66.56,544,577,578,fire,fire,CRITICAL,0.9866666666666667,True,True
+66.56,535,569,560,fire,fire,CRITICAL,0.9933333333333333,True,True
+66.56,529,563,562,fire,fire,CRITICAL,0.9866666666666667,True,True
+66.56,550,565,579,fire,fire,CRITICAL,0.9933333333333333,True,True
+66.56,528,559,565,fire,fire,CRITICAL,0.9733333333333334,True,True
+66.56,564,569,606,fire,fire,CRITICAL,0.9833333333333333,True,True
+66.56,541,560,585,fire,fire,CRITICAL,0.98,True,True
+66.56,603,576,642,fire,fire,CRITICAL,1.0,True,True
+66.56,650,592,690,fire,fire,CRITICAL,1.0,True,True
+66.56,700,609,747,fire,fire,CRITICAL,1.0,True,True
+66.56,795,634,834,fire,fire,CRITICAL,1.0,True,True
+66.56,793,640,836,fire,fire,CRITICAL,1.0,True,True
+66.56,765,640,819,fire,fire,CRITICAL,1.0,True,True
+66.56,775,641,829,fire,fire,CRITICAL,1.0,True,True
+66.56,880,667,937,fire,fire,CRITICAL,1.0,True,True
+66.56,859,674,919,fire,fire,CRITICAL,1.0,True,True
+66.56,783,656,826,fire,fire,CRITICAL,1.0,True,True
+66.56,726,640,777,fire,fire,CRITICAL,1.0,True,True
+66.56,701,630,750,fire,fire,CRITICAL,1.0,True,True
+66.56,751,637,812,fire,fire,CRITICAL,1.0,True,True
+66.56,724,637,769,fire,fire,CRITICAL,1.0,True,True
+66.56,688,629,738,fire,fire,CRITICAL,1.0,True,True
+66.56,668,624,714,fire,fire,CRITICAL,1.0,True,True
+66.56,655,618,707,fire,fire,CRITICAL,1.0,True,True
+66.56,622,608,670,fire,fire,CRITICAL,1.0,True,True
+66.56,614,594,647,fire,fire,CRITICAL,1.0,True,True
+66.56,601,594,640,fire,fire,CRITICAL,1.0,True,True
+66.56,582,592,620,fire,fire,CRITICAL,0.9866666666666667,True,True
+66.56,536,573,553,fire,fire,CRITICAL,0.9866666666666667,True,True
+66.56,508,562,526,fire,fire,CRITICAL,0.9933333333333333,True,True
+66.56,466,549,476,fire,fire,CRITICAL,0.99,True,True
+66.56,447,537,444,fire,fire,CRITICAL,0.9866666666666667,True,True
+66.56,425,529,414,fire,fire,CRITICAL,0.98,True,True
+66.56,422,521,410,fire,fire,CRITICAL,0.9666666666666667,True,True
+66.56,452,528,471,fire,fire,CRITICAL,0.9733333333333334,True,True
+66.56,505,539,541,fire,fire,CRITICAL,0.9566666666666667,True,True
+66.56,657,574,706,fire,fire,CRITICAL,1.0,True,True
+66.56,759,608,821,fire,fire,CRITICAL,1.0,True,True
+66.56,826,637,907,fire,fire,CRITICAL,1.0,True,True
+66.56,821,651,898,fire,fire,CRITICAL,1.0,True,True
+66.56,880,669,961,fire,fire,CRITICAL,1.0,True,True
+66.56,897,681,993,fire,fire,CRITICAL,1.0,True,True
+66.56,1106,730,1237,fire,fire,CRITICAL,1.0,True,True
+66.56,1101,752,1258,fire,fire,CRITICAL,1.0,True,True
+66.56,1033,738,1179,fire,fire,CRITICAL,1.0,True,True
+66.56,983,725,1136,fire,fire,CRITICAL,1.0,True,True
+66.56,971,721,1109,fire,fire,CRITICAL,1.0,True,True
+66.56,914,710,1054,fire,fire,CRITICAL,1.0,True,True
+66.56,879,699,995,fire,fire,CRITICAL,1.0,True,True
+66.56,733,662,831,fire,fire,CRITICAL,1.0,True,True
+66.56,699,647,780,fire,fire,CRITICAL,1.0,True,True
+66.56,719,647,797,fire,fire,CRITICAL,1.0,True,True
+66.56,682,639,753,fire,fire,CRITICAL,1.0,True,True
+66.56,653,626,721,fire,fire,CRITICAL,1.0,True,True
+66.56,709,636,789,fire,fire,CRITICAL,1.0,True,True
+66.56,720,641,816,fire,fire,CRITICAL,1.0,True,True
+66.56,764,654,870,fire,fire,CRITICAL,1.0,True,True
+66.56,763,654,883,fire,fire,CRITICAL,1.0,True,True
+66.56,827,673,967,fire,fire,CRITICAL,1.0,True,True
+66.56,877,688,1047,fire,fire,CRITICAL,1.0,True,True
+66.56,941,700,1151,fire,fire,CRITICAL,1.0,True,True
+66.56,924,708,1174,fire,fire,CRITICAL,1.0,True,True
+66.56,1152,766,1390,fire,fire,CRITICAL,1.0,True,True
+66.56,1152,784,1435,fire,fire,CRITICAL,1.0,True,True
+66.56,1038,761,1298,fire,fire,CRITICAL,1.0,True,True
+66.56,926,738,1168,fire,fire,CRITICAL,1.0,True,True
+66.56,863,721,1087,fire,fire,CRITICAL,1.0,True,True
+66.56,832,709,1023,fire,fire,CRITICAL,1.0,True,True
+66.56,816,699,993,fire,fire,CRITICAL,1.0,True,True
+66.56,848,706,1031,fire,fire,CRITICAL,1.0,True,True
+66.56,896,724,1060,fire,fire,CRITICAL,1.0,True,True
+66.56,894,730,1055,fire,fire,CRITICAL,1.0,True,True
+66.56,854,723,1034,fire,fire,CRITICAL,1.0,True,True
+66.56,927,746,1121,fire,fire,CRITICAL,1.0,True,True
+66.56,971,755,1157,fire,fire,CRITICAL,1.0,True,True
+66.56,882,741,1072,fire,fire,CRITICAL,1.0,True,True
+66.56,848,726,1023,fire,fire,CRITICAL,1.0,True,True
+66.56,781,705,954,fire,fire,CRITICAL,1.0,True,True
+66.56,816,717,999,fire,fire,CRITICAL,1.0,True,True
+66.56,836,720,1014,fire,fire,CRITICAL,1.0,True,True
+66.56,838,731,1017,fire,fire,CRITICAL,1.0,True,True
+66.56,752,706,912,fire,fire,CRITICAL,1.0,True,True
+66.56,720,694,871,fire,fire,CRITICAL,1.0,True,True
+66.56,719,687,896,fire,fire,CRITICAL,1.0,True,True
+66.56,707,673,869,fire,fire,CRITICAL,1.0,True,True
+66.56,709,674,869,fire,fire,CRITICAL,1.0,True,True
+66.56,725,671,896,fire,fire,CRITICAL,1.0,True,True
+66.56,799,686,984,fire,fire,CRITICAL,1.0,True,True
+66.56,798,689,999,fire,fire,CRITICAL,1.0,True,True
+66.56,891,706,1135,fire,fire,CRITICAL,1.0,True,True
+66.56,800,690,1011,fire,fire,CRITICAL,1.0,True,True
+66.56,754,679,951,fire,fire,CRITICAL,1.0,True,True
+66.56,656,655,817,fire,fire,CRITICAL,1.0,True,True
+66.56,624,638,763,fire,fire,CRITICAL,1.0,True,True
+66.56,588,633,711,fire,fire,CRITICAL,1.0,True,True
+66.56,581,623,709,fire,fire,CRITICAL,1.0,True,True
+66.56,654,640,821,fire,fire,CRITICAL,1.0,True,True
+66.56,658,640,848,fire,fire,CRITICAL,1.0,True,True
+66.56,586,619,727,fire,fire,CRITICAL,1.0,True,True
+66.56,581,619,717,fire,fire,CRITICAL,1.0,True,True
+66.56,557,609,668,fire,fire,CRITICAL,1.0,True,True
+66.56,551,601,656,fire,fire,CRITICAL,1.0,True,True
+66.56,528,599,630,fire,fire,CRITICAL,1.0,True,True
+66.56,529,589,629,fire,fire,CRITICAL,0.9966666666666667,True,True
+66.56,528,592,656,fire,fire,CRITICAL,1.0,True,True
+66.56,511,586,642,fire,fire,CRITICAL,0.9966666666666667,True,True
+66.56,501,576,631,fire,fire,CRITICAL,1.0,True,True
+66.56,476,567,591,fire,fire,CRITICAL,0.9833333333333333,True,True
+66.56,485,566,607,fire,fire,CRITICAL,0.9933333333333333,True,True
+66.56,481,562,612,fire,fire,CRITICAL,0.9866666666666667,True,True
+66.56,549,570,699,fire,fire,CRITICAL,1.0,True,True
+66.56,627,581,802,fire,fire,CRITICAL,1.0,True,True
+66.56,603,578,781,fire,fire,CRITICAL,1.0,True,True
+66.56,612,580,790,fire,fire,CRITICAL,1.0,True,True
+66.56,592,576,763,fire,fire,CRITICAL,1.0,True,True
+66.56,605,576,789,fire,fire,CRITICAL,1.0,True,True
+66.56,637,586,826,fire,fire,CRITICAL,1.0,True,True
+66.56,660,588,830,fire,fire,CRITICAL,1.0,True,True
+66.56,688,592,862,fire,fire,CRITICAL,0.9966666666666667,True,True
+66.56,693,597,878,fire,fire,CRITICAL,1.0,True,True
+66.56,794,617,997,fire,fire,CRITICAL,1.0,True,True
+66.56,748,613,931,fire,fire,CRITICAL,1.0,True,True
+66.56,751,614,930,fire,fire,CRITICAL,1.0,True,True
+66.56,819,634,1005,fire,fire,CRITICAL,1.0,True,True
+66.56,999,657,1216,fire,fire,CRITICAL,1.0,True,True
+66.56,866,644,1094,fire,fire,CRITICAL,1.0,True,True
+66.56,799,635,1007,fire,fire,CRITICAL,1.0,True,True
+66.56,897,655,1107,fire,fire,CRITICAL,1.0,True,True
+66.56,940,670,1183,fire,fire,CRITICAL,1.0,True,True
+66.56,848,653,1067,fire,fire,CRITICAL,1.0,True,True
+66.56,993,671,1200,fire,fire,CRITICAL,1.0,True,True
+66.56,921,660,1156,fire,fire,CRITICAL,1.0,True,True
+66.56,975,673,1211,fire,fire,CRITICAL,1.0,True,True
+66.56,869,656,1115,fire,fire,CRITICAL,1.0,True,True
+66.56,823,653,1065,fire,fire,CRITICAL,1.0,True,True
+66.56,859,661,1088,fire,fire,CRITICAL,1.0,True,True
+66.56,946,685,1167,fire,fire,CRITICAL,1.0,True,True
+66.56,817,658,1034,fire,fire,CRITICAL,1.0,True,True
+66.56,820,667,1039,fire,fire,CRITICAL,1.0,True,True
+66.56,817,659,1023,fire,fire,CRITICAL,1.0,True,True
+66.56,801,654,991,fire,fire,CRITICAL,1.0,True,True
+66.56,849,659,1067,fire,fire,CRITICAL,1.0,True,True
+66.56,946,677,1153,fire,fire,CRITICAL,1.0,True,True
+66.56,1274,752,1478,fire,fire,CRITICAL,1.0,True,True
+66.56,1201,768,1465,fire,fire,CRITICAL,1.0,True,True
+66.56,1231,784,1472,fire,fire,CRITICAL,1.0,True,True
+66.56,1230,797,1487,fire,fire,CRITICAL,1.0,True,True
+66.56,1180,794,1427,fire,fire,CRITICAL,1.0,True,True
+66.56,1385,848,1626,fire,fire,CRITICAL,1.0,True,True
+66.56,1437,878,1672,fire,fire,CRITICAL,1.0,True,True
+66.56,1430,898,1664,fire,fire,CRITICAL,1.0,True,True
+66.56,1456,915,1650,fire,fire,CRITICAL,1.0,True,True
+66.56,1398,917,1584,fire,fire,CRITICAL,1.0,True,True
+66.56,1383,926,1553,fire,fire,CRITICAL,1.0,True,True
+66.56,1437,948,1587,fire,fire,CRITICAL,1.0,True,True
+66.56,1396,945,1519,fire,fire,CRITICAL,1.0,True,True
+66.56,1325,933,1424,fire,fire,CRITICAL,1.0,True,True
+66.56,1397,960,1520,fire,fire,CRITICAL,1.0,True,True
+66.56,1329,950,1440,fire,fire,CRITICAL,1.0,True,True
+66.56,1375,978,1462,fire,fire,CRITICAL,1.0,True,True
+66.56,1364,970,1440,fire,fire,CRITICAL,1.0,True,True
+66.56,1323,968,1403,fire,fire,CRITICAL,1.0,True,True
+66.56,1322,969,1394,fire,fire,CRITICAL,1.0,True,True
+66.56,1317,976,1356,fire,fire,CRITICAL,1.0,True,True
+66.56,1238,959,1307,fire,fire,CRITICAL,1.0,True,True
+66.56,1224,951,1293,fire,fire,CRITICAL,1.0,True,True
+66.56,1323,976,1380,fire,fire,CRITICAL,1.0,True,True
+66.56,1314,977,1357,fire,fire,CRITICAL,1.0,True,True
+66.56,1207,953,1258,fire,fire,CRITICAL,1.0,True,True
+66.56,1242,962,1287,fire,fire,CRITICAL,0.9966666666666667,True,True
+66.56,1287,974,1327,fire,fire,CRITICAL,1.0,True,True
+66.56,1166,949,1254,fire,fire,CRITICAL,1.0,True,True
+66.56,1120,935,1170,fire,fire,CRITICAL,1.0,True,True
+66.56,1114,923,1159,fire,fire,CRITICAL,1.0,True,True
+66.56,1011,895,1078,fire,fire,CRITICAL,1.0,True,True
+66.56,1051,899,1104,fire,fire,CRITICAL,1.0,True,True
+66.56,1072,909,1126,fire,fire,CRITICAL,1.0,True,True
+66.56,1066,897,1125,fire,fire,CRITICAL,1.0,True,True
+66.56,982,878,1050,fire,fire,CRITICAL,1.0,True,True
+66.56,942,850,986,fire,fire,CRITICAL,1.0,True,True
+66.56,976,864,1030,fire,fire,CRITICAL,1.0,True,True
+66.56,1018,874,1067,fire,fire,CRITICAL,1.0,True,True
+66.56,991,867,1040,fire,fire,CRITICAL,1.0,True,True
+66.56,921,847,968,fire,fire,CRITICAL,1.0,True,True
+66.56,925,848,973,fire,fire,CRITICAL,1.0,True,True
+66.56,894,833,943,fire,fire,CRITICAL,1.0,True,True
+66.56,931,846,976,fire,fire,CRITICAL,1.0,True,True
+66.56,923,841,960,fire,fire,CRITICAL,1.0,True,True
+66.56,906,842,944,fire,fire,CRITICAL,1.0,True,True
+66.56,928,848,977,fire,fire,CRITICAL,1.0,True,True
+66.56,914,842,961,fire,fire,CRITICAL,1.0,True,True
+66.56,961,851,1001,fire,fire,CRITICAL,1.0,True,True
+66.56,922,835,970,fire,fire,CRITICAL,1.0,True,True
+66.56,889,826,923,fire,fire,CRITICAL,1.0,True,True
+66.56,896,830,918,fire,fire,CRITICAL,1.0,True,True
+66.56,910,832,942,fire,fire,CRITICAL,1.0,True,True
+66.56,911,832,931,fire,fire,CRITICAL,1.0,True,True
+66.56,947,849,955,fire,fire,CRITICAL,1.0,True,True
+66.56,870,828,901,fire,fire,CRITICAL,1.0,True,True
+66.56,893,831,901,fire,fire,CRITICAL,1.0,True,True
+66.56,821,810,837,fire,fire,CRITICAL,1.0,True,True
+66.56,855,804,857,fire,fire,CRITICAL,1.0,True,True
+66.56,851,814,870,fire,fire,CRITICAL,1.0,True,True
+66.56,866,815,876,fire,fire,CRITICAL,1.0,True,True
+66.56,806,793,811,fire,fire,CRITICAL,1.0,True,True
+66.56,811,790,820,fire,fire,CRITICAL,1.0,True,True
+66.56,817,802,846,fire,fire,CRITICAL,1.0,True,True
+66.56,859,807,880,fire,fire,CRITICAL,1.0,True,True
+66.56,832,803,859,fire,fire,CRITICAL,1.0,True,True
+66.56,854,810,863,fire,fire,CRITICAL,1.0,True,True
+66.56,767,781,782,fire,fire,CRITICAL,0.9933333333333333,True,True
+66.56,754,766,760,fire,fire,CRITICAL,0.9966666666666667,True,True
+66.56,752,762,753,fire,fire,CRITICAL,1.0,True,True
+66.56,723,749,731,fire,fire,CRITICAL,1.0,True,True
+66.56,725,747,730,fire,fire,CRITICAL,1.0,True,True
+66.56,693,736,706,fire,fire,CRITICAL,1.0,True,True
+66.56,649,718,656,fire,fire,CRITICAL,1.0,True,True
+66.56,656,709,671,fire,fire,CRITICAL,1.0,True,True
+66.56,687,720,700,fire,fire,CRITICAL,1.0,True,True
+66.56,667,709,679,fire,fire,CRITICAL,1.0,True,True
+66.56,720,720,729,fire,fire,CRITICAL,1.0,True,True
+66.56,719,724,727,fire,fire,CRITICAL,1.0,True,True
+66.56,708,724,729,fire,fire,CRITICAL,1.0,True,True
+66.56,667,710,681,fire,fire,CRITICAL,1.0,True,True
+66.56,683,714,704,fire,fire,CRITICAL,1.0,True,True
+66.56,688,715,705,fire,fire,CRITICAL,1.0,True,True
+66.56,707,719,720,fire,fire,CRITICAL,1.0,True,True
+66.56,685,719,707,fire,fire,CRITICAL,1.0,True,True
+66.56,683,715,701,fire,fire,CRITICAL,1.0,True,True
+66.56,657,699,682,fire,fire,CRITICAL,0.9966666666666667,True,True
+43.56,647,485,721,fire,fire,CRITICAL,0.8633333333333333,True,True
+43.75,720,510,791,fire,fire,CRITICAL,0.8466666666666667,True,True
+43.88,732,528,803,fire,fire,CRITICAL,0.83,True,True
+44.25,820,554,897,fire,fire,CRITICAL,0.98,True,True
+44.5,945,596,1039,fire,fire,CRITICAL,1.0,True,True
+45.19,960,612,1060,fire,fire,CRITICAL,0.9966666666666667,True,True
+46.44,954,620,1040,fire,fire,CRITICAL,1.0,True,True
+46.69,850,595,898,fire,fire,CRITICAL,1.0,True,True
+47.44,848,597,902,fire,fire,CRITICAL,1.0,True,True
+48.0,821,594,851,fire,fire,CRITICAL,1.0,True,True
+49.31,831,592,847,fire,fire,CRITICAL,1.0,True,True
+50.06,848,606,880,fire,fire,CRITICAL,1.0,True,True
+50.88,869,616,893,fire,fire,CRITICAL,1.0,True,True
+50.88,862,620,883,fire,fire,CRITICAL,1.0,True,True
+51.5,892,625,913,fire,fire,CRITICAL,1.0,True,True
+52.0,915,634,924,fire,fire,CRITICAL,1.0,True,True
+53.0,814,615,832,fire,fire,CRITICAL,0.9966666666666667,True,True
+54.06,771,598,773,fire,fire,CRITICAL,0.98,True,True
+55.44,752,592,752,fire,fire,CRITICAL,0.9933333333333333,True,True
+56.25,751,591,748,fire,fire,CRITICAL,0.99,True,True
+58.13,752,589,755,fire,fire,CRITICAL,0.99,True,True
+58.13,750,591,762,fire,fire,CRITICAL,0.9933333333333333,True,True
+57.88,770,590,773,fire,fire,CRITICAL,0.95,True,True
+57.38,830,605,849,fire,fire,CRITICAL,1.0,True,True
+57.0,1008,651,1011,fire,fire,CRITICAL,1.0,True,True
+57.13,1015,663,1056,fire,fire,CRITICAL,1.0,True,True
+57.25,965,655,1004,fire,fire,CRITICAL,1.0,True,True
+57.56,1071,674,1107,fire,fire,CRITICAL,1.0,True,True
+57.31,1151,701,1151,fire,fire,CRITICAL,0.9966666666666667,True,True
+57.0,1255,745,1313,fire,fire,CRITICAL,0.99,True,True
+56.94,1267,753,1351,fire,fire,CRITICAL,0.9933333333333333,True,True
+56.56,1267,758,1353,fire,fire,CRITICAL,0.9933333333333333,True,True
+56.44,1237,759,1335,fire,fire,CRITICAL,1.0,True,True
+56.19,1219,756,1321,fire,fire,CRITICAL,1.0,True,True
+56.19,1206,755,1281,fire,fire,CRITICAL,0.9933333333333333,True,True
+57.0,1136,735,1206,fire,fire,CRITICAL,0.9966666666666667,True,True
+58.31,1147,736,1197,fire,fire,CRITICAL,0.9966666666666667,True,True
+59.19,1142,736,1190,fire,fire,CRITICAL,0.9966666666666667,True,True
+60.56,1059,716,1101,fire,fire,CRITICAL,1.0,True,True
+61.19,982,688,1041,fire,fire,CRITICAL,1.0,True,True
+60.88,1023,700,1077,fire,fire,CRITICAL,1.0,True,True
+61.25,1057,708,1083,fire,fire,CRITICAL,1.0,True,True
+61.25,1143,737,1156,fire,fire,CRITICAL,1.0,True,True
+62.13,1088,732,1097,fire,fire,CRITICAL,1.0,True,True
+62.13,1058,721,1053,fire,fire,CRITICAL,1.0,True,True
+62.13,1083,722,1090,fire,fire,CRITICAL,1.0,True,True
+62.13,1319,786,1344,fire,fire,CRITICAL,1.0,True,True
+62.13,1422,833,1471,fire,fire,CRITICAL,1.0,True,True
+62.13,1417,845,1501,fire,fire,CRITICAL,1.0,True,True
+62.13,1232,803,1359,fire,fire,CRITICAL,1.0,True,True
+62.13,1213,802,1323,fire,fire,CRITICAL,1.0,True,True
+62.13,1072,753,1167,fire,fire,CRITICAL,1.0,True,True
+62.13,944,706,1012,fire,fire,CRITICAL,1.0,True,True
+62.13,912,689,982,fire,fire,CRITICAL,1.0,True,True
+62.13,883,672,960,fire,fire,CRITICAL,1.0,True,True
+62.13,880,669,976,fire,fire,CRITICAL,1.0,True,True
+62.13,903,677,1003,fire,fire,CRITICAL,1.0,True,True
+62.13,909,679,1023,fire,fire,CRITICAL,1.0,True,True
+62.13,921,675,1019,fire,fire,CRITICAL,1.0,True,True
+62.13,885,662,976,fire,fire,CRITICAL,1.0,True,True
+62.13,845,650,917,fire,fire,CRITICAL,1.0,True,True
+62.13,842,643,927,fire,fire,CRITICAL,1.0,True,True
+62.13,805,636,887,fire,fire,CRITICAL,1.0,True,True
+62.13,805,630,874,fire,fire,CRITICAL,1.0,True,True
+62.13,797,625,873,fire,fire,CRITICAL,1.0,True,True
+62.13,835,630,913,fire,fire,CRITICAL,1.0,True,True
+62.13,901,648,998,fire,fire,CRITICAL,1.0,True,True
+62.13,951,667,1063,fire,fire,CRITICAL,1.0,True,True
+62.13,1044,691,1161,fire,fire,CRITICAL,1.0,True,True
+62.13,950,683,1074,fire,fire,CRITICAL,1.0,True,True
+62.13,835,650,962,fire,fire,CRITICAL,1.0,True,True
+62.13,845,642,981,fire,fire,CRITICAL,1.0,True,True
+62.13,832,638,969,fire,fire,CRITICAL,1.0,True,True
+62.13,792,631,897,fire,fire,CRITICAL,1.0,True,True
+62.13,776,624,877,fire,fire,CRITICAL,1.0,True,True
+62.13,832,630,913,fire,fire,CRITICAL,1.0,True,True
+62.13,883,641,966,fire,fire,CRITICAL,1.0,True,True
+62.13,975,674,1099,fire,fire,CRITICAL,1.0,True,True
+62.13,921,662,1063,fire,fire,CRITICAL,1.0,True,True
+62.13,875,656,1010,fire,fire,CRITICAL,1.0,True,True
+62.13,816,640,946,fire,fire,CRITICAL,1.0,True,True
+62.13,785,626,908,fire,fire,CRITICAL,1.0,True,True
+62.13,789,627,903,fire,fire,CRITICAL,1.0,True,True
+62.13,765,614,883,fire,fire,CRITICAL,1.0,True,True
+62.13,718,601,824,fire,fire,CRITICAL,1.0,True,True
+62.13,690,591,795,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.13,737,596,851,fire,fire,CRITICAL,1.0,True,True
+62.13,713,593,828,fire,fire,CRITICAL,1.0,True,True
+62.13,721,592,817,fire,fire,CRITICAL,1.0,True,True
+62.13,731,592,823,fire,fire,CRITICAL,1.0,True,True
+62.13,816,617,916,fire,fire,CRITICAL,1.0,True,True
+62.13,746,595,822,fire,fire,CRITICAL,1.0,True,True
+62.13,801,610,909,fire,fire,CRITICAL,1.0,True,True
+62.13,845,629,977,fire,fire,CRITICAL,1.0,True,True
+62.13,1019,677,1154,fire,fire,CRITICAL,1.0,True,True
+62.13,991,673,1139,fire,fire,CRITICAL,1.0,True,True
+62.13,1044,688,1141,fire,fire,CRITICAL,1.0,True,True
+62.13,955,669,1072,fire,fire,CRITICAL,1.0,True,True
+62.13,993,659,1092,fire,fire,CRITICAL,1.0,True,True
+62.13,945,659,1073,fire,fire,CRITICAL,1.0,True,True
+62.13,974,656,1103,fire,fire,CRITICAL,1.0,True,True
+62.13,972,659,1110,fire,fire,CRITICAL,1.0,True,True
+62.13,940,651,1075,fire,fire,CRITICAL,1.0,True,True
+62.13,942,646,1074,fire,fire,CRITICAL,1.0,True,True
+62.13,944,643,1072,fire,fire,CRITICAL,1.0,True,True
+62.13,964,651,1101,fire,fire,CRITICAL,1.0,True,True
+62.13,960,654,1104,fire,fire,CRITICAL,1.0,True,True
+62.13,955,656,1091,fire,fire,CRITICAL,1.0,True,True
+62.13,971,656,1088,fire,fire,CRITICAL,1.0,True,True
+62.13,938,651,1055,fire,fire,CRITICAL,1.0,True,True
+62.13,894,637,1008,fire,fire,CRITICAL,1.0,True,True
+62.13,911,639,1023,fire,fire,CRITICAL,1.0,True,True
+62.13,919,650,1048,fire,fire,CRITICAL,1.0,True,True
+62.13,951,658,1071,fire,fire,CRITICAL,1.0,True,True
+62.13,927,656,1055,fire,fire,CRITICAL,1.0,True,True
+62.13,1045,674,1159,fire,fire,CRITICAL,1.0,True,True
+62.13,1102,714,1254,fire,fire,CRITICAL,1.0,True,True
+62.13,1145,727,1301,fire,fire,CRITICAL,1.0,True,True
+62.13,1122,730,1289,fire,fire,CRITICAL,1.0,True,True
+62.13,1051,714,1220,fire,fire,CRITICAL,1.0,True,True
+62.13,1101,726,1296,fire,fire,CRITICAL,1.0,True,True
+62.13,1180,757,1396,fire,fire,CRITICAL,1.0,True,True
+62.13,1126,743,1335,fire,fire,CRITICAL,1.0,True,True
+62.13,1012,706,1181,fire,fire,CRITICAL,1.0,True,True
+62.13,1056,715,1216,fire,fire,CRITICAL,1.0,True,True
+62.13,1010,707,1180,fire,fire,CRITICAL,1.0,True,True
+62.13,976,702,1143,fire,fire,CRITICAL,1.0,True,True
+62.13,975,702,1136,fire,fire,CRITICAL,1.0,True,True
+62.13,914,688,1083,fire,fire,CRITICAL,1.0,True,True
+62.13,867,676,1040,fire,fire,CRITICAL,1.0,True,True
+62.13,933,688,1088,fire,fire,CRITICAL,1.0,True,True
+62.13,1123,742,1319,fire,fire,CRITICAL,1.0,True,True
+62.13,1083,740,1277,fire,fire,CRITICAL,1.0,True,True
+62.13,1070,727,1231,fire,fire,CRITICAL,1.0,True,True
+62.13,1138,752,1310,fire,fire,CRITICAL,1.0,True,True
+62.13,1023,730,1199,fire,fire,CRITICAL,1.0,True,True
+62.13,896,688,1042,fire,fire,CRITICAL,1.0,True,True
+62.13,805,660,942,fire,fire,CRITICAL,1.0,True,True
+62.13,768,644,892,fire,fire,CRITICAL,1.0,True,True
+62.13,752,636,864,fire,fire,CRITICAL,1.0,True,True
+62.13,731,625,841,fire,fire,CRITICAL,1.0,True,True
+62.13,710,618,826,fire,fire,CRITICAL,1.0,True,True
+62.13,772,638,893,fire,fire,CRITICAL,1.0,True,True
+62.13,778,635,880,fire,fire,CRITICAL,1.0,True,True
+62.13,697,615,803,fire,fire,CRITICAL,1.0,True,True
+62.13,688,611,784,fire,fire,CRITICAL,1.0,True,True
+62.13,679,598,775,fire,fire,CRITICAL,1.0,True,True
+62.13,640,590,750,fire,fire,CRITICAL,1.0,True,True
+62.13,619,579,723,fire,fire,CRITICAL,1.0,True,True
+62.13,623,576,717,fire,fire,CRITICAL,1.0,True,True
+62.13,579,565,689,fire,fire,CRITICAL,1.0,True,True
+62.13,640,572,742,fire,fire,CRITICAL,1.0,True,True
+62.13,589,561,702,fire,fire,CRITICAL,1.0,True,True
+62.13,621,561,722,fire,fire,CRITICAL,1.0,True,True
+62.13,581,553,708,fire,fire,CRITICAL,1.0,True,True
+62.13,592,547,706,fire,fire,CRITICAL,1.0,True,True
+62.13,560,536,688,fire,fire,CRITICAL,0.9933333333333333,True,True
+62.13,621,549,735,fire,fire,CRITICAL,1.0,True,True
+62.13,609,551,762,fire,fire,CRITICAL,1.0,True,True
+62.13,620,546,765,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.13,587,544,725,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.13,551,537,686,fire,fire,CRITICAL,1.0,True,True
+62.13,607,555,742,fire,fire,CRITICAL,1.0,True,True
+62.13,574,548,713,fire,fire,CRITICAL,1.0,True,True
+62.13,579,556,713,fire,fire,CRITICAL,1.0,True,True
+62.13,582,560,725,fire,fire,CRITICAL,1.0,True,True
+62.13,503,528,640,fire,fire,CRITICAL,1.0,True,True
+62.13,496,511,620,fire,fire,CRITICAL,0.93,True,True
+62.13,485,499,598,fire,fire,CRITICAL,0.9333333333333333,True,True
+62.13,477,496,594,fire,fire,CRITICAL,0.9433333333333334,True,True
+62.13,524,503,643,fire,fire,CRITICAL,1.0,True,True
+62.13,528,502,640,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.13,535,503,640,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.13,542,501,642,fire,fire,CRITICAL,0.9933333333333333,True,True
+62.13,539,501,658,fire,fire,CRITICAL,0.9933333333333333,True,True
+62.13,530,497,659,fire,fire,CRITICAL,0.9866666666666667,True,True
+62.13,507,487,609,fire,fire,CRITICAL,0.8766666666666667,True,True
+62.13,543,496,664,fire,fire,CRITICAL,0.9733333333333334,True,True
+62.13,545,496,685,fire,fire,CRITICAL,0.9733333333333334,True,True
+62.13,589,511,752,fire,fire,CRITICAL,0.9833333333333333,True,True
+62.13,640,528,797,fire,fire,CRITICAL,0.97,True,True
+62.13,761,560,961,fire,fire,CRITICAL,0.9933333333333333,True,True
+62.13,704,549,900,fire,fire,CRITICAL,0.9833333333333333,True,True
+62.13,789,568,991,fire,fire,CRITICAL,0.9933333333333333,True,True
+62.13,805,573,976,fire,fire,CRITICAL,0.99,True,True
+62.13,800,573,976,fire,fire,CRITICAL,0.9933333333333333,True,True
+62.13,807,571,976,fire,fire,CRITICAL,0.99,True,True
+62.13,784,561,951,fire,fire,CRITICAL,0.99,True,True
+62.13,769,561,930,fire,fire,CRITICAL,0.99,True,True
+62.13,770,562,947,fire,fire,CRITICAL,0.99,True,True
+62.13,812,572,955,fire,fire,CRITICAL,0.9833333333333333,True,True
+62.13,839,582,981,fire,fire,CRITICAL,0.99,True,True
+62.13,855,589,994,fire,fire,CRITICAL,0.9866666666666667,True,True
+62.13,842,581,959,fire,fire,CRITICAL,0.9933333333333333,True,True
+62.13,875,592,986,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.13,920,602,1018,fire,fire,CRITICAL,1.0,True,True
+62.13,914,606,1003,fire,fire,CRITICAL,1.0,True,True
+62.13,896,610,989,fire,fire,CRITICAL,1.0,True,True
+62.13,883,598,970,fire,fire,CRITICAL,1.0,True,True
+62.13,960,617,1084,fire,fire,CRITICAL,1.0,True,True
+62.13,993,625,1138,fire,fire,CRITICAL,1.0,True,True
+62.13,1007,634,1127,fire,fire,CRITICAL,1.0,True,True
+62.13,932,624,1068,fire,fire,CRITICAL,1.0,True,True
+62.13,977,627,1082,fire,fire,CRITICAL,1.0,True,True
+62.13,1091,655,1203,fire,fire,CRITICAL,1.0,True,True
+62.13,1152,669,1257,fire,fire,CRITICAL,1.0,True,True
+62.13,1174,674,1284,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.13,1119,665,1237,fire,fire,CRITICAL,1.0,True,True
+62.13,1019,647,1137,fire,fire,CRITICAL,1.0,True,True
+62.13,970,634,1087,fire,fire,CRITICAL,1.0,True,True
+62.13,930,625,1039,fire,fire,CRITICAL,1.0,True,True
+62.13,954,625,1043,fire,fire,CRITICAL,1.0,True,True
+62.13,1022,640,1117,fire,fire,CRITICAL,1.0,True,True
+62.13,1040,651,1125,fire,fire,CRITICAL,1.0,True,True
+62.13,1054,655,1144,fire,fire,CRITICAL,1.0,True,True
+62.13,1038,649,1104,fire,fire,CRITICAL,1.0,True,True
+62.13,1072,656,1137,fire,fire,CRITICAL,1.0,True,True
+62.13,1017,650,1104,fire,fire,CRITICAL,1.0,True,True
+62.13,1003,647,1105,fire,fire,CRITICAL,1.0,True,True
+62.13,914,629,996,fire,fire,CRITICAL,1.0,True,True
+62.13,922,630,993,fire,fire,CRITICAL,1.0,True,True
+62.13,961,637,1023,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.13,923,629,983,fire,fire,CRITICAL,1.0,True,True
+62.13,944,636,1011,fire,fire,CRITICAL,1.0,True,True
+62.13,937,637,997,fire,fire,CRITICAL,1.0,True,True
+62.13,944,638,1010,fire,fire,CRITICAL,1.0,True,True
+62.13,965,646,1019,fire,fire,CRITICAL,1.0,True,True
+62.13,995,654,1058,fire,fire,CRITICAL,1.0,True,True
+62.13,1008,659,1068,fire,fire,CRITICAL,1.0,True,True
+62.13,953,650,1015,fire,fire,CRITICAL,1.0,True,True
+62.13,913,638,972,fire,fire,CRITICAL,1.0,True,True
+62.13,979,651,1020,fire,fire,CRITICAL,1.0,True,True
+62.13,945,650,1010,fire,fire,CRITICAL,1.0,True,True
+62.13,931,640,1003,fire,fire,CRITICAL,1.0,True,True
+62.13,912,635,973,fire,fire,CRITICAL,1.0,True,True
+62.13,915,638,970,fire,fire,CRITICAL,1.0,True,True
+62.13,942,641,997,fire,fire,CRITICAL,1.0,True,True
+62.13,907,640,960,fire,fire,CRITICAL,1.0,True,True
+62.13,848,619,912,fire,fire,CRITICAL,1.0,True,True
+62.13,870,620,951,fire,fire,CRITICAL,1.0,True,True
+62.13,959,645,1046,fire,fire,CRITICAL,1.0,True,True
+62.13,953,653,1010,fire,fire,CRITICAL,1.0,True,True
+62.13,948,651,1010,fire,fire,CRITICAL,1.0,True,True
+62.13,1130,690,1156,fire,fire,CRITICAL,1.0,True,True
+62.13,1065,686,1088,fire,fire,CRITICAL,1.0,True,True
+62.13,1100,699,1119,fire,fire,CRITICAL,1.0,True,True
+62.13,1046,688,1067,fire,fire,CRITICAL,1.0,True,True
+62.13,960,666,976,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.13,871,631,925,fire,fire,CRITICAL,1.0,True,True
+62.13,883,636,930,fire,fire,CRITICAL,1.0,True,True
+62.13,839,620,899,fire,fire,CRITICAL,1.0,True,True
+62.13,947,644,1011,fire,fire,CRITICAL,1.0,True,True
+62.13,944,642,1031,fire,fire,CRITICAL,1.0,True,True
+62.13,994,650,1065,fire,fire,CRITICAL,1.0,True,True
+62.13,966,645,1043,fire,fire,CRITICAL,1.0,True,True
+62.13,912,626,1005,fire,fire,CRITICAL,1.0,True,True
+62.13,855,610,951,fire,fire,CRITICAL,1.0,True,True
+62.13,845,609,926,fire,fire,CRITICAL,1.0,True,True
+62.13,780,594,866,fire,fire,CRITICAL,1.0,True,True
+62.13,799,592,883,fire,fire,CRITICAL,0.9933333333333333,True,True
+62.13,827,592,899,fire,fire,CRITICAL,0.9966666666666667,True,True
+62.13,864,604,957,fire,fire,CRITICAL,1.0,True,True
+62.13,879,599,977,fire,fire,CRITICAL,1.0,True,True
+62.13,876,600,974,fire,fire,CRITICAL,1.0,True,True
+62.13,915,607,1023,fire,fire,CRITICAL,1.0,True,True
+32.69,254,255,181,maybe fire,maybe fire,LOW,0.0,False,True
+32.69,289,256,182,maybe fire,maybe fire,LOW,0.016666666666666666,False,True
+32.63,253,261,178,maybe fire,maybe fire,LOW,0.0,False,True
+32.63,247,252,185,maybe fire,maybe fire,LOW,0.0,False,True
+32.63,256,247,181,maybe fire,maybe fire,LOW,0.0,False,True
+32.69,242,252,173,maybe fire,maybe fire,LOW,0.0,False,True
+32.69,251,247,202,maybe fire,maybe fire,LOW,0.03333333333333333,False,True
+32.63,240,254,176,maybe fire,maybe fire,LOW,0.0,False,True
+32.69,240,244,183,maybe fire,maybe fire,LOW,0.0,False,True
+32.69,246,250,176,maybe fire,maybe fire,LOW,0.0,False,True
+32.75,256,240,183,maybe fire,maybe fire,LOW,0.0,False,True
+32.75,255,250,186,maybe fire,maybe fire,LOW,0.0,False,True
+32.88,245,240,186,maybe fire,maybe fire,LOW,0.0,False,True
+33.0,253,234,181,maybe fire,maybe fire,LOW,0.0,False,True
+32.94,246,253,178,maybe fire,maybe fire,LOW,0.0,False,True
+32.88,252,253,178,maybe fire,maybe fire,LOW,0.0,False,True
+32.88,250,240,184,maybe fire,maybe fire,LOW,0.0,False,True
+32.81,246,241,186,maybe fire,maybe fire,LOW,0.0,False,True
+32.75,254,231,174,maybe fire,maybe fire,LOW,0.0,False,True
+32.69,253,251,186,maybe fire,maybe fire,LOW,0.0,False,True
+32.56,250,243,183,maybe fire,maybe fire,LOW,0.0,False,True
+32.5,247,260,188,maybe fire,maybe fire,LOW,0.0,False,True
+32.44,256,237,177,maybe fire,maybe fire,LOW,0.0,False,True
+32.38,240,240,189,maybe fire,maybe fire,LOW,0.0,False,True
+32.31,249,240,167,maybe fire,maybe fire,LOW,0.0,False,True
+32.25,241,239,174,maybe fire,maybe fire,LOW,0.0,False,True
+32.19,241,254,179,maybe fire,maybe fire,LOW,0.0,False,True
+32.19,242,243,173,maybe fire,maybe fire,LOW,0.0,False,True
+32.13,239,253,177,maybe fire,maybe fire,LOW,0.0,False,True
+32.13,203,240,175,maybe fire,maybe fire,LOW,0.0,False,True
+32.06,241,240,177,maybe fire,maybe fire,LOW,0.0,False,True
+32.06,240,250,183,maybe fire,maybe fire,LOW,0.0,False,True
+32.0,249,240,176,maybe fire,maybe fire,LOW,0.0,False,True
+31.94,241,240,171,maybe fire,maybe fire,LOW,0.0,False,True
+32.56,252,240,173,maybe fire,maybe fire,LOW,0.0,False,True
+32.88,255,242,176,maybe fire,maybe fire,LOW,0.0,False,True
+33.5,252,248,187,maybe fire,maybe fire,LOW,0.0,False,True
+34.13,243,245,179,maybe fire,maybe fire,LOW,0.0,False,True
+34.63,257,240,189,maybe fire,maybe fire,LOW,0.0,False,True
+34.63,246,239,172,maybe fire,maybe fire,LOW,0.0,False,True
+35.5,247,233,170,maybe fire,maybe fire,LOW,0.0,False,True
+36.69,250,238,179,maybe fire,maybe fire,LOW,0.0,False,True
+36.63,247,243,176,maybe fire,maybe fire,LOW,0.0,False,True
+36.88,240,242,182,maybe fire,maybe fire,LOW,0.0,False,True
+37.69,246,242,175,maybe fire,maybe fire,LOW,0.0,False,True
+37.69,240,242,176,maybe fire,maybe fire,LOW,0.0,False,True
+37.75,241,240,188,maybe fire,maybe fire,LOW,0.0,False,True
+37.81,242,243,183,maybe fire,maybe fire,LOW,0.0,False,True
+37.75,257,240,171,maybe fire,maybe fire,LOW,0.0,False,True
+37.69,241,240,184,maybe fire,maybe fire,LOW,0.0,False,True
+37.63,246,236,178,maybe fire,maybe fire,LOW,0.0,False,True
+37.44,245,243,177,maybe fire,maybe fire,LOW,0.0,False,True
+37.25,241,248,176,maybe fire,maybe fire,LOW,0.0,False,True
+37.19,240,246,190,maybe fire,maybe fire,LOW,0.0,False,True
+37.06,247,240,178,maybe fire,maybe fire,LOW,0.0,False,True
+37.06,277,242,176,maybe fire,maybe fire,MEDIUM,0.2833333333333333,False,True
+37.0,247,240,183,maybe fire,maybe fire,LOW,0.0,False,True
+37.06,256,246,192,maybe fire,maybe fire,LOW,0.0,False,True
+37.25,243,243,176,maybe fire,maybe fire,LOW,0.0,False,True
+37.31,243,243,185,maybe fire,maybe fire,LOW,0.0,False,True
+37.44,245,240,186,maybe fire,maybe fire,LOW,0.0,False,True
+37.38,250,241,189,maybe fire,maybe fire,LOW,0.0,False,True
+37.25,243,251,178,maybe fire,maybe fire,LOW,0.0,False,True
+37.19,245,250,179,maybe fire,maybe fire,LOW,0.0,False,True
+37.0,238,241,183,maybe fire,maybe fire,LOW,0.0,False,True
+37.0,250,237,181,maybe fire,maybe fire,LOW,0.0,False,True
+36.94,241,243,184,maybe fire,maybe fire,LOW,0.0,False,True
+36.75,239,240,177,maybe fire,maybe fire,LOW,0.0,False,True
+36.63,240,243,176,maybe fire,maybe fire,LOW,0.0,False,True
+36.63,261,239,191,maybe fire,maybe fire,LOW,0.0,False,True
+36.63,241,242,179,maybe fire,maybe fire,LOW,0.0,False,True
+36.69,247,235,185,maybe fire,maybe fire,LOW,0.0,False,True
+36.63,249,238,170,maybe fire,maybe fire,LOW,0.0,False,True
+36.38,242,224,178,maybe fire,maybe fire,LOW,0.0,False,True
+35.88,238,239,179,maybe fire,maybe fire,LOW,0.0,False,True
+35.5,240,234,178,maybe fire,maybe fire,LOW,0.0,False,True
+35.44,240,243,176,maybe fire,maybe fire,LOW,0.0,False,True
+35.44,245,240,179,maybe fire,maybe fire,LOW,0.0,False,True
+35.25,245,238,191,maybe fire,maybe fire,LOW,0.0,False,True
+35.25,245,241,181,maybe fire,maybe fire,LOW,0.0,False,True
+35.13,245,240,185,maybe fire,maybe fire,LOW,0.0,False,True
+35.0,240,239,187,maybe fire,maybe fire,LOW,0.0,False,True
+34.88,246,240,186,maybe fire,maybe fire,LOW,0.0,False,True
+34.88,240,239,178,maybe fire,maybe fire,LOW,0.0,False,True
+34.75,242,196,180,maybe fire,maybe fire,LOW,0.0,False,True
+34.69,240,245,177,maybe fire,maybe fire,LOW,0.0,False,True
+34.81,246,243,179,maybe fire,maybe fire,LOW,0.0,False,True
+34.88,246,239,188,maybe fire,maybe fire,LOW,0.0,False,True
+34.88,240,238,181,maybe fire,maybe fire,LOW,0.0,False,True
+34.88,244,240,178,maybe fire,maybe fire,LOW,0.0,False,True
+35.44,251,237,178,maybe fire,maybe fire,LOW,0.0,False,True
+35.38,246,240,184,maybe fire,maybe fire,LOW,0.0,False,True
+35.19,241,237,186,maybe fire,maybe fire,LOW,0.0,False,True
+35.13,251,194,176,maybe fire,maybe fire,LOW,0.0,False,True
+35.06,245,240,183,maybe fire,maybe fire,LOW,0.0,False,True
+34.94,245,241,178,maybe fire,maybe fire,LOW,0.0,False,True
+34.94,262,242,189,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+34.94,246,240,185,maybe fire,maybe fire,LOW,0.0,False,True
+35.06,285,243,203,maybe fire,maybe fire,MEDIUM,0.24,False,True
+35.13,249,240,179,maybe fire,maybe fire,LOW,0.0,False,True
+34.94,244,239,181,maybe fire,maybe fire,LOW,0.0,False,True
+34.94,259,239,185,maybe fire,maybe fire,LOW,0.0,False,True
+34.94,240,240,189,maybe fire,maybe fire,LOW,0.0,False,True
+37.88,257,246,185,maybe fire,maybe fire,LOW,0.0,False,True
+38.44,257,247,179,maybe fire,maybe fire,LOW,0.0,False,True
+40.63,229,245,194,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+43.44,258,254,182,maybe fire,maybe fire,LOW,0.0,False,True
+42.94,256,246,192,maybe fire,maybe fire,LOW,0.0,False,True
+42.81,251,253,183,maybe fire,maybe fire,LOW,0.0,False,True
+42.63,240,247,193,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+42.44,250,245,182,maybe fire,maybe fire,LOW,0.0,False,True
+42.0,251,242,178,maybe fire,maybe fire,LOW,0.0,False,True
+41.63,244,246,178,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+41.25,250,242,190,maybe fire,maybe fire,LOW,0.0,False,True
+40.69,251,241,180,maybe fire,maybe fire,LOW,0.0,False,True
+40.44,250,237,179,maybe fire,maybe fire,LOW,0.0,False,True
+40.13,238,247,183,maybe fire,maybe fire,LOW,0.0,False,True
+39.75,244,243,171,maybe fire,maybe fire,LOW,0.0,False,True
+39.31,243,239,179,maybe fire,maybe fire,LOW,0.0,False,True
+38.81,240,240,186,maybe fire,maybe fire,LOW,0.0,False,True
+38.56,240,246,176,maybe fire,maybe fire,LOW,0.0,False,True
+38.44,219,241,186,maybe fire,maybe fire,LOW,0.0,False,True
+38.13,243,240,176,maybe fire,maybe fire,LOW,0.0,False,True
+37.75,245,242,179,maybe fire,maybe fire,LOW,0.0,False,True
+37.56,247,242,182,maybe fire,maybe fire,LOW,0.0,False,True
+37.38,251,241,181,maybe fire,maybe fire,LOW,0.0,False,True
+37.25,247,242,179,maybe fire,maybe fire,LOW,0.0,False,True
+37.19,250,243,188,maybe fire,maybe fire,LOW,0.0,False,True
+37.06,241,240,179,maybe fire,maybe fire,LOW,0.0,False,True
+36.94,247,241,182,maybe fire,maybe fire,LOW,0.0,False,True
+36.81,241,249,183,maybe fire,maybe fire,LOW,0.0,False,True
+36.69,240,242,191,maybe fire,maybe fire,LOW,0.0,False,True
+36.56,247,245,179,maybe fire,maybe fire,LOW,0.0,False,True
+36.5,246,247,179,maybe fire,maybe fire,LOW,0.0,False,True
+36.56,245,240,181,maybe fire,maybe fire,LOW,0.0,False,True
+36.75,244,242,178,maybe fire,maybe fire,LOW,0.0,False,True
+36.63,240,245,166,maybe fire,maybe fire,LOW,0.0,False,True
+36.44,240,243,180,maybe fire,maybe fire,LOW,0.0,False,True
+36.31,242,240,182,maybe fire,maybe fire,LOW,0.0,False,True
+36.94,250,361,203,maybe fire,maybe fire,LOW,0.02666666666666667,False,True
+36.94,246,359,199,maybe fire,maybe fire,LOW,0.0,False,True
+37.0,246,362,197,maybe fire,maybe fire,LOW,0.0,False,True
+37.06,245,364,193,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+37.13,245,364,196,maybe fire,maybe fire,LOW,0.0,False,True
+37.19,247,364,197,maybe fire,maybe fire,LOW,0.0,False,True
+37.38,250,368,201,maybe fire,maybe fire,LOW,0.03,False,True
+37.44,245,366,199,maybe fire,maybe fire,LOW,0.0,False,True
+37.5,249,368,198,maybe fire,maybe fire,LOW,0.0,False,True
+37.75,272,385,217,maybe fire,maybe fire,LOW,0.02666666666666667,False,True
+38.88,271,383,213,maybe fire,maybe fire,LOW,0.02,False,True
+40.31,288,391,235,maybe fire,maybe fire,LOW,0.016666666666666666,False,True
+39.63,267,379,221,maybe fire,maybe fire,LOW,0.12,False,True
+41.5,275,385,229,maybe fire,maybe fire,LOW,0.04666666666666667,False,True
+42.19,301,394,259,maybe fire,maybe fire,LOW,0.03,False,True
+43.88,324,412,258,maybe fire,maybe fire,LOW,0.09333333333333334,False,True
+42.13,281,393,233,maybe fire,maybe fire,LOW,0.01,False,True
+42.13,266,382,212,maybe fire,maybe fire,LOW,0.01,False,True
+42.69,267,391,224,maybe fire,maybe fire,LOW,0.10333333333333333,False,True
+43.63,267,389,212,maybe fire,maybe fire,LOW,0.0,False,True
+43.56,254,376,213,maybe fire,maybe fire,LOW,0.01,False,True
+45.0,260,375,207,maybe fire,maybe fire,LOW,0.0,False,True
+45.13,286,389,220,maybe fire,maybe fire,LOW,0.10666666666666667,False,True
+45.75,304,395,229,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+45.88,291,397,224,maybe fire,maybe fire,LOW,0.10666666666666667,False,True
+46.5,272,385,221,maybe fire,maybe fire,LOW,0.06333333333333334,False,True
+46.56,280,385,216,maybe fire,maybe fire,LOW,0.08666666666666667,False,True
+46.25,263,381,207,maybe fire,maybe fire,LOW,0.0,False,True
+46.63,263,378,204,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+47.06,267,380,207,maybe fire,maybe fire,LOW,0.0,False,True
+46.06,262,378,204,maybe fire,maybe fire,LOW,0.02,False,True
+45.69,256,373,208,maybe fire,maybe fire,LOW,0.0,False,True
+45.31,270,378,205,maybe fire,maybe fire,LOW,0.0,False,True
+44.94,360,387,248,maybe fire,maybe fire,LOW,0.016666666666666666,False,True
+44.44,369,391,291,maybe fire,maybe fire,LOW,0.016666666666666666,False,True
+44.19,404,401,320,maybe fire,maybe fire,MEDIUM,0.22,False,True
+45.06,310,386,256,maybe fire,maybe fire,LOW,0.0,False,True
+44.5,295,381,239,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+44.5,282,377,230,maybe fire,maybe fire,LOW,0.02666666666666667,False,True
+44.94,283,376,225,maybe fire,maybe fire,LOW,0.09333333333333334,False,True
+47.0,320,384,247,maybe fire,maybe fire,LOW,0.0,False,True
+48.81,320,388,254,maybe fire,maybe fire,LOW,0.0,False,True
+48.13,293,381,233,maybe fire,maybe fire,LOW,0.0,False,True
+49.88,336,384,269,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+49.94,309,390,245,maybe fire,maybe fire,LOW,0.0,False,True
+49.31,287,383,229,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+50.38,307,381,243,maybe fire,maybe fire,LOW,0.0,False,True
+49.94,297,382,259,maybe fire,maybe fire,LOW,0.01,False,True
+50.88,325,400,281,maybe fire,maybe fire,LOW,0.0,False,True
+50.88,304,396,266,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+50.06,295,389,240,maybe fire,maybe fire,LOW,0.0,False,True
+49.69,295,381,240,maybe fire,maybe fire,LOW,0.0,False,True
+53.69,359,413,310,maybe fire,maybe fire,LOW,0.03333333333333333,False,True
+53.81,340,407,300,maybe fire,maybe fire,LOW,0.0,False,True
+53.56,336,400,278,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+54.06,338,399,272,maybe fire,maybe fire,LOW,0.01,False,True
+53.13,306,398,256,maybe fire,maybe fire,LOW,0.0,False,True
+52.94,290,389,241,maybe fire,maybe fire,LOW,0.0,False,True
+52.81,299,393,243,maybe fire,maybe fire,LOW,0.0,False,True
+52.56,287,385,237,maybe fire,maybe fire,LOW,0.0,False,True
+52.38,279,385,227,maybe fire,maybe fire,LOW,0.01,False,True
+52.13,272,384,239,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+52.06,271,374,226,maybe fire,maybe fire,LOW,0.016666666666666666,False,True
+52.06,321,406,291,maybe fire,maybe fire,LOW,0.01,False,True
+57.0,323,406,305,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+57.75,314,402,279,maybe fire,maybe fire,LOW,0.02,False,True
+57.75,291,395,254,maybe fire,maybe fire,LOW,0.023333333333333334,False,True
+56.63,306,394,261,maybe fire,maybe fire,LOW,0.0,False,True
+57.44,304,397,254,maybe fire,maybe fire,LOW,0.0,False,True
+57.69,294,386,250,maybe fire,maybe fire,LOW,0.02,False,True
+55.63,292,384,246,maybe fire,maybe fire,LOW,0.0,False,True
+55.5,279,375,229,maybe fire,maybe fire,LOW,0.0,False,True
+31.88,246,243,177,maybe fire,maybe fire,LOW,0.0,False,True
+31.88,255,240,185,maybe fire,maybe fire,LOW,0.0,False,True
+31.88,246,247,176,maybe fire,maybe fire,LOW,0.0,False,True
+31.88,246,237,178,maybe fire,maybe fire,LOW,0.0,False,True
+31.88,230,246,192,maybe fire,maybe fire,LOW,0.0,False,True
+31.88,257,239,194,maybe fire,maybe fire,LOW,0.0,False,True
+31.81,247,240,190,maybe fire,maybe fire,LOW,0.0,False,True
+31.81,256,248,176,maybe fire,maybe fire,LOW,0.0,False,True
+31.75,241,247,177,maybe fire,maybe fire,LOW,0.0,False,True
+31.69,253,240,186,maybe fire,maybe fire,LOW,0.0,False,True
+31.56,254,241,188,maybe fire,maybe fire,LOW,0.0,False,True
+31.56,249,244,189,maybe fire,maybe fire,LOW,0.0,False,True
+31.56,255,251,187,maybe fire,maybe fire,LOW,0.0,False,True
+31.63,259,247,183,maybe fire,maybe fire,LOW,0.0,False,True
+31.63,258,247,196,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+31.63,315,253,185,maybe fire,maybe fire,LOW,0.03,False,True
+31.69,247,247,187,maybe fire,maybe fire,LOW,0.0,False,True
+31.75,257,209,198,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+31.69,249,255,178,maybe fire,maybe fire,LOW,0.0,False,True
+31.69,253,241,181,maybe fire,maybe fire,LOW,0.0,False,True
+31.69,263,253,182,maybe fire,maybe fire,LOW,0.0,False,True
+31.69,255,258,194,maybe fire,maybe fire,LOW,0.0,False,True
+31.75,243,258,176,maybe fire,maybe fire,LOW,0.0,False,True
+31.75,258,253,180,maybe fire,maybe fire,LOW,0.0,False,True
+32.06,433,297,326,maybe fire,maybe fire,MEDIUM,0.21666666666666667,False,True
+38.63,630,381,437,maybe fire,maybe fire,HIGH,0.42333333333333334,True,True
+40.75,604,386,413,maybe fire,maybe fire,HIGH,0.43,True,True
+45.13,736,437,533,maybe fire,maybe fire,LOW,0.06666666666666667,False,True
+47.81,800,475,576,maybe fire,maybe fire,LOW,0.02666666666666667,False,True
+55.25,775,487,542,maybe fire,maybe fire,LOW,0.01,False,True
+62.44,855,532,616,maybe fire,maybe fire,MEDIUM,0.21666666666666667,False,True
+64.56,749,531,547,maybe fire,maybe fire,LOW,0.03333333333333333,False,True
+64.19,721,530,546,maybe fire,maybe fire,LOW,0.07,False,True
+65.56,816,565,633,maybe fire,fire,CRITICAL,0.81,True,False
+80.25,673,487,464,maybe fire,maybe fire,LOW,0.03333333333333333,False,True
+77.0,658,496,493,maybe fire,maybe fire,LOW,0.02666666666666667,False,True
+75.5,814,592,592,maybe fire,maybe fire,MEDIUM,0.2633333333333333,False,True
+74.69,773,586,566,maybe fire,maybe fire,LOW,0.06333333333333334,False,True
+72.94,698,528,506,maybe fire,maybe fire,LOW,0.11666666666666667,False,True
+71.44,635,496,464,maybe fire,maybe fire,LOW,0.016666666666666666,False,True
+69.88,613,471,432,maybe fire,maybe fire,LOW,0.04666666666666667,False,True
+68.88,561,449,383,maybe fire,maybe fire,LOW,0.18333333333333332,False,True
+67.38,539,419,373,maybe fire,maybe fire,LOW,0.03666666666666667,False,True
+66.19,511,413,361,maybe fire,maybe fire,LOW,0.06333333333333334,False,True
+64.81,494,387,346,maybe fire,maybe fire,LOW,0.10333333333333333,False,True
+63.56,475,368,336,maybe fire,maybe fire,LOW,0.16,False,True
+62.56,459,365,297,maybe fire,maybe fire,MEDIUM,0.32666666666666666,False,True
+61.69,437,351,301,maybe fire,maybe fire,LOW,0.19333333333333333,False,True
+60.44,426,348,282,maybe fire,maybe fire,LOW,0.10666666666666667,False,True
+59.38,427,348,285,maybe fire,maybe fire,LOW,0.10666666666666667,False,True
+58.5,405,336,285,maybe fire,maybe fire,MEDIUM,0.23,False,True
+57.75,401,354,272,maybe fire,maybe fire,LOW,0.12666666666666668,False,True
+57.31,397,323,259,maybe fire,maybe fire,MEDIUM,0.26,False,True
+56.13,378,320,258,maybe fire,fire,HIGH,0.5766666666666667,True,False
+31.19,227,368,195,non fire,non fire,LOW,0.0,False,True
+31.19,222,369,179,non fire,non fire,LOW,0.0,False,True
+31.19,226,369,197,non fire,non fire,LOW,0.0,False,True
+31.19,227,368,194,non fire,non fire,LOW,0.0,False,True
+31.19,215,368,187,non fire,non fire,LOW,0.0,False,True
+31.19,223,366,186,non fire,non fire,LOW,0.0,False,True
+31.19,210,354,181,non fire,non fire,LOW,0.0,False,True
+31.19,223,355,178,non fire,non fire,LOW,0.0,False,True
+31.19,221,354,197,non fire,non fire,LOW,0.0,False,True
+31.19,214,368,193,non fire,non fire,LOW,0.0,False,True
+31.19,214,370,194,non fire,non fire,LOW,0.0,False,True
+31.19,211,355,195,non fire,non fire,LOW,0.0,False,True
+31.19,222,368,194,non fire,non fire,LOW,0.0,False,True
+31.13,223,365,191,non fire,non fire,LOW,0.0,False,True
+31.13,224,367,183,non fire,non fire,LOW,0.0,False,True
+31.06,215,366,179,non fire,non fire,LOW,0.0,False,True
+31.06,226,353,184,non fire,non fire,LOW,0.0,False,True
+31.06,225,358,176,non fire,non fire,LOW,0.0,False,True
+31.06,214,367,187,non fire,non fire,LOW,0.0,False,True
+31.06,215,353,190,non fire,non fire,LOW,0.0,False,True
+31.06,220,368,195,non fire,non fire,LOW,0.0,False,True
+31.06,220,367,192,non fire,non fire,LOW,0.0,False,True
+31.06,248,360,201,non fire,non fire,LOW,0.006666666666666667,False,True
+31.06,213,366,192,non fire,non fire,LOW,0.0,False,True
+31.0,220,358,190,non fire,non fire,LOW,0.0,False,True
+31.0,224,366,183,non fire,non fire,LOW,0.0,False,True
+31.0,224,360,190,non fire,non fire,LOW,0.0,False,True
+31.0,219,368,192,non fire,non fire,LOW,0.0,False,True
+31.0,210,356,179,non fire,non fire,LOW,0.0,False,True
+31.0,221,355,184,non fire,non fire,LOW,0.0,False,True
+31.0,208,365,178,non fire,non fire,LOW,0.0,False,True
+30.94,218,354,196,non fire,non fire,LOW,0.0,False,True
+30.94,224,358,201,non fire,non fire,LOW,0.006666666666666667,False,True
+31.0,217,369,198,non fire,non fire,LOW,0.0,False,True
+31.0,219,368,194,non fire,non fire,LOW,0.0,False,True
+31.0,225,365,188,non fire,non fire,LOW,0.0,False,True
+30.94,226,355,176,non fire,non fire,LOW,0.0,False,True
+30.94,230,368,195,non fire,non fire,LOW,0.0,False,True
+30.94,222,366,182,non fire,non fire,LOW,0.0,False,True
+30.94,226,369,189,non fire,non fire,LOW,0.0,False,True
+30.94,214,368,193,non fire,non fire,LOW,0.0,False,True
+30.94,224,371,189,non fire,non fire,LOW,0.0,False,True
+30.94,226,357,183,non fire,non fire,LOW,0.0,False,True
+30.94,218,359,192,non fire,non fire,LOW,0.0,False,True
+30.94,220,357,198,non fire,non fire,LOW,0.0,False,True
+30.94,224,359,195,non fire,non fire,LOW,0.0,False,True
+30.94,226,356,189,non fire,non fire,LOW,0.0,False,True
+30.94,222,368,186,non fire,non fire,LOW,0.0,False,True
+30.94,209,374,185,non fire,non fire,LOW,0.0,False,True
+30.94,215,373,179,non fire,non fire,LOW,0.0,False,True
+30.94,221,368,194,non fire,non fire,LOW,0.0,False,True
+30.94,225,368,196,non fire,non fire,LOW,0.0,False,True
+30.94,210,374,178,non fire,non fire,LOW,0.0,False,True
+30.88,221,357,186,non fire,non fire,LOW,0.0,False,True
+30.94,224,359,192,non fire,non fire,LOW,0.0,False,True
+30.94,217,358,199,non fire,non fire,LOW,0.0,False,True
+30.94,213,359,182,non fire,non fire,LOW,0.0,False,True
+30.94,223,370,195,non fire,non fire,LOW,0.0,False,True
+30.94,219,370,198,non fire,non fire,LOW,0.0,False,True
+30.94,227,358,193,non fire,non fire,LOW,0.0,False,True
+30.94,211,368,189,non fire,non fire,LOW,0.0,False,True
+30.94,213,361,179,non fire,non fire,LOW,0.0,False,True
+30.88,228,354,178,non fire,non fire,LOW,0.0,False,True
+30.88,226,370,197,non fire,non fire,LOW,0.0,False,True
+30.94,225,355,194,non fire,non fire,LOW,0.0,False,True
+30.94,218,364,178,non fire,non fire,LOW,0.0,False,True
+30.88,217,356,192,non fire,non fire,LOW,0.0,False,True
+30.88,221,358,192,non fire,non fire,LOW,0.0,False,True
+30.88,218,360,182,non fire,non fire,LOW,0.0,False,True
+30.88,216,358,196,non fire,non fire,LOW,0.0,False,True
+30.88,218,358,181,non fire,non fire,LOW,0.0,False,True
+30.88,226,374,183,non fire,non fire,LOW,0.0,False,True
+30.88,218,359,177,non fire,non fire,LOW,0.0,False,True
+30.88,216,365,177,non fire,non fire,LOW,0.0,False,True
+30.88,222,371,182,non fire,non fire,LOW,0.0,False,True
+30.88,225,368,179,non fire,non fire,LOW,0.0,False,True
+30.81,225,368,195,non fire,non fire,LOW,0.0,False,True
+30.81,220,355,177,non fire,non fire,LOW,0.0,False,True
+30.81,215,365,192,non fire,non fire,LOW,0.0,False,True
+30.81,218,358,195,non fire,non fire,LOW,0.0,False,True
+30.81,220,355,182,non fire,non fire,LOW,0.0,False,True
+30.81,223,368,192,non fire,non fire,LOW,0.0,False,True
+30.81,211,353,198,non fire,non fire,LOW,0.0,False,True
+30.88,215,361,197,non fire,non fire,LOW,0.0,False,True
+30.88,216,355,190,non fire,non fire,LOW,0.0,False,True
+30.81,214,367,186,non fire,non fire,LOW,0.0,False,True
+30.81,213,354,184,non fire,non fire,LOW,0.0,False,True
+30.81,224,355,200,non fire,non fire,LOW,0.0,False,True
+30.81,227,355,190,non fire,non fire,LOW,0.0,False,True
+30.81,218,371,192,non fire,non fire,LOW,0.0,False,True
+30.81,224,357,198,non fire,non fire,LOW,0.0,False,True
+30.81,219,368,190,non fire,non fire,LOW,0.0,False,True
+30.81,222,365,193,non fire,non fire,LOW,0.0,False,True
+30.81,220,362,197,non fire,non fire,LOW,0.0,False,True
+30.81,218,359,192,non fire,non fire,LOW,0.0,False,True
+30.81,224,359,199,non fire,non fire,LOW,0.0,False,True
+30.75,217,367,178,non fire,non fire,LOW,0.0,False,True
+30.81,213,368,178,non fire,non fire,LOW,0.0,False,True
+30.75,212,359,192,non fire,non fire,LOW,0.0,False,True
+30.75,224,368,197,non fire,non fire,LOW,0.0,False,True
+30.75,215,355,186,non fire,non fire,LOW,0.0,False,True
+30.75,214,358,195,non fire,non fire,LOW,0.0,False,True
+30.75,221,365,182,non fire,non fire,LOW,0.0,False,True
+30.75,224,369,177,non fire,non fire,LOW,0.0,False,True
+30.75,217,365,199,non fire,non fire,LOW,0.0,False,True
+30.75,212,365,176,non fire,non fire,LOW,0.0,False,True
+30.75,218,358,198,non fire,non fire,LOW,0.0,False,True
+30.69,225,362,187,non fire,non fire,LOW,0.0,False,True
+30.75,217,368,187,non fire,non fire,LOW,0.0,False,True
+30.75,212,368,195,non fire,non fire,LOW,0.0,False,True
+30.69,211,359,199,non fire,non fire,LOW,0.0,False,True
+30.69,215,354,192,non fire,non fire,LOW,0.0,False,True
+30.69,219,368,196,non fire,non fire,LOW,0.0,False,True
+30.69,221,368,180,non fire,non fire,LOW,0.0,False,True
+30.69,211,353,177,non fire,non fire,LOW,0.0,False,True
+30.69,222,368,194,non fire,non fire,LOW,0.0,False,True
+30.69,218,365,195,non fire,non fire,LOW,0.0,False,True
+30.69,212,365,193,non fire,non fire,LOW,0.0,False,True
+30.69,220,361,192,non fire,non fire,LOW,0.0,False,True
+30.69,222,352,192,non fire,non fire,LOW,0.0,False,True
+30.69,222,368,191,non fire,non fire,LOW,0.0,False,True
+30.69,215,363,189,non fire,non fire,LOW,0.0,False,True
+30.69,217,365,196,non fire,non fire,LOW,0.0,False,True
+30.69,222,367,193,non fire,non fire,LOW,0.0,False,True
+30.69,212,355,185,non fire,non fire,LOW,0.0,False,True
+30.69,210,352,192,non fire,non fire,LOW,0.0,False,True
+30.69,211,362,192,non fire,non fire,LOW,0.0,False,True
+30.69,208,358,190,non fire,non fire,LOW,0.0,False,True
+30.69,213,358,181,non fire,non fire,LOW,0.0,False,True
+30.69,211,365,190,non fire,non fire,LOW,0.0,False,True
+30.63,222,352,192,non fire,non fire,LOW,0.0,False,True
+30.69,212,357,182,non fire,non fire,LOW,0.0,False,True
+30.63,224,363,193,non fire,non fire,LOW,0.0,False,True
+30.63,208,363,189,non fire,non fire,LOW,0.0,False,True
+30.63,220,370,187,non fire,non fire,LOW,0.0,False,True
+30.63,219,355,181,non fire,non fire,LOW,0.0,False,True
+30.63,222,368,192,non fire,non fire,LOW,0.0,False,True
+30.63,222,347,186,non fire,non fire,LOW,0.0,False,True
+30.63,218,355,182,non fire,non fire,LOW,0.0,False,True
+30.63,209,368,192,non fire,non fire,LOW,0.0,False,True
+30.63,214,356,198,non fire,non fire,LOW,0.0,False,True
+30.63,208,361,190,non fire,non fire,LOW,0.0,False,True
+30.63,222,365,193,non fire,non fire,LOW,0.0,False,True
+30.63,216,365,191,non fire,non fire,LOW,0.0,False,True
+30.63,219,368,176,non fire,non fire,LOW,0.0,False,True
+30.63,219,368,179,non fire,non fire,LOW,0.0,False,True
+30.63,215,368,179,non fire,non fire,LOW,0.0,False,True
+30.63,218,362,181,non fire,non fire,LOW,0.0,False,True
+30.63,209,350,179,non fire,non fire,LOW,0.0,False,True
+30.63,208,350,178,non fire,non fire,LOW,0.0,False,True
+30.63,211,364,192,non fire,non fire,LOW,0.0,False,True
+30.63,211,368,179,non fire,non fire,LOW,0.0,False,True
+30.63,222,357,177,non fire,non fire,LOW,0.0,False,True
+30.69,216,358,181,non fire,non fire,LOW,0.0,False,True
+30.63,224,364,197,non fire,non fire,LOW,0.0,False,True
+30.69,222,351,177,non fire,non fire,LOW,0.0,False,True
+30.69,211,365,192,non fire,non fire,LOW,0.0,False,True
+30.69,219,355,192,non fire,non fire,LOW,0.0,False,True
+30.69,210,356,193,non fire,non fire,LOW,0.0,False,True
+30.69,213,363,191,non fire,non fire,LOW,0.0,False,True
+30.69,208,368,178,non fire,non fire,LOW,0.0,False,True
+30.69,217,364,187,non fire,non fire,LOW,0.0,False,True
+30.69,219,368,176,non fire,non fire,LOW,0.0,False,True
+30.75,215,359,191,non fire,non fire,LOW,0.0,False,True
+30.75,208,362,177,non fire,non fire,LOW,0.0,False,True
+30.75,216,365,181,non fire,non fire,LOW,0.0,False,True
+30.75,220,350,198,non fire,non fire,LOW,0.0,False,True
+30.75,215,367,176,non fire,non fire,LOW,0.0,False,True
+30.75,211,352,189,non fire,non fire,LOW,0.0,False,True
+30.75,218,352,193,non fire,non fire,LOW,0.0,False,True
+30.75,216,358,193,non fire,non fire,LOW,0.0,False,True
+30.75,209,362,197,non fire,non fire,LOW,0.0,False,True
+30.75,216,352,182,non fire,non fire,LOW,0.0,False,True
+30.75,216,368,176,non fire,non fire,LOW,0.0,False,True
+30.75,212,352,189,non fire,non fire,LOW,0.0,False,True
+30.75,222,363,194,non fire,non fire,LOW,0.0,False,True
+30.81,211,354,180,non fire,non fire,LOW,0.0,False,True
+30.81,209,368,185,non fire,non fire,LOW,0.0,False,True
+30.81,217,366,192,non fire,non fire,LOW,0.0,False,True
+30.81,208,349,192,non fire,non fire,LOW,0.0,False,True
+30.81,215,359,183,non fire,non fire,LOW,0.0,False,True
+30.81,213,368,192,non fire,non fire,LOW,0.0,False,True
+30.75,217,357,192,non fire,non fire,LOW,0.0,False,True
+30.81,210,350,188,non fire,non fire,LOW,0.0,False,True
+30.81,224,349,176,non fire,non fire,LOW,0.0,False,True
+30.81,223,368,176,non fire,non fire,LOW,0.0,False,True
+30.81,212,355,182,non fire,non fire,LOW,0.0,False,True
+30.81,217,352,176,non fire,non fire,LOW,0.0,False,True
+30.75,219,351,184,non fire,non fire,LOW,0.0,False,True
+30.75,215,367,195,non fire,non fire,LOW,0.0,False,True
+30.75,210,353,192,non fire,non fire,LOW,0.0,False,True
+30.75,220,368,193,non fire,non fire,LOW,0.0,False,True
+30.75,215,351,187,non fire,non fire,LOW,0.0,False,True
+30.75,223,368,187,non fire,non fire,LOW,0.0,False,True
+30.75,210,357,178,non fire,non fire,LOW,0.0,False,True
+30.75,218,350,181,non fire,non fire,LOW,0.0,False,True
+30.75,209,354,195,non fire,non fire,LOW,0.0,False,True
+30.75,221,350,176,non fire,non fire,LOW,0.0,False,True
+30.75,213,354,178,non fire,non fire,LOW,0.0,False,True
+30.75,207,351,183,non fire,non fire,LOW,0.0,False,True
+30.81,217,360,178,non fire,non fire,LOW,0.0,False,True
+30.81,210,366,178,non fire,non fire,LOW,0.0,False,True
+30.75,218,366,191,non fire,non fire,LOW,0.0,False,True
+30.75,223,352,183,non fire,non fire,LOW,0.0,False,True
+30.81,210,366,177,non fire,non fire,LOW,0.0,False,True
+30.81,210,367,178,non fire,non fire,LOW,0.0,False,True
+30.81,217,354,182,non fire,non fire,LOW,0.0,False,True
+30.81,211,352,186,non fire,non fire,LOW,0.0,False,True
+30.81,221,363,187,non fire,non fire,LOW,0.0,False,True
+30.81,209,365,195,non fire,non fire,LOW,0.0,False,True
+30.81,207,351,192,non fire,non fire,LOW,0.0,False,True
+30.81,217,363,180,non fire,non fire,LOW,0.0,False,True
+30.75,213,353,184,non fire,non fire,LOW,0.0,False,True
+30.75,214,364,176,non fire,non fire,LOW,0.0,False,True
+30.75,215,302,177,non fire,non fire,LOW,0.0,False,True
+30.75,222,355,176,non fire,non fire,LOW,0.0,False,True
+30.75,211,347,179,non fire,non fire,LOW,0.0,False,True
+30.75,218,353,188,non fire,non fire,LOW,0.0,False,True
+30.75,217,363,182,non fire,non fire,LOW,0.0,False,True
+30.75,210,358,185,non fire,non fire,LOW,0.0,False,True
+30.75,221,352,184,non fire,non fire,LOW,0.0,False,True
+30.75,222,349,188,non fire,non fire,LOW,0.0,False,True
+30.75,213,358,192,non fire,non fire,LOW,0.0,False,True
+30.75,210,358,192,non fire,non fire,LOW,0.0,False,True
+30.75,221,352,178,non fire,non fire,LOW,0.0,False,True
+30.69,209,362,181,non fire,non fire,LOW,0.0,False,True
+30.75,221,352,176,non fire,non fire,LOW,0.0,False,True
+30.75,208,365,185,non fire,non fire,LOW,0.0,False,True
+30.75,211,366,183,non fire,non fire,LOW,0.0,False,True
+30.69,220,365,181,non fire,non fire,LOW,0.0,False,True
+30.69,219,368,197,non fire,non fire,LOW,0.0,False,True
+30.69,223,352,192,non fire,non fire,LOW,0.0,False,True
+30.69,210,354,176,non fire,non fire,LOW,0.0,False,True
+30.69,209,350,190,non fire,non fire,LOW,0.0,False,True
+30.69,212,365,186,non fire,non fire,LOW,0.0,False,True
+30.69,209,359,193,non fire,non fire,LOW,0.0,False,True
+30.63,215,350,187,non fire,non fire,LOW,0.0,False,True
+30.69,210,366,198,non fire,non fire,LOW,0.0,False,True
+30.69,209,353,185,non fire,non fire,LOW,0.0,False,True
+30.63,217,352,181,non fire,non fire,LOW,0.0,False,True
+30.63,222,353,192,non fire,non fire,LOW,0.0,False,True
+30.69,222,368,177,non fire,non fire,LOW,0.0,False,True
+30.69,214,357,177,non fire,non fire,LOW,0.0,False,True
+30.63,214,358,177,non fire,non fire,LOW,0.0,False,True
+30.63,213,362,195,non fire,non fire,LOW,0.0,False,True
+30.63,221,364,176,non fire,non fire,LOW,0.0,False,True
+30.63,207,357,176,non fire,non fire,LOW,0.0,False,True
+30.63,219,362,178,non fire,non fire,LOW,0.0,False,True
+30.63,220,352,180,non fire,non fire,LOW,0.0,False,True
+30.63,219,350,189,non fire,non fire,LOW,0.0,False,True
+30.63,211,353,188,non fire,non fire,LOW,0.0,False,True
+30.63,209,365,192,non fire,non fire,LOW,0.0,False,True
+30.63,219,354,193,non fire,non fire,LOW,0.0,False,True
+30.63,208,356,185,non fire,non fire,LOW,0.0,False,True
+30.56,213,352,176,non fire,non fire,LOW,0.0,False,True
+30.63,208,358,192,non fire,non fire,LOW,0.0,False,True
+30.56,209,347,175,non fire,non fire,LOW,0.0,False,True
+30.63,208,359,178,non fire,non fire,LOW,0.0,False,True
+30.63,214,349,174,non fire,non fire,LOW,0.0,False,True
+30.63,218,354,176,non fire,non fire,LOW,0.0,False,True
+30.63,215,368,194,non fire,non fire,LOW,0.0,False,True
+30.63,213,355,192,non fire,non fire,LOW,0.0,False,True
+30.63,213,369,177,non fire,non fire,LOW,0.0,False,True
+30.63,211,352,175,non fire,non fire,LOW,0.0,False,True
+30.63,209,350,187,non fire,non fire,LOW,0.0,False,True
+30.63,212,368,176,non fire,non fire,LOW,0.0,False,True
+30.69,219,362,176,non fire,non fire,LOW,0.0,False,True
+30.69,219,359,193,non fire,non fire,LOW,0.0,False,True
+30.69,212,361,192,non fire,non fire,LOW,0.0,False,True
+30.69,211,365,196,non fire,non fire,LOW,0.0,False,True
+30.69,210,358,180,non fire,non fire,LOW,0.0,False,True
+30.69,214,366,193,non fire,non fire,LOW,0.0,False,True
+30.69,216,363,178,non fire,non fire,LOW,0.0,False,True
+30.69,217,355,193,non fire,non fire,LOW,0.0,False,True
+30.69,219,353,175,non fire,non fire,LOW,0.0,False,True
+30.69,220,363,182,non fire,non fire,LOW,0.0,False,True
+30.69,214,365,182,non fire,non fire,LOW,0.0,False,True
+30.69,213,368,179,non fire,non fire,LOW,0.0,False,True
+30.63,208,360,192,non fire,non fire,LOW,0.0,False,True
+30.69,220,352,176,non fire,non fire,LOW,0.0,False,True
+30.69,219,362,176,non fire,non fire,LOW,0.0,False,True
+30.69,215,352,195,non fire,non fire,LOW,0.0,False,True
+30.63,219,355,190,non fire,non fire,LOW,0.0,False,True
+30.63,208,352,176,non fire,non fire,LOW,0.0,False,True
+30.63,218,355,192,non fire,non fire,LOW,0.0,False,True
+30.63,208,364,193,non fire,non fire,LOW,0.0,False,True
+30.69,210,362,178,non fire,non fire,LOW,0.0,False,True
+30.63,211,352,197,non fire,non fire,LOW,0.0,False,True
+30.63,208,353,178,non fire,non fire,LOW,0.0,False,True
+30.63,207,352,192,non fire,non fire,LOW,0.0,False,True
+30.63,210,365,182,non fire,non fire,LOW,0.0,False,True
+30.63,215,353,185,non fire,non fire,LOW,0.0,False,True
+30.63,208,353,176,non fire,non fire,LOW,0.0,False,True
+30.63,219,355,176,non fire,non fire,LOW,0.0,False,True
+30.56,218,352,187,non fire,non fire,LOW,0.0,False,True
+30.56,212,363,190,non fire,non fire,LOW,0.0,False,True
+30.56,221,348,184,non fire,non fire,LOW,0.0,False,True
+30.56,216,353,185,non fire,non fire,LOW,0.0,False,True
+30.56,219,361,194,non fire,non fire,LOW,0.0,False,True
+30.56,220,345,191,non fire,non fire,LOW,0.0,False,True
+30.56,211,366,189,non fire,non fire,LOW,0.0,False,True
+30.56,208,351,178,non fire,non fire,LOW,0.0,False,True
+30.56,210,349,194,non fire,non fire,LOW,0.0,False,True
+30.56,217,362,190,non fire,non fire,LOW,0.0,False,True
+30.56,208,350,176,non fire,non fire,LOW,0.0,False,True
+30.56,220,349,177,non fire,non fire,LOW,0.0,False,True
+30.56,222,359,182,non fire,non fire,LOW,0.0,False,True
+30.56,209,355,174,non fire,non fire,LOW,0.0,False,True
+30.56,205,350,186,non fire,non fire,LOW,0.0,False,True
+30.56,219,351,176,non fire,non fire,LOW,0.0,False,True
+30.56,217,359,196,non fire,non fire,LOW,0.0,False,True
+30.56,208,353,182,non fire,non fire,LOW,0.0,False,True
+30.56,208,343,192,non fire,non fire,LOW,0.0,False,True
+30.56,211,350,178,non fire,non fire,LOW,0.0,False,True
+30.5,210,346,177,non fire,non fire,LOW,0.0,False,True
+30.56,211,367,191,non fire,non fire,LOW,0.0,False,True
+30.5,208,349,176,non fire,non fire,LOW,0.0,False,True
+30.5,208,364,180,non fire,non fire,LOW,0.0,False,True
+30.5,211,348,176,non fire,non fire,LOW,0.0,False,True
+30.5,206,350,176,non fire,non fire,LOW,0.0,False,True
+30.5,213,343,176,non fire,non fire,LOW,0.0,False,True
+30.5,210,347,182,non fire,non fire,LOW,0.0,False,True
+30.5,216,352,176,non fire,non fire,LOW,0.0,False,True
+30.5,208,350,189,non fire,non fire,LOW,0.0,False,True
+30.5,214,367,195,non fire,non fire,LOW,0.0,False,True
+30.44,211,355,191,non fire,non fire,LOW,0.0,False,True
+30.44,209,362,191,non fire,non fire,LOW,0.0,False,True
+30.44,219,352,184,non fire,non fire,LOW,0.0,False,True
+30.44,219,344,176,non fire,non fire,LOW,0.0,False,True
+30.44,211,361,177,non fire,non fire,LOW,0.0,False,True
+30.44,208,348,198,non fire,non fire,LOW,0.0,False,True
+30.44,212,345,182,non fire,non fire,LOW,0.0,False,True
+30.44,206,350,185,non fire,non fire,LOW,0.0,False,True
+30.44,221,364,198,non fire,non fire,LOW,0.0,False,True
+30.44,208,347,176,non fire,non fire,LOW,0.0,False,True
+30.44,208,356,194,non fire,non fire,LOW,0.0,False,True
+30.44,219,364,179,non fire,non fire,LOW,0.0,False,True
+30.44,214,362,195,non fire,non fire,LOW,0.0,False,True
+30.44,211,362,176,non fire,non fire,LOW,0.0,False,True
+30.38,206,354,176,non fire,non fire,LOW,0.0,False,True
+30.38,214,359,192,non fire,non fire,LOW,0.0,False,True
+30.44,214,353,176,non fire,non fire,LOW,0.0,False,True
+30.38,215,350,188,non fire,non fire,LOW,0.0,False,True
+30.38,209,357,188,non fire,non fire,LOW,0.0,False,True
+30.38,206,362,197,non fire,non fire,LOW,0.0,False,True
+30.38,217,347,189,non fire,non fire,LOW,0.0,False,True
+30.38,208,358,186,non fire,non fire,LOW,0.0,False,True
+30.38,218,347,188,non fire,non fire,LOW,0.0,False,True
+30.38,208,350,193,non fire,non fire,LOW,0.0,False,True
+30.38,210,347,192,non fire,non fire,LOW,0.0,False,True
+30.31,208,361,176,non fire,non fire,LOW,0.0,False,True
+30.38,213,347,195,non fire,non fire,LOW,0.0,False,True
+30.38,212,349,197,non fire,non fire,LOW,0.0,False,True
+30.38,205,349,176,non fire,non fire,LOW,0.0,False,True
+30.38,208,351,182,non fire,non fire,LOW,0.0,False,True
+30.38,213,351,182,non fire,non fire,LOW,0.0,False,True
+30.38,217,347,192,non fire,non fire,LOW,0.0,False,True
+30.31,210,358,194,non fire,non fire,LOW,0.0,False,True
+30.38,208,352,181,non fire,non fire,LOW,0.0,False,True
+30.38,219,348,183,non fire,non fire,LOW,0.0,False,True
+30.38,208,351,187,non fire,non fire,LOW,0.0,False,True
+30.38,205,348,186,non fire,non fire,LOW,0.0,False,True
+30.38,215,347,185,non fire,non fire,LOW,0.0,False,True
+30.44,203,356,178,non fire,non fire,LOW,0.0,False,True
+30.38,208,354,176,non fire,non fire,LOW,0.0,False,True
+30.44,215,363,174,non fire,non fire,LOW,0.0,False,True
+30.44,211,347,191,non fire,non fire,LOW,0.0,False,True
+30.44,211,364,176,non fire,non fire,LOW,0.0,False,True
+30.44,214,349,175,non fire,non fire,LOW,0.0,False,True
+30.38,208,361,189,non fire,non fire,LOW,0.0,False,True
+30.44,213,351,188,non fire,non fire,LOW,0.0,False,True
+30.44,215,355,176,non fire,non fire,LOW,0.0,False,True
+30.44,215,354,176,non fire,non fire,LOW,0.0,False,True
+30.44,212,350,177,non fire,non fire,LOW,0.0,False,True
+30.44,214,347,191,non fire,non fire,LOW,0.0,False,True
+30.44,208,345,191,non fire,non fire,LOW,0.0,False,True
+30.44,208,359,186,non fire,non fire,LOW,0.0,False,True
+30.44,218,354,177,non fire,non fire,LOW,0.0,False,True
+30.44,202,349,176,non fire,non fire,LOW,0.0,False,True
+30.44,211,346,192,non fire,non fire,LOW,0.0,False,True
+30.44,208,365,178,non fire,non fire,LOW,0.0,False,True
+30.38,206,364,183,non fire,non fire,LOW,0.0,False,True
+30.44,219,356,191,non fire,non fire,LOW,0.0,False,True
+30.44,209,347,181,non fire,non fire,LOW,0.0,False,True
+30.44,208,344,191,non fire,non fire,LOW,0.0,False,True
+30.38,213,349,175,non fire,non fire,LOW,0.0,False,True
+30.38,208,361,188,non fire,non fire,LOW,0.0,False,True
+30.44,210,354,188,non fire,non fire,LOW,0.0,False,True
+30.38,213,357,192,non fire,non fire,LOW,0.0,False,True
+30.38,213,343,192,non fire,non fire,LOW,0.0,False,True
+30.38,204,343,174,non fire,non fire,LOW,0.0,False,True
+30.38,208,343,190,non fire,non fire,LOW,0.0,False,True
+30.38,204,350,176,non fire,non fire,LOW,0.0,False,True
+30.38,205,350,177,non fire,non fire,LOW,0.0,False,True
+30.38,214,351,192,non fire,non fire,LOW,0.0,False,True
+30.38,206,352,176,non fire,non fire,LOW,0.0,False,True
+30.38,215,348,175,non fire,non fire,LOW,0.0,False,True
+30.38,203,348,189,non fire,non fire,LOW,0.0,False,True
+30.38,211,357,181,non fire,non fire,LOW,0.0,False,True
+30.38,211,354,172,non fire,non fire,LOW,0.0,False,True
+30.31,205,353,176,non fire,non fire,LOW,0.0,False,True
+30.38,207,346,185,non fire,non fire,LOW,0.0,False,True
+30.38,208,356,174,non fire,non fire,LOW,0.0,False,True
+30.31,208,349,192,non fire,non fire,LOW,0.0,False,True
+30.38,205,350,195,non fire,non fire,LOW,0.0,False,True
+30.38,212,358,177,non fire,non fire,LOW,0.0,False,True
+30.38,208,354,192,non fire,non fire,LOW,0.0,False,True
+30.38,208,351,180,non fire,non fire,LOW,0.0,False,True
+30.38,206,357,190,non fire,non fire,LOW,0.0,False,True
+30.38,205,357,191,non fire,non fire,LOW,0.0,False,True
+30.38,212,358,178,non fire,non fire,LOW,0.0,False,True
+30.38,212,354,177,non fire,non fire,LOW,0.0,False,True
+30.38,205,350,192,non fire,non fire,LOW,0.0,False,True
+30.38,209,355,189,non fire,non fire,LOW,0.0,False,True
+30.38,208,358,185,non fire,non fire,LOW,0.0,False,True
+30.38,210,346,183,non fire,non fire,LOW,0.0,False,True
+30.38,207,353,191,non fire,non fire,LOW,0.0,False,True
+30.38,205,359,176,non fire,non fire,LOW,0.0,False,True
+30.38,208,359,174,non fire,non fire,LOW,0.0,False,True
+30.38,209,353,171,non fire,non fire,LOW,0.0,False,True
+30.31,214,345,171,non fire,non fire,LOW,0.0,False,True
+30.38,203,358,182,non fire,non fire,LOW,0.0,False,True
+30.31,202,346,182,non fire,non fire,LOW,0.0,False,True
+30.38,210,340,189,non fire,non fire,LOW,0.0,False,True
+34.38,386,316,289,fire,maybe fire,MEDIUM,0.25,False,False
+39.44,582,415,454,fire,fire,HIGH,0.65,True,True
+44.25,569,426,417,fire,fire,HIGH,0.6533333333333333,True,True
+50.0,673,464,480,fire,fire,CRITICAL,0.74,True,True
+60.44,659,465,474,fire,maybe fire,HIGH,0.42333333333333334,True,False
+66.94,689,496,527,fire,fire,HIGH,0.6566666666666666,True,True
+66.13,643,521,464,fire,fire,HIGH,0.52,True,True
+66.38,611,522,459,fire,fire,CRITICAL,0.78,True,True
+69.0,761,575,560,fire,fire,HIGH,0.64,True,True
+77.19,843,642,644,fire,fire,CRITICAL,0.9833333333333333,True,True
+77.56,704,591,529,fire,fire,CRITICAL,0.7733333333333333,True,True
+76.25,752,640,580,fire,fire,CRITICAL,0.9233333333333333,True,True
+79.31,768,624,587,fire,fire,CRITICAL,0.9766666666666667,True,True
+79.75,729,624,538,fire,fire,CRITICAL,0.9933333333333333,True,True
+78.0,771,650,583,fire,fire,CRITICAL,0.9566666666666667,True,True
+79.25,834,669,645,fire,fire,CRITICAL,0.9966666666666667,True,True
+90.56,827,639,614,fire,fire,CRITICAL,0.9866666666666667,True,True
+90.94,690,556,511,fire,fire,HIGH,0.6033333333333334,True,True
+88.56,803,686,621,fire,fire,CRITICAL,0.9933333333333333,True,True
+93.88,777,647,583,fire,fire,CRITICAL,0.9533333333333334,True,True
+96.31,725,650,557,fire,fire,CRITICAL,0.9933333333333333,True,True
+96.5,744,663,576,fire,fire,CRITICAL,1.0,True,True
+93.69,807,731,633,fire,fire,CRITICAL,0.9966666666666667,True,True
+93.75,816,690,627,fire,fire,CRITICAL,0.9966666666666667,True,True
+96.63,755,656,582,fire,fire,CRITICAL,1.0,True,True
+102.0,762,653,592,fire,fire,CRITICAL,1.0,True,True
+102.13,719,638,530,fire,fire,CRITICAL,0.9966666666666667,True,True
+104.25,752,672,586,fire,fire,CRITICAL,1.0,True,True
+103.5,671,651,542,fire,fire,CRITICAL,0.9966666666666667,True,True
+101.31,851,766,701,fire,fire,CRITICAL,0.9966666666666667,True,True
+99.63,899,784,745,fire,fire,CRITICAL,1.0,True,True
+103.56,755,698,594,fire,fire,CRITICAL,0.9966666666666667,True,True
+101.0,736,718,601,fire,fire,CRITICAL,1.0,True,True
+100.0,773,751,624,fire,fire,CRITICAL,0.9933333333333333,True,True
+98.5,757,720,615,fire,fire,CRITICAL,1.0,True,True
+96.44,645,651,506,fire,fire,CRITICAL,0.9866666666666667,True,True
+93.94,566,594,431,fire,fire,CRITICAL,0.9833333333333333,True,True
+91.13,539,562,410,fire,fire,CRITICAL,0.9066666666666666,True,True
+89.0,525,543,388,fire,fire,CRITICAL,0.8133333333333334,True,True
+86.81,493,511,373,fire,fire,CRITICAL,0.79,True,True
+84.88,489,494,347,fire,fire,CRITICAL,0.83,True,True
+82.81,479,469,342,fire,fire,CRITICAL,0.81,True,True
+81.13,454,463,323,fire,fire,CRITICAL,0.9533333333333334,True,True
+79.13,456,445,336,fire,fire,CRITICAL,0.9066666666666666,True,True
+77.69,450,439,315,fire,fire,CRITICAL,0.95,True,True
+76.19,426,431,293,fire,fire,CRITICAL,0.93,True,True
+74.5,412,415,291,fire,fire,CRITICAL,0.8866666666666667,True,True
+72.56,405,400,277,fire,fire,CRITICAL,0.8,True,True
+70.81,395,398,263,fire,fire,CRITICAL,0.8166666666666667,True,True
+69.63,385,384,265,fire,fire,CRITICAL,0.8933333333333333,True,True
+68.19,378,383,262,fire,fire,CRITICAL,0.86,True,True
+67.0,368,369,254,fire,fire,CRITICAL,0.9533333333333334,True,True
+66.0,365,368,250,fire,fire,CRITICAL,0.9433333333333334,True,True
+64.69,353,363,259,fire,fire,CRITICAL,0.9166666666666666,True,True
+63.5,368,359,262,fire,fire,CRITICAL,0.9066666666666666,True,True
+62.5,358,364,247,fire,fire,CRITICAL,0.9266666666666666,True,True
+61.25,359,358,249,fire,fire,CRITICAL,0.8166666666666667,True,True
+60.13,352,353,251,fire,fire,CRITICAL,0.91,True,True
+59.0,353,365,240,fire,fire,CRITICAL,0.8833333333333333,True,True
+58.19,350,352,236,fire,fire,CRITICAL,0.9333333333333333,True,True
+57.75,342,343,240,fire,fire,CRITICAL,0.9433333333333334,True,True
+56.94,347,338,294,fire,fire,CRITICAL,0.82,True,True
+56.13,338,343,240,fire,fire,CRITICAL,0.97,True,True
+55.0,328,349,228,fire,fire,CRITICAL,0.93,True,True
+54.75,335,337,232,fire,fire,CRITICAL,1.0,True,True
+54.0,331,336,236,fire,fire,CRITICAL,1.0,True,True
+53.38,332,329,272,fire,fire,CRITICAL,0.85,True,True
+52.81,336,336,228,fire,fire,CRITICAL,1.0,True,True
+52.31,325,339,240,fire,fire,CRITICAL,0.9966666666666667,True,True
+51.88,336,336,238,fire,fire,CRITICAL,1.0,True,True
+51.19,335,334,237,fire,fire,CRITICAL,1.0,True,True
+50.63,329,326,230,fire,fire,CRITICAL,1.0,True,True
+50.31,330,334,234,fire,fire,CRITICAL,1.0,True,True
+49.94,323,336,225,fire,fire,CRITICAL,0.99,True,True
+49.5,318,330,231,fire,fire,CRITICAL,0.99,True,True
+49.13,313,329,231,fire,fire,CRITICAL,0.89,True,True
+48.69,323,336,237,fire,fire,CRITICAL,0.9966666666666667,True,True
+47.81,322,320,236,fire,fire,CRITICAL,0.9966666666666667,True,True
+47.25,326,330,235,fire,fire,CRITICAL,1.0,True,True
+46.25,320,315,237,fire,fire,CRITICAL,0.9933333333333333,True,True
+46.06,317,323,222,fire,fire,CRITICAL,0.99,True,True
+45.63,320,322,231,fire,fire,CRITICAL,0.9933333333333333,True,True
+45.31,320,322,226,fire,fire,CRITICAL,0.9966666666666667,True,True
+44.81,317,330,223,fire,fire,CRITICAL,0.9966666666666667,True,True
+44.5,327,327,240,fire,fire,CRITICAL,0.9933333333333333,True,True
+44.38,315,325,230,fire,fire,CRITICAL,0.9666666666666667,True,True
+44.19,319,327,234,fire,fire,CRITICAL,0.9966666666666667,True,True
+44.0,316,296,271,fire,fire,CRITICAL,0.9266666666666666,True,True
+43.81,326,326,234,fire,fire,CRITICAL,0.9966666666666667,True,True
+43.69,318,323,237,fire,fire,CRITICAL,0.9966666666666667,True,True
+43.38,310,323,221,fire,fire,CRITICAL,0.9766666666666667,True,True
+43.13,304,330,221,fire,fire,CRITICAL,0.9866666666666667,True,True
+42.81,307,310,214,fire,fire,CRITICAL,0.9766666666666667,True,True
+42.56,304,320,222,fire,fire,CRITICAL,0.9866666666666667,True,True
+42.31,302,322,211,fire,fire,CRITICAL,0.9833333333333333,True,True
+42.19,291,320,221,fire,fire,CRITICAL,0.99,True,True
+42.19,304,320,215,fire,fire,CRITICAL,0.9933333333333333,True,True
+41.75,294,316,222,fire,fire,CRITICAL,1.0,True,True
+41.69,298,323,206,fire,fire,CRITICAL,0.9866666666666667,True,True
+41.38,299,320,215,fire,fire,CRITICAL,0.9933333333333333,True,True
+41.06,291,323,211,fire,fire,CRITICAL,1.0,True,True
+40.81,294,318,210,fire,fire,CRITICAL,0.9966666666666667,True,True
+40.56,292,321,209,fire,fire,CRITICAL,0.9966666666666667,True,True
+40.44,296,327,213,fire,fire,CRITICAL,1.0,True,True
+40.25,289,317,218,fire,fire,CRITICAL,0.9966666666666667,True,True
+40.0,294,320,206,fire,fire,CRITICAL,0.99,True,True
+39.88,295,314,208,fire,fire,CRITICAL,0.9966666666666667,True,True
+39.69,262,314,202,fire,fire,CRITICAL,0.7066666666666667,True,True
+39.56,290,315,206,fire,fire,CRITICAL,0.9933333333333333,True,True
+39.31,295,315,211,fire,fire,CRITICAL,1.0,True,True
+38.94,287,307,199,fire,fire,CRITICAL,0.8733333333333333,True,True
+38.81,292,309,199,fire,fire,CRITICAL,0.8566666666666667,True,True
+38.75,287,310,208,fire,fire,CRITICAL,0.9966666666666667,True,True
+38.69,291,323,211,fire,fire,CRITICAL,0.9866666666666667,True,True
+38.56,287,308,196,fire,fire,CRITICAL,0.86,True,True
+38.5,291,316,202,fire,fire,CRITICAL,0.9766666666666667,True,True
+38.44,290,304,203,fire,fire,CRITICAL,0.9966666666666667,True,True
+38.38,287,317,199,fire,fire,CRITICAL,0.87,True,True
+38.19,282,307,209,fire,fire,CRITICAL,0.9966666666666667,True,True
+38.06,275,306,253,fire,fire,CRITICAL,0.88,True,True
+37.69,296,309,204,fire,fire,CRITICAL,0.96,True,True
+37.44,284,319,202,fire,fire,CRITICAL,0.9933333333333333,True,True
+37.25,287,306,208,fire,fire,CRITICAL,0.9866666666666667,True,True
+37.06,286,303,201,fire,fire,CRITICAL,0.9566666666666667,True,True
+37.0,279,306,203,fire,fire,CRITICAL,0.9933333333333333,True,True
+36.94,278,310,205,fire,fire,CRITICAL,0.9866666666666667,True,True
+36.75,275,306,207,fire,fire,CRITICAL,0.9866666666666667,True,True
+36.63,272,320,197,fire,fire,HIGH,0.6233333333333333,True,True
+36.38,281,311,206,fire,fire,CRITICAL,0.9866666666666667,True,True
+36.31,282,304,168,fire,fire,HIGH,0.69,True,True
+36.13,285,310,203,fire,fire,CRITICAL,0.9833333333333333,True,True
+35.88,284,304,208,fire,fire,CRITICAL,0.99,True,True
+35.75,272,304,203,fire,fire,CRITICAL,0.8366666666666667,True,True
+35.69,271,304,198,fire,fire,HIGH,0.6566666666666666,True,True
+35.5,272,305,204,fire,fire,CRITICAL,0.8133333333333334,True,True
+35.44,279,306,201,fire,fire,CRITICAL,0.9833333333333333,True,True
+35.31,275,310,194,fire,fire,CRITICAL,0.83,True,True
+35.19,275,302,207,fire,fire,CRITICAL,0.9266666666666666,True,True
+35.06,275,294,203,fire,fire,CRITICAL,0.76,True,True
+35.0,272,307,203,fire,fire,CRITICAL,0.7533333333333333,True,True
+34.94,272,304,208,fire,fire,HIGH,0.69,True,True
+31.5,256,290,195,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+31.56,295,289,197,maybe fire,maybe fire,MEDIUM,0.27666666666666667,False,True
+31.5,263,293,199,maybe fire,maybe fire,LOW,0.016666666666666666,False,True
+31.56,257,279,195,maybe fire,maybe fire,LOW,0.0,False,True
+31.56,261,289,192,maybe fire,maybe fire,LOW,0.0,False,True
+31.63,256,301,193,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+31.69,251,294,202,maybe fire,maybe fire,LOW,0.15,False,True
+31.81,259,289,187,maybe fire,maybe fire,LOW,0.0,False,True
+31.94,253,288,199,maybe fire,maybe fire,LOW,0.0,False,True
+32.0,259,287,165,maybe fire,maybe fire,LOW,0.0,False,True
+32.19,270,294,198,maybe fire,maybe fire,LOW,0.0,False,True
+32.19,270,293,205,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+32.13,259,295,200,maybe fire,maybe fire,LOW,0.0,False,True
+32.38,272,293,208,maybe fire,maybe fire,LOW,0.06666666666666667,False,True
+32.31,272,299,208,maybe fire,maybe fire,LOW,0.07,False,True
+32.31,286,303,215,maybe fire,maybe fire,MEDIUM,0.22666666666666666,False,True
+32.31,272,331,197,maybe fire,maybe fire,LOW,0.15,False,True
+32.31,257,301,204,maybe fire,maybe fire,LOW,0.01,False,True
+32.31,262,295,196,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+32.31,270,304,194,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+32.31,261,295,195,maybe fire,maybe fire,LOW,0.0,False,True
+32.31,266,304,200,maybe fire,maybe fire,LOW,0.03666666666666667,False,True
+32.44,276,297,219,maybe fire,maybe fire,MEDIUM,0.27666666666666667,False,True
+32.56,279,301,218,maybe fire,maybe fire,LOW,0.16333333333333333,False,True
+32.63,297,290,264,maybe fire,maybe fire,LOW,0.06333333333333334,False,True
+32.75,324,351,336,maybe fire,maybe fire,LOW,0.056666666666666664,False,True
+32.94,336,366,312,maybe fire,maybe fire,LOW,0.02666666666666667,False,True
+33.06,411,388,421,maybe fire,maybe fire,LOW,0.01,False,True
+33.13,391,393,417,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+33.13,346,374,325,maybe fire,maybe fire,LOW,0.016666666666666666,False,True
+33.13,320,367,294,maybe fire,maybe fire,LOW,0.11,False,True
+33.13,347,362,371,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+33.19,338,358,352,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+33.25,368,365,351,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+33.31,349,359,367,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+33.63,368,368,350,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+33.63,355,357,303,maybe fire,maybe fire,LOW,0.04,False,True
+33.56,324,346,272,maybe fire,maybe fire,LOW,0.043333333333333335,False,True
+33.5,333,336,294,maybe fire,maybe fire,LOW,0.14,False,True
+33.69,432,395,433,maybe fire,maybe fire,LOW,0.03,False,True
+33.63,399,387,355,maybe fire,maybe fire,LOW,0.0,False,True
+33.69,373,377,325,maybe fire,maybe fire,LOW,0.01,False,True
+33.75,414,400,415,maybe fire,maybe fire,LOW,0.0,False,True
+33.63,379,377,333,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+33.69,432,407,401,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+33.94,453,429,415,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+33.88,448,433,432,maybe fire,maybe fire,LOW,0.01,False,True
+33.94,527,453,556,maybe fire,maybe fire,LOW,0.05,False,True
+33.94,431,432,427,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+33.94,400,395,355,maybe fire,maybe fire,LOW,0.0,False,True
+33.94,372,403,351,maybe fire,maybe fire,LOW,0.0,False,True
+34.0,421,407,410,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+34.0,397,395,379,maybe fire,maybe fire,LOW,0.0,False,True
+33.94,374,390,340,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+33.88,363,375,313,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+33.88,368,384,330,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+34.13,544,496,602,maybe fire,maybe fire,LOW,0.023333333333333334,False,True
+34.0,444,436,453,maybe fire,maybe fire,LOW,0.01,False,True
+34.0,384,416,400,maybe fire,maybe fire,LOW,0.0,False,True
+34.06,415,387,404,maybe fire,maybe fire,LOW,0.0,False,True
+34.19,379,392,336,maybe fire,maybe fire,LOW,0.0,False,True
+34.31,590,401,673,maybe fire,maybe fire,LOW,0.03333333333333333,False,True
+34.31,566,432,565,maybe fire,maybe fire,LOW,0.016666666666666666,False,True
+34.31,474,405,473,maybe fire,maybe fire,LOW,0.06,False,True
+34.38,455,395,422,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+34.56,566,387,381,maybe fire,maybe fire,LOW,0.0,False,True
+34.5,549,374,511,maybe fire,maybe fire,LOW,0.02,False,True
+34.56,598,611,1067,maybe fire,maybe fire,LOW,0.09666666666666666,False,True
+35.0,788,527,781,maybe fire,maybe fire,LOW,0.05333333333333334,False,True
+35.06,1008,632,1011,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+35.13,675,511,624,maybe fire,maybe fire,LOW,0.04666666666666667,False,True
+35.19,592,493,511,maybe fire,maybe fire,LOW,0.05,False,True
+35.5,959,647,784,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+35.5,721,594,591,maybe fire,maybe fire,LOW,0.05,False,True
+35.38,753,619,607,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+35.5,1045,769,1286,maybe fire,maybe fire,LOW,0.0,False,True
+35.44,875,719,959,maybe fire,maybe fire,LOW,0.03333333333333333,False,True
+35.75,848,645,907,maybe fire,maybe fire,LOW,0.03666666666666667,False,True
+36.0,976,661,831,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+35.69,784,576,628,maybe fire,maybe fire,LOW,0.0,False,True
+36.0,1206,803,1107,maybe fire,maybe fire,LOW,0.0,False,True
+35.94,833,609,718,maybe fire,maybe fire,LOW,0.0,False,True
+36.06,803,550,618,maybe fire,maybe fire,LOW,0.0,False,True
+35.81,693,503,534,maybe fire,maybe fire,LOW,0.03666666666666667,False,True
+35.94,1389,766,1081,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+36.19,1174,626,714,maybe fire,maybe fire,LOW,0.0,False,True
+36.06,829,539,560,maybe fire,maybe fire,LOW,0.01,False,True
+36.31,1660,857,1362,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+36.13,964,600,730,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+36.25,976,624,704,maybe fire,maybe fire,LOW,0.0,False,True
+36.31,970,550,603,maybe fire,maybe fire,LOW,0.0,False,True
+36.75,1560,865,1039,maybe fire,maybe fire,LOW,0.0,False,True
+36.94,1728,1106,1590,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+37.69,1818,1111,1477,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+37.81,1535,1021,1131,maybe fire,maybe fire,LOW,0.0,False,True
+37.69,1197,822,976,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+37.75,1143,746,837,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+37.69,1264,873,1136,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+37.75,1529,913,1197,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+37.63,1084,751,899,maybe fire,maybe fire,LOW,0.01,False,True
+37.75,1243,806,953,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+37.63,945,647,720,maybe fire,maybe fire,LOW,0.01,False,True
+37.56,941,636,699,maybe fire,maybe fire,LOW,0.02,False,True
+37.44,1085,670,742,maybe fire,maybe fire,LOW,0.016666666666666666,False,True
+37.25,924,609,629,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+37.06,987,704,720,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+36.94,831,606,608,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+36.69,752,559,560,maybe fire,maybe fire,LOW,0.05,False,True
+36.44,815,610,706,maybe fire,maybe fire,LOW,0.0,False,True
+36.25,778,574,577,maybe fire,maybe fire,LOW,0.01,False,True
+36.0,688,521,506,maybe fire,maybe fire,LOW,0.04666666666666667,False,True
+35.81,814,511,503,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+35.75,766,491,483,maybe fire,maybe fire,LOW,0.02,False,True
+35.63,677,476,443,maybe fire,maybe fire,LOW,0.03333333333333333,False,True
+35.5,624,456,415,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+35.31,598,435,443,maybe fire,maybe fire,LOW,0.01,False,True
+35.25,794,529,610,maybe fire,maybe fire,LOW,0.0,False,True
+35.31,1169,699,875,maybe fire,maybe fire,LOW,0.0,False,True
+35.44,1328,801,1041,maybe fire,maybe fire,LOW,0.0,False,True
+35.38,1094,711,835,maybe fire,maybe fire,LOW,0.0,False,True
+35.31,887,613,635,maybe fire,maybe fire,LOW,0.0,False,True
+35.25,778,549,544,maybe fire,maybe fire,LOW,0.0,False,True
+35.25,715,526,486,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+35.13,642,481,448,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+35.0,640,479,432,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+34.88,613,464,451,maybe fire,maybe fire,LOW,0.01,False,True
+34.81,621,466,415,maybe fire,maybe fire,LOW,0.01,False,True
+34.88,841,529,487,maybe fire,maybe fire,LOW,0.0,False,True
+34.94,1106,688,754,maybe fire,maybe fire,LOW,0.0,False,True
+34.75,794,578,576,maybe fire,maybe fire,LOW,0.01,False,True
+34.63,784,623,608,maybe fire,maybe fire,LOW,0.0,False,True
+34.56,927,647,620,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+34.56,912,637,640,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+34.5,873,607,541,maybe fire,maybe fire,LOW,0.02,False,True
+34.56,1088,701,752,maybe fire,maybe fire,LOW,0.0,False,True
+34.69,1478,898,1141,maybe fire,maybe fire,LOW,0.0,False,True
+34.81,1585,871,1241,maybe fire,maybe fire,LOW,0.0,False,True
+34.88,1091,726,831,maybe fire,maybe fire,LOW,0.0,False,True
+35.0,1161,795,991,maybe fire,maybe fire,LOW,0.0,False,True
+35.38,1340,798,951,maybe fire,maybe fire,LOW,0.0,False,True
+35.25,963,639,669,maybe fire,maybe fire,LOW,0.0,False,True
+35.13,1350,764,1136,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+35.13,1038,638,765,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+35.19,875,578,656,maybe fire,maybe fire,LOW,0.0,False,True
+35.31,810,581,793,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+35.44,1273,671,991,maybe fire,maybe fire,LOW,0.0,False,True
+35.69,1616,827,993,maybe fire,maybe fire,LOW,0.0,False,True
+35.88,1391,735,880,maybe fire,maybe fire,LOW,0.0,False,True
+35.94,1328,756,1089,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+36.06,1694,966,1389,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+37.0,1987,958,1429,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+37.25,1632,944,1280,maybe fire,maybe fire,LOW,0.0,False,True
+37.38,2054,991,1424,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+37.75,1972,933,1659,maybe fire,maybe fire,LOW,0.01,False,True
+37.44,1235,858,1166,maybe fire,maybe fire,LOW,0.01,False,True
+37.31,1175,803,1198,maybe fire,maybe fire,LOW,0.006666666666666667,False,True
+37.06,1205,789,1339,maybe fire,maybe fire,LOW,0.013333333333333334,False,True
+31.63,283,297,208,fire,fire,CRITICAL,0.8833333333333333,True,True
+31.63,279,304,203,fire,fire,CRITICAL,0.8666666666666667,True,True
+31.75,286,301,208,fire,fire,CRITICAL,0.8866666666666667,True,True
+31.75,284,303,209,fire,fire,CRITICAL,0.93,True,True
+31.69,279,304,213,fire,fire,CRITICAL,0.71,True,True
+31.69,275,291,209,fire,fire,HIGH,0.5266666666666666,True,True
+31.75,282,295,203,fire,fire,CRITICAL,0.7866666666666666,True,True
+31.69,283,293,204,fire,fire,CRITICAL,0.7766666666666666,True,True
+31.69,284,297,207,fire,fire,CRITICAL,0.9566666666666667,True,True
+31.88,291,294,213,fire,fire,CRITICAL,0.7866666666666666,True,True
+32.13,295,310,215,fire,maybe fire,MEDIUM,0.3566666666666667,False,False
+32.69,329,315,247,fire,maybe fire,MEDIUM,0.27,False,False
+33.13,354,326,272,fire,maybe fire,LOW,0.16666666666666666,False,False
+34.94,777,496,577,fire,maybe fire,LOW,0.01,False,False
+38.81,718,511,553,fire,fire,HIGH,0.6133333333333333,True,True
+39.94,592,481,454,fire,fire,CRITICAL,0.8533333333333334,True,True
+40.81,560,478,426,fire,fire,CRITICAL,0.9466666666666667,True,True
+42.38,593,487,461,fire,fire,CRITICAL,0.9166666666666666,True,True
+43.19,626,511,489,fire,fire,HIGH,0.6633333333333333,True,True
+43.31,592,491,451,fire,fire,CRITICAL,0.81,True,True
+43.25,592,495,454,fire,fire,CRITICAL,0.8233333333333334,True,True
+42.94,559,496,443,fire,fire,HIGH,0.6866666666666666,True,True
+42.44,537,473,415,fire,fire,CRITICAL,0.7333333333333333,True,True
+42.0,546,464,426,fire,fire,CRITICAL,0.97,True,True
+41.63,559,474,442,fire,fire,CRITICAL,0.9566666666666667,True,True
+41.31,577,465,436,fire,fire,CRITICAL,0.93,True,True
+41.0,685,522,549,fire,fire,CRITICAL,0.7733333333333333,True,True
+40.75,829,600,668,fire,fire,CRITICAL,0.9766666666666667,True,True
+40.5,972,692,772,fire,fire,CRITICAL,0.9666666666666667,True,True
+40.13,929,731,735,fire,fire,CRITICAL,0.9733333333333334,True,True
+39.94,1069,832,909,fire,fire,CRITICAL,0.99,True,True
+39.75,1141,907,967,fire,fire,CRITICAL,0.9866666666666667,True,True
+39.94,1232,961,1043,fire,fire,CRITICAL,0.98,True,True
+39.81,1341,1053,1169,fire,fire,CRITICAL,0.9466666666666667,True,True
+39.56,1345,1079,1195,fire,fire,CRITICAL,0.94,True,True
+39.75,1845,1263,1725,fire,fire,CRITICAL,0.9566666666666667,True,True
+40.19,2293,1522,2320,fire,fire,CRITICAL,0.9433333333333334,True,True
+41.63,2579,1638,2691,fire,fire,CRITICAL,0.93,True,True
+44.38,1677,1354,1959,fire,fire,CRITICAL,0.9833333333333333,True,True
+45.56,1525,1317,1724,fire,fire,CRITICAL,1.0,True,True
+45.88,1307,1212,1457,fire,fire,CRITICAL,0.9966666666666667,True,True
+46.31,1343,1255,1455,fire,fire,CRITICAL,1.0,True,True
+46.63,1369,1323,1520,fire,fire,CRITICAL,1.0,True,True
+49.88,1505,1360,1648,fire,fire,CRITICAL,1.0,True,True
+58.31,1683,1486,1809,fire,fire,CRITICAL,0.9966666666666667,True,True
+72.38,1423,1370,1683,fire,fire,CRITICAL,1.0,True,True
+77.94,1093,1247,1415,fire,fire,CRITICAL,1.0,True,True
+80.44,966,1215,1232,fire,fire,CRITICAL,1.0,True,True
+82.5,795,1118,1017,fire,fire,CRITICAL,1.0,True,True
+84.0,806,1105,991,fire,fire,CRITICAL,1.0,True,True
+89.0,776,1058,876,fire,fire,CRITICAL,1.0,True,True
+90.81,689,1008,801,fire,fire,CRITICAL,1.0,True,True
+90.19,624,943,704,fire,fire,CRITICAL,1.0,True,True
+90.0,733,1073,813,fire,fire,CRITICAL,1.0,True,True
+88.88,773,1135,880,fire,fire,CRITICAL,1.0,True,True
+87.69,944,1258,1133,fire,fire,CRITICAL,1.0,True,True
+86.63,899,1232,1054,fire,fire,CRITICAL,1.0,True,True
+86.06,837,1181,977,fire,fire,CRITICAL,1.0,True,True
+86.5,801,1127,891,fire,fire,CRITICAL,1.0,True,True
+87.19,755,1106,827,fire,fire,CRITICAL,1.0,True,True
+89.94,829,1120,880,fire,fire,CRITICAL,1.0,True,True
+90.81,784,1104,819,fire,fire,CRITICAL,1.0,True,True
+93.63,746,1071,780,fire,fire,CRITICAL,1.0,True,True
+94.06,656,1011,700,fire,fire,CRITICAL,1.0,True,True
+97.31,675,998,690,fire,fire,CRITICAL,1.0,True,True
+97.94,614,954,628,fire,fire,CRITICAL,1.0,True,True
+96.88,573,926,604,fire,fire,CRITICAL,1.0,True,True
+97.19,547,891,566,fire,fire,CRITICAL,1.0,True,True
+97.06,491,834,497,fire,fire,CRITICAL,1.0,True,True
+94.69,454,788,463,fire,fire,CRITICAL,1.0,True,True
+93.13,445,752,434,fire,fire,CRITICAL,1.0,True,True
+91.38,436,726,422,fire,fire,CRITICAL,1.0,True,True
+89.94,429,704,416,fire,fire,CRITICAL,1.0,True,True
+87.81,400,694,401,fire,fire,CRITICAL,1.0,True,True
+86.06,419,686,397,fire,fire,CRITICAL,1.0,True,True
+84.31,413,663,378,fire,fire,CRITICAL,1.0,True,True
+82.81,405,651,366,fire,fire,CRITICAL,1.0,True,True
+81.06,397,640,365,fire,fire,CRITICAL,1.0,True,True
+80.31,404,624,360,fire,fire,CRITICAL,1.0,True,True
+79.13,400,621,351,fire,fire,CRITICAL,1.0,True,True
+78.25,398,602,353,fire,fire,CRITICAL,1.0,True,True
+77.13,393,594,340,fire,fire,CRITICAL,0.9933333333333333,True,True
+76.13,385,599,335,fire,fire,CRITICAL,0.9866666666666667,True,True
+75.25,385,592,329,fire,fire,CRITICAL,0.9533333333333334,True,True
+74.5,385,592,329,fire,fire,CRITICAL,0.95,True,True
+73.5,383,588,324,fire,fire,CRITICAL,0.9966666666666667,True,True
+73.06,383,575,325,fire,fire,CRITICAL,1.0,True,True
+72.5,378,576,319,fire,fire,CRITICAL,1.0,True,True
+71.75,372,575,319,fire,fire,CRITICAL,1.0,True,True
+70.75,371,569,311,fire,fire,CRITICAL,0.9966666666666667,True,True
+70.38,372,569,318,fire,fire,CRITICAL,1.0,True,True
+69.69,370,572,315,fire,fire,CRITICAL,0.9966666666666667,True,True
+69.38,379,571,311,fire,fire,CRITICAL,1.0,True,True
+69.0,371,565,304,fire,fire,CRITICAL,0.9966666666666667,True,True
+68.63,370,560,304,fire,fire,CRITICAL,0.9966666666666667,True,True
+67.44,367,554,298,fire,fire,CRITICAL,0.9733333333333334,True,True
+67.31,383,578,304,fire,fire,CRITICAL,0.9933333333333333,True,True
+67.31,396,603,320,fire,fire,CRITICAL,1.0,True,True
+66.81,395,613,318,fire,fire,CRITICAL,1.0,True,True
+66.44,399,623,315,fire,fire,CRITICAL,1.0,True,True
+66.19,382,615,309,fire,fire,CRITICAL,1.0,True,True
+66.25,381,611,304,fire,fire,CRITICAL,1.0,True,True
+65.94,376,599,303,fire,fire,CRITICAL,1.0,True,True
+66.5,393,607,304,fire,fire,CRITICAL,1.0,True,True
+66.5,388,605,304,fire,fire,CRITICAL,1.0,True,True
+66.94,393,611,307,fire,fire,CRITICAL,1.0,True,True
+67.25,389,626,307,fire,fire,CRITICAL,1.0,True,True
+67.44,397,634,320,fire,fire,CRITICAL,1.0,True,True
+67.56,398,637,304,fire,fire,CRITICAL,1.0,True,True
+67.44,398,640,304,fire,fire,CRITICAL,1.0,True,True
+67.63,399,638,304,fire,fire,CRITICAL,1.0,True,True
+67.19,390,647,302,fire,fire,CRITICAL,1.0,True,True
+67.81,403,683,310,fire,fire,CRITICAL,1.0,True,True
+68.0,409,661,313,fire,fire,CRITICAL,1.0,True,True
+67.69,406,657,304,fire,fire,CRITICAL,1.0,True,True
+67.38,395,619,299,fire,fire,CRITICAL,1.0,True,True
+66.81,390,655,294,fire,fire,CRITICAL,1.0,True,True
+67.25,399,658,296,fire,fire,CRITICAL,1.0,True,True
+67.75,400,658,301,fire,fire,CRITICAL,1.0,True,True
+68.38,406,661,306,fire,fire,CRITICAL,1.0,True,True
+68.44,399,665,296,fire,fire,CRITICAL,1.0,True,True
+68.31,396,662,293,fire,fire,CRITICAL,1.0,True,True
+68.5,393,669,294,fire,fire,CRITICAL,1.0,True,True
+68.44,397,667,298,fire,fire,CRITICAL,1.0,True,True
+68.44,393,661,300,fire,fire,CRITICAL,1.0,True,True
+68.38,397,665,297,fire,fire,CRITICAL,1.0,True,True
+68.63,393,668,293,fire,fire,CRITICAL,1.0,True,True
+68.75,386,677,294,fire,fire,CRITICAL,1.0,True,True
+68.75,385,670,286,fire,fire,CRITICAL,1.0,True,True
+68.13,374,667,283,fire,fire,CRITICAL,1.0,True,True
+68.13,378,661,281,fire,fire,CRITICAL,1.0,True,True
+68.25,382,656,286,fire,fire,CRITICAL,1.0,True,True
+68.25,378,668,284,fire,fire,CRITICAL,1.0,True,True
+68.38,380,667,283,fire,fire,CRITICAL,1.0,True,True
+69.06,389,670,291,fire,fire,CRITICAL,1.0,True,True
+69.13,390,678,290,fire,fire,CRITICAL,1.0,True,True
+68.81,384,690,285,fire,fire,CRITICAL,1.0,True,True
+67.94,448,745,327,fire,fire,CRITICAL,1.0,True,True
+72.13,644,971,464,fire,fire,CRITICAL,0.9833333333333333,True,True
+74.25,559,955,405,fire,fire,CRITICAL,0.9766666666666667,True,True
+73.31,560,976,403,fire,fire,CRITICAL,1.0,True,True
+72.31,596,1022,441,fire,fire,CRITICAL,1.0,True,True
+72.44,619,1051,449,fire,fire,CRITICAL,0.9866666666666667,True,True
+72.44,603,1040,451,fire,fire,CRITICAL,1.0,True,True
+72.69,607,1042,432,fire,fire,CRITICAL,1.0,True,True
+72.31,590,1023,426,fire,fire,CRITICAL,1.0,True,True
+72.0,618,1042,440,fire,fire,CRITICAL,0.9866666666666667,True,True
+71.88,623,1058,444,fire,fire,CRITICAL,0.9866666666666667,True,True
+71.56,609,1054,428,fire,fire,CRITICAL,0.9966666666666667,True,True
+71.0,592,1040,418,fire,fire,CRITICAL,1.0,True,True
+70.5,583,1037,415,fire,fire,CRITICAL,1.0,True,True
+69.88,585,1037,417,fire,fire,CRITICAL,1.0,True,True
+69.94,597,1035,432,fire,fire,CRITICAL,1.0,True,True
+69.06,576,1008,401,fire,fire,CRITICAL,1.0,True,True
+68.19,555,998,394,fire,fire,CRITICAL,1.0,True,True
+66.44,527,940,368,fire,fire,CRITICAL,1.0,True,True
+65.94,557,960,393,fire,fire,CRITICAL,1.0,True,True
+66.06,557,949,387,fire,fire,CRITICAL,0.9966666666666667,True,True
+66.19,549,949,384,fire,fire,CRITICAL,1.0,True,True
+65.56,530,925,368,fire,fire,CRITICAL,1.0,True,True
+65.63,528,915,360,fire,fire,CRITICAL,1.0,True,True
+65.0,495,896,349,fire,fire,CRITICAL,1.0,True,True
+64.06,492,883,346,fire,fire,CRITICAL,0.9933333333333333,True,True
+64.94,511,899,368,fire,fire,CRITICAL,1.0,True,True
+65.81,544,912,380,fire,fire,CRITICAL,1.0,True,True
+66.5,544,922,379,fire,fire,CRITICAL,1.0,True,True
+66.63,525,914,365,fire,fire,CRITICAL,1.0,True,True
+67.25,511,903,367,fire,fire,CRITICAL,0.9966666666666667,True,True
+67.56,508,897,359,fire,fire,CRITICAL,1.0,True,True
+67.0,492,882,349,fire,fire,CRITICAL,1.0,True,True
+66.69,490,884,358,fire,fire,CRITICAL,1.0,True,True
+66.56,498,883,349,fire,fire,CRITICAL,1.0,True,True
+67.19,496,881,345,fire,fire,CRITICAL,1.0,True,True
+67.5,501,876,349,fire,fire,CRITICAL,1.0,True,True
+67.88,491,870,339,fire,fire,CRITICAL,1.0,True,True
+67.75,482,859,336,fire,fire,CRITICAL,0.9966666666666667,True,True
+68.0,478,864,336,fire,fire,CRITICAL,0.9966666666666667,True,True
+67.88,465,848,336,fire,fire,CRITICAL,1.0,True,True
+67.5,459,833,317,fire,fire,CRITICAL,1.0,True,True
+67.63,463,844,331,fire,fire,CRITICAL,1.0,True,True
+67.94,484,839,337,fire,fire,CRITICAL,1.0,True,True
+68.38,494,857,336,fire,fire,CRITICAL,1.0,True,True
+68.38,483,848,336,fire,fire,CRITICAL,1.0,True,True
+68.38,464,831,318,fire,fire,CRITICAL,1.0,True,True
+68.13,451,823,314,fire,fire,CRITICAL,1.0,True,True
+68.06,450,810,309,fire,fire,CRITICAL,1.0,True,True
+67.06,433,791,300,fire,fire,CRITICAL,1.0,True,True
+66.0,432,798,300,fire,fire,CRITICAL,1.0,True,True
+64.88,439,808,317,fire,fire,CRITICAL,1.0,True,True
+64.63,447,813,315,fire,fire,CRITICAL,0.9966666666666667,True,True
+64.31,452,815,315,fire,fire,CRITICAL,0.9933333333333333,True,True
+64.44,446,806,315,fire,fire,CRITICAL,0.9933333333333333,True,True
+64.81,451,805,320,fire,fire,CRITICAL,1.0,True,True
+65.13,451,808,324,fire,fire,CRITICAL,1.0,True,True
+65.31,435,789,311,fire,fire,CRITICAL,1.0,True,True
+65.75,441,793,306,fire,fire,CRITICAL,1.0,True,True
+65.88,435,784,304,fire,fire,CRITICAL,1.0,True,True
+66.06,432,784,307,fire,fire,CRITICAL,1.0,True,True
+66.19,433,783,304,fire,fire,CRITICAL,1.0,True,True
+66.5,433,777,305,fire,fire,CRITICAL,1.0,True,True
+66.75,433,769,304,fire,fire,CRITICAL,1.0,True,True
+65.94,422,759,294,fire,fire,CRITICAL,1.0,True,True
+65.25,419,763,297,fire,fire,CRITICAL,1.0,True,True
+65.38,435,773,313,fire,fire,CRITICAL,1.0,True,True
+65.31,426,765,298,fire,fire,CRITICAL,1.0,True,True
+65.44,423,765,298,fire,fire,CRITICAL,1.0,True,True
+65.25,425,761,303,fire,fire,CRITICAL,1.0,True,True
+64.56,407,742,291,fire,fire,CRITICAL,1.0,True,True
+64.0,407,740,299,fire,fire,CRITICAL,1.0,True,True
+64.25,425,762,304,fire,fire,CRITICAL,0.9966666666666667,True,True
+64.25,419,759,299,fire,fire,CRITICAL,1.0,True,True
+64.63,427,752,301,fire,fire,CRITICAL,1.0,True,True
+64.69,419,752,295,fire,fire,CRITICAL,1.0,True,True
+64.5,411,746,295,fire,fire,CRITICAL,1.0,True,True
+64.75,407,711,271,fire,fire,CRITICAL,1.0,True,True
+64.81,411,743,300,fire,fire,CRITICAL,1.0,True,True
+64.94,409,730,286,fire,fire,CRITICAL,1.0,True,True
+64.88,409,725,291,fire,fire,CRITICAL,1.0,True,True
+65.13,407,726,291,fire,fire,CRITICAL,1.0,True,True
+65.88,413,730,299,fire,fire,CRITICAL,1.0,True,True
+66.56,419,743,302,fire,fire,CRITICAL,1.0,True,True
+66.19,411,738,298,fire,fire,CRITICAL,1.0,True,True
+65.63,401,726,289,fire,fire,CRITICAL,1.0,True,True
+65.31,408,737,298,fire,fire,CRITICAL,1.0,True,True
+65.13,413,739,293,fire,fire,CRITICAL,1.0,True,True
+65.31,416,747,293,fire,fire,CRITICAL,1.0,True,True
+65.38,416,738,289,fire,fire,CRITICAL,1.0,True,True
+65.25,407,743,294,fire,fire,CRITICAL,1.0,True,True
+65.25,403,729,287,fire,fire,CRITICAL,1.0,True,True
+65.13,402,729,286,fire,fire,CRITICAL,1.0,True,True
+64.81,399,719,283,fire,fire,CRITICAL,1.0,True,True
+64.81,404,721,290,fire,fire,CRITICAL,1.0,True,True
+64.31,395,719,289,fire,fire,CRITICAL,1.0,True,True
+63.75,389,715,284,fire,fire,CRITICAL,1.0,True,True
+63.13,391,715,281,fire,fire,CRITICAL,1.0,True,True
+63.06,387,705,286,fire,fire,CRITICAL,1.0,True,True
+62.94,394,709,281,fire,fire,CRITICAL,1.0,True,True
+62.38,398,705,279,fire,fire,CRITICAL,1.0,True,True
+62.06,395,704,279,fire,fire,CRITICAL,1.0,True,True
+61.75,386,706,282,fire,fire,CRITICAL,1.0,True,True
+61.75,402,709,289,fire,fire,CRITICAL,1.0,True,True
+62.06,398,707,291,fire,fire,CRITICAL,1.0,True,True
+62.06,399,710,289,fire,fire,CRITICAL,1.0,True,True
+61.69,400,715,293,fire,fire,CRITICAL,1.0,True,True
+61.88,398,720,281,fire,fire,CRITICAL,1.0,True,True
+61.56,395,703,277,fire,fire,CRITICAL,1.0,True,True
+61.44,393,703,284,fire,fire,CRITICAL,1.0,True,True
+61.31,402,709,295,fire,fire,CRITICAL,1.0,True,True
+61.0,402,721,289,fire,fire,CRITICAL,1.0,True,True
+60.88,393,707,283,fire,fire,CRITICAL,1.0,True,True
+60.75,387,713,282,fire,fire,CRITICAL,1.0,True,True
+60.56,387,705,290,fire,fire,CRITICAL,0.95,True,True
+60.56,390,714,277,fire,fire,CRITICAL,0.95,True,True
+60.31,390,705,286,fire,fire,CRITICAL,0.83,True,True
+60.5,403,718,299,fire,fire,CRITICAL,0.88,True,True
+60.75,398,718,282,fire,fire,CRITICAL,1.0,True,True
+60.94,400,720,290,fire,fire,CRITICAL,1.0,True,True
+61.0,395,725,282,fire,fire,CRITICAL,1.0,True,True
+61.25,403,717,289,fire,fire,CRITICAL,1.0,True,True
+61.44,400,717,290,fire,fire,CRITICAL,1.0,True,True
+61.88,400,719,293,fire,fire,CRITICAL,1.0,True,True
+62.13,404,720,291,fire,fire,CRITICAL,1.0,True,True
+62.38,400,727,295,fire,fire,CRITICAL,1.0,True,True
+62.56,400,724,297,fire,fire,CRITICAL,1.0,True,True
+62.5,400,723,289,fire,fire,CRITICAL,1.0,True,True
+62.44,406,729,295,fire,fire,CRITICAL,1.0,True,True
+62.56,417,735,290,fire,fire,CRITICAL,1.0,True,True
+62.44,407,720,292,fire,fire,CRITICAL,1.0,True,True
+62.19,397,720,282,fire,fire,CRITICAL,1.0,True,True
+61.75,400,717,298,fire,fire,CRITICAL,1.0,True,True
+61.56,407,727,301,fire,fire,CRITICAL,1.0,True,True
+61.75,400,719,294,fire,fire,CRITICAL,1.0,True,True
+61.31,394,717,288,fire,fire,CRITICAL,1.0,True,True
+60.88,390,714,290,fire,fire,CRITICAL,1.0,True,True
+60.94,403,720,297,fire,fire,CRITICAL,1.0,True,True
+30.56,265,369,203,non fire,non fire,LOW,0.01,False,True
+30.56,266,367,208,non fire,non fire,LOW,0.01,False,True
+30.75,629,379,315,non fire,non fire,LOW,0.0,False,True
+30.44,414,384,258,non fire,non fire,LOW,0.0,False,True
+30.38,362,379,237,non fire,non fire,LOW,0.0,False,True
+30.38,336,378,225,non fire,non fire,LOW,0.01,False,True
+30.44,590,387,283,non fire,non fire,LOW,0.0,False,True
+30.25,410,398,232,non fire,non fire,LOW,0.0,False,True
+30.19,364,395,226,non fire,non fire,LOW,0.0,False,True
+30.13,343,400,208,non fire,non fire,LOW,0.0,False,True
+30.19,331,390,208,non fire,non fire,LOW,0.0,False,True
+30.19,309,412,208,non fire,non fire,LOW,0.0,False,True
+30.25,311,398,221,non fire,non fire,LOW,0.01,False,True
+30.25,697,402,352,non fire,non fire,LOW,0.0,False,True
+30.06,523,410,304,non fire,non fire,LOW,0.0,False,True
+30.0,421,402,256,non fire,non fire,LOW,0.0,False,True
+29.94,401,400,244,non fire,non fire,LOW,0.0,False,True
+29.94,368,388,240,non fire,non fire,LOW,0.0,False,True
+29.94,353,399,223,non fire,non fire,LOW,0.0,False,True
+29.94,341,392,239,non fire,non fire,LOW,0.0,False,True
+30.0,339,384,231,non fire,non fire,LOW,0.0,False,True
+30.06,336,398,226,non fire,non fire,LOW,0.0,False,True
+29.94,446,400,285,non fire,non fire,LOW,0.0,False,True
+29.94,385,400,261,non fire,non fire,LOW,0.0,False,True
+30.19,421,526,243,maybe fire,maybe fire,LOW,0.01,False,True
+30.25,597,576,290,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+30.25,2239,1181,1559,maybe fire,maybe fire,LOW,0.0,False,True
+30.19,1854,1437,1657,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+30.38,3057,1602,2135,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,2371,1495,2218,maybe fire,maybe fire,LOW,0.0,False,True
+30.38,2426,1423,2160,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,2810,1425,2192,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,2123,1256,1866,maybe fire,maybe fire,LOW,0.0033333333333333335,False,True
+30.25,1779,1119,2000,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,1875,1631,2379,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,1749,1593,2672,maybe fire,maybe fire,LOW,0.0,False,True
+30.25,2165,1383,2448,maybe fire,maybe fire,LOW,0.0,False,True
+30.25,1937,1421,2087,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,3326,1612,2096,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,3115,1645,2191,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,2931,1825,2404,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,2556,1959,2303,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,2022,1696,2285,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,1813,1488,2181,maybe fire,maybe fire,LOW,0.0,False,True
+30.31,2691,1953,1999,maybe fire,maybe fire,LOW,0.0,False,True
+30.44,2925,1717,2485,maybe fire,maybe fire,LOW,0.0,False,True
+30.44,3044,1992,2605,maybe fire,maybe fire,LOW,0.0,False,True
+30.44,2479,1754,2299,maybe fire,maybe fire,LOW,0.0,False,True
+30.44,2375,1775,2123,maybe fire,maybe fire,LOW,0.0,False,True
+29.81,298,368,217,non fire,non fire,LOW,0.0033333333333333335,False,True
+29.81,299,367,226,non fire,non fire,LOW,0.0033333333333333335,False,True
+29.88,291,357,222,non fire,non fire,LOW,0.006666666666666667,False,True
+29.88,302,368,215,non fire,non fire,LOW,0.0033333333333333335,False,True
+29.88,1002,485,626,non fire,non fire,LOW,0.0,False,True
+29.94,981,757,720,non fire,non fire,LOW,0.0,False,True
+29.94,794,769,656,non fire,non fire,LOW,0.0,False,True
+29.94,646,707,543,non fire,non fire,LOW,0.0,False,True
+29.94,599,677,487,non fire,non fire,LOW,0.0,False,True
+30.0,568,658,449,non fire,non fire,LOW,0.006666666666666667,False,True
+29.94,837,784,562,non fire,non fire,LOW,0.0033333333333333335,False,True
+29.94,790,777,613,non fire,non fire,LOW,0.0,False,True
+29.94,704,735,546,non fire,non fire,LOW,0.0,False,True
+29.94,626,702,490,non fire,non fire,LOW,0.0,False,True
+29.94,543,654,417,non fire,non fire,LOW,0.006666666666666667,False,True
+29.88,506,618,383,non fire,non fire,LOW,0.006666666666666667,False,True
+29.88,481,591,371,non fire,non fire,LOW,0.0033333333333333335,False,True
+29.94,471,571,339,non fire,non fire,LOW,0.0,False,True
+29.94,458,561,336,non fire,non fire,LOW,0.01,False,True
+29.94,1748,898,1185,non fire,non fire,LOW,0.0,False,True
+29.94,850,825,715,non fire,non fire,LOW,0.0033333333333333335,False,True
+30.0,747,752,662,non fire,non fire,LOW,0.0,False,True
+30.0,699,751,611,non fire,non fire,LOW,0.0,False,True
+30.0,688,720,589,non fire,non fire,LOW,0.0033333333333333335,False,True
+29.94,743,765,669,non fire,non fire,LOW,0.0,False,True
+30.0,786,787,679,non fire,non fire,LOW,0.0,False,True
+30.06,1064,838,776,non fire,non fire,LOW,0.0,False,True
+30.13,926,877,753,non fire,non fire,LOW,0.006666666666666667,False,True
+30.13,1247,949,992,non fire,non fire,LOW,0.0,False,True
+30.13,1623,1010,1195,non fire,non fire,LOW,0.0,False,True
+30.13,1037,952,882,non fire,non fire,LOW,0.0,False,True
+30.19,976,939,874,non fire,non fire,LOW,0.0,False,True
+30.13,849,870,735,non fire,non fire,LOW,0.006666666666666667,False,True
+30.19,966,901,847,non fire,non fire,LOW,0.006666666666666667,False,True
+30.13,1042,927,929,non fire,non fire,LOW,0.0,False,True
+30.19,1695,978,1340,non fire,non fire,LOW,0.0033333333333333335,False,True
+30.13,1232,1088,1047,non fire,non fire,LOW,0.0033333333333333335,False,True
+30.13,1439,1047,1104,non fire,non fire,LOW,0.0,False,True
+30.13,1170,1077,1114,non fire,non fire,LOW,0.0033333333333333335,False,True
+30.13,1261,1067,1118,non fire,non fire,LOW,0.0,False,True
+30.13,1397,1094,1395,non fire,non fire,LOW,0.0033333333333333335,False,True
+30.06,1181,1035,1093,non fire,non fire,LOW,0.0033333333333333335,False,True
+30.06,887,911,784,non fire,non fire,LOW,0.006666666666666667,False,True
+30.06,933,913,892,non fire,non fire,LOW,0.006666666666666667,False,True
+30.0,830,865,752,non fire,non fire,LOW,0.006666666666666667,False,True
+30.0,787,835,695,non fire,non fire,LOW,0.0,False,True
+30.0,811,843,703,non fire,non fire,LOW,0.0,False,True
+30.06,775,826,679,non fire,non fire,LOW,0.0,False,True

@@ -10,7 +10,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 from st_supabase_connection import SupabaseConnection
 from services.utils import format_timestamp
-from services.fire_detection import classify_fire_risk
+from services.fire_detection import predict_fire_risk
 
 
 def get_supabase_connection():
@@ -92,3 +92,9 @@ def get_readings_for_timeframe(area_name, hours=24):
         return df
     
     return None 
+
+
+def classify_fire_risk(row):
+    """Classify fire risk for a row of sensor data using the updated ML model."""
+    result = predict_fire_risk(row.to_dict())
+    return result['prediction'] 

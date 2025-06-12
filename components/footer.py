@@ -9,12 +9,14 @@ def display_footer():
     st.markdown("""
     <div class="footer-container">
         <div class="logo-container">
-            <img src="app/static/images/pup-logo.png" alt="Nursing Logo">
-            <img src="app/static/images/pup-ce-logo.png" alt="Mabini Logo">
-                <img src="app/static/images/pup-ee-logo.png" alt="CON Logo">
-            <img src="app/static/images/seekliyab-logo.png" alt="College Logo">
+            <img src="app/static/images/pup-logo.png" alt="PUP Logo">
+            <img src="app/static/images/pup-ce-logo.png" alt="College of Engineering Logo">
+            <img src="app/static/images/pup-ee-logo.png" alt="College of Electrical Engineering Logo">
+            <img src="app/static/images/seekliyab-logo.png" alt="Seekliyab Logo">
         </div>
-        <div class="footer-title">SEEKLIYAB</div>
+        <div class="footer-title">
+            <a href="/" class="footer-title-link">SEEKLIYAB</a>
+        </div>
         <div class="footer-subtitle">IoT-Based Fire Detection System with Machine Learning</div>
         <div class="footer-college">College of Electrical Engineering</div>
         <div class="footer-links">

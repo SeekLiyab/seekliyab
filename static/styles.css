@@ -85,7 +85,6 @@ div[data-testid="stElementContainer"] hr {
   padding: 25px;
   border: 1px solid rgba(128, 0, 0, 0.08);
   transition: var(--transition-normal);
-  animation: fadeIn 0.6s ease-out;
 }
 
 .st-key-login_container:hover {
@@ -185,6 +184,7 @@ div[data-testid="stElementContainer"] hr {
   overflow: hidden !important;
   transition: var(--transition-normal) !important;
   transform: translateY(0) !important;
+  will-change: transform, box-shadow;
 }
 
 .stButton > button > div {
@@ -196,10 +196,8 @@ div[data-testid="stElementContainer"] hr {
 }
 
 .stButton > button:hover {
-  background: var(--accent-hover) !important;
-  color: white !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 4px 8px rgba(128, 0, 0, 0.25) !important;
+  transform: scale(1.05) translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(128, 0, 0, 0.25) !important;
 }
 
 .stButton > button:hover * {
@@ -207,8 +205,8 @@ div[data-testid="stElementContainer"] hr {
 }
 
 .stButton > button:active {
-  transform: translateY(1px) !important;
-  box-shadow: 0 1px 2px rgba(128, 0, 0, 0.2) !important;
+  transform: scale(0.97) translateY(1px) !important;
+  box-shadow: 0 2px 4px rgba(128, 0, 0, 0.18) !important;
 }
 
 /* Force white text on specific Streamlit components */
@@ -363,7 +361,9 @@ div[data-testid="stElementContainer"] hr {
 
 /* Row Hover Effects */
 [data-testid="stDataFrameGlideDataEditor"] tr:hover td {
-  background-color: rgba(128, 0, 0, 0.02) !important;
+  background-color: rgba(128, 0, 0, 0.04) !important;
+  transition: background-color 0.2s, transform 0.2s;
+  transform: scale(1.01);
 }
 
 /* Alternating Row Colors */
@@ -611,8 +611,7 @@ div[data-testid="stElementContainer"] hr {
 }
 
 .logo-container img:hover {
-  transform: translateY(-2px);
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1));
+  animation: bounce 0.5s;
 }
 
 .footer-title {
@@ -760,6 +759,17 @@ div[data-testid="stElementContainer"] hr {
 [data-baseweb="slider"] [data-testid="stThumbValue"] {
   background-color: var(--accent-color) !important;
   color: white !important;
+}
+
+.footer-title-link {
+  color: var(--accent-color) !important;
+  text-decoration: none !important;
+}
+
+.footer-title-link:hover {
+  color: var(--accent-hover) !important;
+  transform: translateY(20px);
+  color: var(--accent-color);
 }
 
 /* Multi-select dropdown selections */
@@ -975,12 +985,14 @@ button.st-cc * {
   margin: 10px 0;
   border-left: 4px solid var(--accent-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: var(--transition-normal);
+  transition: var(--transition-normal), box-shadow 0.4s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform, box-shadow;
 }
 
 .stat-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(128, 0, 0, 0.18) !important;
+  animation: pulse 0.7s;
 }
 
 /* Code Block Styling for Project */
@@ -1076,4 +1088,129 @@ button.st-cc * {
   .research-context {
     padding: 15px;
   }
+}
+
+/* --- Enhanced Hover and Click Effects --- */
+
+/* Buttons: Add scale and shadow on hover/click */
+.stButton > button {
+  transition: var(--transition-normal) !important;
+  will-change: transform, box-shadow;
+}
+.stButton > button:hover {
+  transform: scale(1.05) translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(128, 0, 0, 0.25) !important;
+}
+.stButton > button:active {
+  transform: scale(0.97) translateY(1px) !important;
+  box-shadow: 0 2px 4px rgba(128, 0, 0, 0.18) !important;
+}
+
+/* Card/Container: Pulse and shadow on hover */
+.st-key-login_container,
+[class*="st-key-feed_container"],
+[class*="st-key-data_acquisition"],
+[class*="st-key-eda_container"],
+[class*="st-key-data_cleaning"],
+[class*="st-key-preprocessing"],
+[class*="st-key-model_pipeline"],
+.stat-card {
+  transition: var(--transition-normal), box-shadow 0.4s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform, box-shadow;
+}
+.st-key-login_container:hover,
+[class*="st-key-feed_container"]:hover,
+[class*="st-key-data_acquisition"]:hover,
+[class*="st-key-eda_container"]:hover,
+[class*="st-key-data_cleaning"]:hover,
+[class*="st-key-preprocessing"]:hover,
+[class*="st-key-model_pipeline"]:hover,
+.stat-card:hover {
+  box-shadow: 0 12px 32px rgba(128, 0, 0, 0.18) !important;
+  transform: translateY(-4px) scale(1.02);
+  animation: pulse 0.7s;
+}
+
+/* DataFrame row hover: subtle scale and highlight */
+[data-testid="stDataFrameGlideDataEditor"] tr:hover td {
+  background-color: rgba(128, 0, 0, 0.04) !important;
+  transition: background-color 0.2s, transform 0.2s;
+  transform: scale(1.01);
+}
+
+/* Expander: animate open/close */
+.stExpander > details[open] > div {
+  animation: fadeIn 0.5s;
+}
+.stExpander > details > summary {
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.stExpander > details > summary:hover {
+  background-color: rgba(128, 0, 0, 0.08) !important;
+  box-shadow: 0 2px 8px rgba(128, 0, 0, 0.08);
+  transform: scale(1.03);
+}
+
+/* Tabs: animate tab selection */
+.stTabs [data-baseweb="tab"] {
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+  animation: fadeIn 0.4s;
+  transform: scale(1.08);
+}
+
+/* Checkbox and radio: pop effect on check */
+.stCheckbox > div > label > div[role="checkbox"][aria-checked="true"],
+.stRadio > div[role="radiogroup"] > label > div[data-baseweb="radio"] > div:first-child[aria-checked="true"] {
+  animation: pop 0.3s;
+}
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+/* Slider thumb: animate on drag */
+[data-baseweb="slider"] [data-testid="stThumbValue"] {
+  transition: background 0.3s, transform 0.2s;
+}
+[data-baseweb="slider"] [data-testid="stThumbValue"]:active {
+  transform: scale(1.15);
+}
+
+/* Download and file upload buttons: scale and shadow */
+.stDownloadButton > button:hover,
+.stFileUploader > button:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 16px rgba(128, 0, 0, 0.18) !important;
+}
+
+/* Add a little bounce to footer logos on hover */
+.logo-container img:hover {
+  animation: bounce 0.5s;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  30% { transform: translateY(-10px); }
+  50% { transform: translateY(0); }
+  70% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* Force maroon background and white text for sidebar buttons (by class) */
+.e10vaf9m1.st-emotion-cache-1f3w014.ex0cdmw0 > button {
+  background: var(--accent-color) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 2px 4px rgba(128, 0, 0, 0.18) !important;
+  transition: var(--transition-normal) !important;
+}
+.e10vaf9m1.st-emotion-cache-1f3w014.ex0cdmw0 > button:hover {
+  background: var(--accent-hover) !important;
+  color: white !important;
+  transform: scale(1.05) translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(128, 0, 0, 0.25) !important;
 }

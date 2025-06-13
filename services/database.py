@@ -10,7 +10,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 from st_supabase_connection import SupabaseConnection
 from services.utils import format_timestamp
-from services.fire_detection import predict_fire_risk
+from services.fire_detection import classify_fire_risk, batch_predict_fire_risk
 
 
 def get_supabase_connection():
@@ -48,8 +48,9 @@ def get_recent_readings_for_area(area_name, limit=20):
     if rows.data and len(rows.data) > 0:
         df = pd.DataFrame(rows.data)
         
-        # Apply fire risk classification
-        df['fire_risk'] = df.apply(classify_fire_risk, axis=1)
+        # Use batch prediction for much better performance
+        batch_results = batch_predict_fire_risk(df)
+        df['fire_risk'] = [result['prediction'] if isinstance(result, dict) else result for result in batch_results]
         df['timestamp'] = df['timestamp'].apply(format_timestamp)
         
         return df
@@ -85,16 +86,11 @@ def get_readings_for_timeframe(area_name, hours=24):
     if rows.data and len(rows.data) > 0:
         df = pd.DataFrame(rows.data)
         
-        # Apply fire risk classification
-        df['fire_risk'] = df.apply(classify_fire_risk, axis=1)
+        # Use batch prediction for much better performance
+        batch_results = batch_predict_fire_risk(df)
+        df['fire_risk'] = [result['prediction'] if isinstance(result, dict) else result for result in batch_results]
         df['timestamp'] = pd.to_datetime(df['timestamp'])
         
         return df
     
     return None 
-
-
-def classify_fire_risk(row):
-    """Classify fire risk for a row of sensor data using the updated ML model."""
-    result = predict_fire_risk(row.to_dict())
-    return result['prediction'] 

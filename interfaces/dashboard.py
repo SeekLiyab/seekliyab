@@ -34,9 +34,6 @@ def get_area_from_state_or_params():
 
 
 # Main dashboard rendering
-if st.button('Back to Area Selection'):
-    st.switch_page('interfaces/visitor.py')
-
 selected_area = get_area_from_state_or_params()
 
 if selected_area:

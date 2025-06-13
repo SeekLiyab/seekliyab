@@ -56,11 +56,6 @@ def get_fire_detection_model():
         logger.error(f"Error loading model: {e}")
         return None
 
-# Update load_fire_detection_model to use the cached resource
-@st.cache_data
-def load_fire_detection_model(MODEL_PATH):
-    return get_fire_detection_model()
-
 @st.cache_data
 def engineer_features(X):
   """Create engineered features using only training statistics"""
@@ -139,6 +134,37 @@ def physics_validation(sensor_data):
         
     return indicators
 
+# def classify_fire_risk(sensor_data):
+#     """
+#     Classify fire risk level based on sensor readings.
+    
+#     Parameters:
+#         sensor_data (dict or pandas.Series): Sensor readings data with keys:
+#             - temperature_reading
+#             - smoke_reading
+#             - carbon_monoxide_reading
+        
+#     Returns:
+#         str: Risk classification as "Fire Detected", "Potential Fire", or "No Fire"
+#     """
+#     thresholds = FIRE_DETECTION_THRESHOLDS
+    
+#     # Check if we have a fire detection
+#     if (sensor_data['temperature_reading'] > thresholds["fire_detected"]["temperature"] and 
+#         sensor_data['smoke_reading'] > thresholds["fire_detected"]["smoke"] and 
+#         sensor_data['carbon_monoxide_reading'] > thresholds["fire_detected"]["carbon_monoxide"]):
+#         return "Fire Detected"
+    
+#     # Check if we have a potential fire
+#     elif (sensor_data['temperature_reading'] > thresholds["potential_fire"]["temperature"] and 
+#           sensor_data['smoke_reading'] > thresholds["potential_fire"]["smoke"] and 
+#           sensor_data['carbon_monoxide_reading'] > thresholds["potential_fire"]["carbon_monoxide"]):
+#         return "Potential Fire"
+    
+#     # No fire risk detected
+#     else:
+#         return "No Fire"
+
 
 def fallback_classification(sensor_data):
     """Fallback threshold-based classification"""
@@ -202,7 +228,7 @@ def get_label(predicted_class_id):
     else:
         return "No Fire"
 
-def predict_fire_risk(sensor_data):
+def classify_fire_risk(sensor_data):
     """
     Predict fire risk using the trained ML model.
     
@@ -216,8 +242,8 @@ def predict_fire_risk(sensor_data):
     Returns:
         dict: Comprehensive fire risk assessment
     """
-    # Load model components
-    model = load_fire_detection_model( MODEL_PATH)
+    # Load model components - using cached model
+    model = get_fire_detection_model()
     
     if model is None:
         logger.warning("Model not loaded, using fallback method")
@@ -247,112 +273,94 @@ def predict_fire_risk(sensor_data):
         predicted_class_id = np.argmax(probabilities)
         predicted_class = get_label(predicted_class_id)
         
-        return {
-            'prediction': predicted_class,
-            'probabilities': probabilities,
-            'confidence': probabilities[0][predicted_class_id],
-            'sensor_data': sensor_data,
-            'model_used': True
-        }
+        return predicted_class
     except Exception as e:
         logger.error(f"Error predicting fire risk: {e}")
-        return fallback_classification(sensor_data)
+        return "Error"
 
-
-
-# Example usage and testing function
-def test_fire_detection():
-    """Test the fire detection system with sample data"""
-    
-    test_scenarios = [
-        {
-            'name': 'Normal Conditions',
-            'data': {
-                'temperature_reading': 22.0,
-                'smoke_reading': 190,
-                'carbon_monoxide_reading': 320,
-                'air_quality_reading': 280
-            }
-        },
-        {
-            'name': 'Potential Fire',
-            'data': {
-                'temperature_reading': 45.0,
-                'smoke_reading': 350,
-                'carbon_monoxide_reading': 480,
-                'air_quality_reading': 420
-            }
-        },
-        {
-            'name': 'Fire Detected',
-            'data': {
-                'temperature_reading': 65.0,
-                'smoke_reading': 720,
-                'carbon_monoxide_reading': 780,
-                'air_quality_reading': 850
-            }
-        }
-    ]
-    
-    print("🔥 Testing SeekLiyab Fire Detection System")
-    print("=" * 50)
-    
-    for scenario in test_scenarios:
-        print(f"\n📍 Scenario: {scenario['name']}")
-        result = predict_fire_risk(scenario['data'])
-        
-
-
-def send_sms_alert(numbers, message):
-    """Placeholder for sending SMS to a list of numbers."""
-    # Integrate with your SMS provider here (e.g., Twilio)
-    for number in numbers:
-        print(f"Sending SMS to {number}: {message}")
-    # You can replace this with actual SMS sending logic
+# def send_sms_alert(numbers, message):
+#     """Placeholder for sending SMS to a list of numbers."""
+#     # Integrate with your SMS provider here (e.g., Twilio)
+#     for number in numbers:
+#         print(f"Sending SMS to {number}: {message}")
+#     # You can replace this with actual SMS sending logic
 
 
 # Batch prediction for a DataFrame of sensor readings
 def batch_predict_fire_risk(df):
+    """
+    Batch prediction for multiple sensor readings - much more efficient 
+    than calling classify_fire_risk for each row individually.
+    
+    Parameters:
+        df (pandas.DataFrame): DataFrame with sensor readings
+        
+    Returns:
+        list: List of prediction results for each row
+    """
     model = get_fire_detection_model()
     if model is None or df is None or df.empty:
         return [fallback_classification(row) for _, row in df.iterrows()]
-    # Engineer features for all rows at once
-    X_engineered = engineer_features(df)
-    if hasattr(model, 'feature_names_in_'):
-        X_engineered = X_engineered[model.feature_names_in_]
-    # Predict probabilities for all rows
-    probabilities = model.predict_proba(X_engineered)
-    preds = np.argmax(probabilities, axis=1)
-    labels = [get_label(idx) for idx in preds]
-    results = []
-    for i, row in enumerate(df.itertuples(index=False)):
-        results.append({
-            'prediction': labels[i],
-            'probabilities': probabilities[i],
-            'confidence': probabilities[i][preds[i]],
-            'sensor_data': row._asdict(),
-            'model_used': True
-        })
-    return results
+    
+    try:
+        # Engineer features for all rows at once
+        X_engineered = engineer_features(df)
+        if hasattr(model, 'feature_names_in_'):
+            X_engineered = X_engineered[model.feature_names_in_]
+        
+        # Predict probabilities for all rows
+        probabilities = model.predict_proba(X_engineered)
+        preds = np.argmax(probabilities, axis=1)
+        labels = [get_label(idx) for idx in preds]
+        
+        results = []
+        for i, row in enumerate(df.itertuples(index=False)):
+            results.append({
+                'prediction': labels[i],
+                'probabilities': probabilities[i],
+                'confidence': probabilities[i][preds[i]],
+                'sensor_data': row._asdict(),
+                'model_used': True
+            })
+        return results
+    except Exception as e:
+        logger.error(f"Error in batch prediction: {e}")
+        # Fallback to individual predictions
+        return [fallback_classification(row) for _, row in df.iterrows()]
 
-# Optimize check_and_alert_consecutive_fires to use batch prediction
-def check_and_alert_consecutive_fires(area_name, n=10):
-    from services.database import get_recent_readings_for_area
-    df = get_recent_readings_for_area(area_name, limit=n)
-    if df is None or df.empty or len(df) < n:
-        return False
-    df = df.sort_values('timestamp', ascending=False)
-    # Use batch prediction for all rows
-    results = batch_predict_fire_risk(df)
-    fire_predictions = [r['prediction'] for r in results]
-    if all(pred == 'Fire Detected' for pred in fire_predictions):
-        numbers = st.secrets.emergency_contacts.emergency_numbers
-        message = f"ALERT: {n} consecutive fire detections in {area_name}! Immediate action required."
-        send_sms_alert(numbers, message)
-        return True
+# # Optimize check_and_alert_consecutive_fires to use batch prediction
+# def check_and_alert_consecutive_fires(area_name, n=10):
+#     from services.database import get_recent_readings_for_area
+#     df = get_recent_readings_for_area(area_name, limit=n)
+#     if df is None or df.empty or len(df) < n:
+#         return False
+#     df = df.sort_values('timestamp', ascending=False)
+#     # Use batch prediction for all rows
+#     results = batch_predict_fire_risk(df)
+#     fire_predictions = [r['prediction'] for r in results]
+#     if all(pred == 'Fire Detected' for pred in fire_predictions):
+#         numbers = st.secrets.emergency_contacts.emergency_numbers
+#         message = f"ALERT: {n} consecutive fire detections in {area_name}! Immediate action required."
+#         send_sms_alert(numbers, message)
+#         return True
+#     return False
+
+def should_trigger_alarm(sensor_data):
+    """
+    Determine if an alarm should be triggered based on sensor readings.
+    
+    Parameters:
+        sensor_data (dict): Sensor readings data
+        
+    Returns:
+        bool: True if alarm should be triggered, False otherwise
+    """
+    fire_risk = classify_fire_risk(sensor_data)
+    
+    # Trigger alarm for high-risk situations
+    if isinstance(fire_risk, str):
+        return fire_risk in ["Fire Detected", "Potential Fire"]
+    elif isinstance(fire_risk, dict):
+        return fire_risk.get('alert_required', False)
+    
     return False
-
-
-if __name__ == "__main__":
-    print(joblib.load(MODEL_PATH))
-    test_fire_detection() 

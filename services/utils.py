@@ -32,23 +32,48 @@ def get_risk_level_style(risk_level):
     Get UI style attributes for a given risk level.
     
     Parameters:
-        risk_level (str): The risk level ('Fire Detected', 'Potential Fire', or 'No Fire')
+        risk_level (str): The risk level from various sources:
+            - CSV data: 'LOW', 'HIGH', 'CRITICAL'  
+            - ML predictions: 'Fire Detected', 'Fire', 'Potential Fire', 'No Fire'
         
     Returns:
         dict: Dictionary with 'color' and 'icon' keys for styling
     """
-    if risk_level == "Fire Detected":
+    # Handle CSV data risk levels
+    if risk_level == "CRITICAL":
         return {
-            "color": "red",
+            "color": "#8B0000",  # Dark red for critical
+            "icon": "🔥"
+        }
+    elif risk_level == "HIGH":
+        return {
+            "color": "#FF8C00",  # Dark orange for high risk
+            "icon": "⚠️"
+        }
+    elif risk_level == "LOW":
+        return {
+            "color": "#32CD32",  # Lime green for low risk
+            "icon": "✅"
+        }
+    # Handle ML prediction values (backward compatibility)
+    elif risk_level == "Fire Detected" or risk_level == "Fire":
+        return {
+            "color": "#8B0000",  # Dark red
             "icon": "🔥"
         }
     elif risk_level == "Potential Fire":
         return {
-            "color": "orange",
+            "color": "#FF8C00",  # Dark orange
             "icon": "⚠️"
         }
-    else:
+    elif risk_level == "No Fire":
         return {
-            "color": "green",
+            "color": "#32CD32",  # Lime green
             "icon": "✅"
+        }
+    else:
+        # Default fallback for unknown values
+        return {
+            "color": "#808080",  # Gray for unknown
+            "icon": "❓"
         } 

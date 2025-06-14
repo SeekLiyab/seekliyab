@@ -14,6 +14,7 @@ from components.footer import display_footer
 from datetime import timedelta, datetime
 from services.utils import get_risk_level_style
 from services.database import get_recent_readings_for_area
+from services.sms import check_for_sms, check_if_sent, send_sms
 
 
 def get_area_from_state_or_params():
@@ -37,6 +38,10 @@ def get_area_from_state_or_params():
 selected_area = get_area_from_state_or_params()
 
 if selected_area:
+    # Add back button
+    if st.button("← Back to Visitor Page", type="secondary"):
+        st.switch_page("interfaces/visitor.py")
+    
     _, area_col, _ = st.columns([1, 8, 1])
     with area_col:
         st.subheader(f"Showing data for {selected_area}")
@@ -62,6 +67,15 @@ if selected_area:
             df = get_recent_readings_for_area(selected_area)
             
             if df is not None and not df.empty:
+                # Remove area_name column if it exists
+                if 'area_name' in df.columns:
+                    df = df.drop('area_name', axis=1)
+                
+                # Convert timestamp to Philippine Time (PHT)
+                if 'timestamp' in df.columns:
+                    df['timestamp'] = pd.to_datetime(df['timestamp']).dt.tz_localize('UTC').dt.tz_convert('Asia/Manila')
+                    df['timestamp'] = df['timestamp'].dt.strftime('%Y-%m-%d %H:%M:%S PHT')
+                
                 # Get the latest reading for status display
                 latest = df.iloc[0]
                 risk_level = latest['fire_risk']
@@ -80,7 +94,33 @@ if selected_area:
                 # Update data container with the dataframe
                 with data_container:
                     st.dataframe(df, use_container_width=True, hide_index=True)
+
+                # Check if SMS should be sent using the specified flow
+                should_send_sms = check_for_sms(df)
+                if should_send_sms:
+                    # Get the latest risk level for checking
+                    latest_risk = df.iloc[0]['fire_risk']
                     
+                    # Check if SMS was already sent in the last hour for this area/classification
+                    already_sent = check_if_sent(selected_area, latest_risk)
+                    
+                    if not already_sent:
+                        # SMS not sent recently, proceed to send
+                        sms_result = send_sms(selected_area, latest_risk)
+                        
+                        if sms_result["sent"]:
+                            st.success(f"🚨 {latest_risk} detected! SMS sent to emergency contacts.")
+                        elif sms_result["blocked_by_cooldown"]:
+                            st.info(f"⏰ {latest_risk} detected! SMS not sent - already notified recently (cooldown active to prevent spam).")
+                        else:
+                            st.error(f"🚨 {latest_risk} detected but SMS failed to send: {sms_result['reason']}")
+                            st.warning("Please check emergency contacts manually!")
+                    else:
+                        # SMS was already sent within the last hour
+                        st.info(f"⏰ {latest_risk} detected! SMS not sent - already notified within the last hour for this area and risk level.")
+                else:
+                    st.info("No consecutive fire risk pattern detected.")
+
             else:
                 with status_container:
                     st.error(f"No data available for {selected_area}")

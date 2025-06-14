@@ -1,4 +1,4 @@
-
+authlib==1.5.1
 cryptography==41.0.7
 imbalanced-learn==0.12.4
 imblearn==0.0

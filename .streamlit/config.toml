@@ -1,13 +1,33 @@
 [theme]
 base = "light"
-primaryColor = "#800000"
+primaryColor = "#8B0000"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+font = "sans serif"
 
 [client]
 showSidebarNavigation = false
+caching = true
+showErrorDetails = false
 
 [server]
-maxUploadSize = 50
+maxUploadSize = 200
+maxMessageSize = 200
 enableStaticServing = true
+enableXsrfProtection = false
+enableCORS = false
+runOnSave = true
+port = 8501
 
 [global]
 disableWidgetStateDuplicationWarning = true
+
+[runner]
+magicEnabled = true
+postScriptGC = true
+fastReruns = true
+enforceSerializableSessionState = true
+
+[browser]
+gatherUsageStats = false

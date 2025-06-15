@@ -19,6 +19,10 @@
 # import warnings
 # warnings.filterwarnings('ignore')
 
+
+# import pickle
+
+
 # class SeekLiyabFireDetector:
 #     """
 #     Production-ready fire detection system for SeekLiyab IoT platform
@@ -43,21 +47,21 @@
 
 #             for excel_file_name in raw_excel_wb.sheetnames:
 #                 print(f"\nProcessing sheet: {excel_file_name}")
-                
+
 #                 label = excel_file_name.split('_')[0]
 #                 print(f"Extracted label: {label}")
-                
+
 #                 if label in ['maybe fire', 'fire', 'non fire']:
 #                     print(f"Reading data for label: {label}")
 #                     temp_df = pd.read_excel(RAW_DATA_FILE_PATH, sheet_name=excel_file_name)
 #                     temp_df['label'] = label
-                    
+
 #                     print(f"DataFrame shape before concat: raw_df={raw_df.shape}, temp_df={temp_df.shape}")
 #                     raw_df = pd.concat([raw_df, temp_df[SENSORS_COLUMN_NAMES + ['label']]])
 #                     print(f"DataFrame shape after concat: raw_df={raw_df.shape}")
 #                 else:
 #                     print(f"Skipping sheet: {excel_file_name} (label '{label}' not in allowed list)")
-                    
+
 #             print(f"Dataset loaded successfully: {raw_df.shape[0]} samples, {raw_df.shape[1]} features")
 #             print(f"Features: {list(raw_df.columns)}")
 #             print(f"\nClass distribution:")
@@ -99,13 +103,13 @@
 #         if not self.apply_feature_engineering:
 #             print("Feature engineering is disabled")
 #             return
-            
+
 #         # Map column names to standard names
 #         temp_col = 'temperature_reading' if 'temperature_reading' in X_train.columns else 'temperature'
 #         air_col = 'air_quality_reading' if 'air_quality_reading' in X_train.columns else 'air_quality'
 #         co_col = 'carbon_monoxide_reading' if 'carbon_monoxide_reading' in X_train.columns else 'carbon_monoxide'
 #         smoke_col = 'smoke_reading' if 'smoke_reading' in X_train.columns else 'gas_and_smoke'
-            
+
 #         self.feature_stats = {
 #             'temp_mean': X_train[temp_col].mean(),
 #             'temp_std': X_train[temp_col].std(),
@@ -126,7 +130,7 @@
 #             if is_training:
 #                 print("Feature engineering disabled - using original features only")
 #             return X.copy()
-            
+
 #         if not self.feature_stats:
 #             raise ValueError("Must call fit_feature_engineering() first on training data")
 
@@ -775,7 +779,7 @@
 
 #     # Define sensor column names (update these to match your Excel file columns)
 #     SENSORS_COLUMN_NAMES = ['temperature_reading', 'air_quality_reading', 'carbon_monoxide_reading', 'smoke_reading']
-    
+
 #     # Step 1: Load data
 #     RAW_DATA_FILE_PATH = '/content/sensor_readings_rows-06_12_25.xlsx'  # Update with your Excel file path
 #     df = detector.load_data(RAW_DATA_FILE_PATH, SENSORS_COLUMN_NAMES)
@@ -850,47 +854,47 @@
 
 #     # Step 14: Real-time prediction demo using actual data
 #     print("\n=== REAL-TIME FIRE DETECTION DEMO USING ACTUAL DATA ===")
-    
+
 #     # Load the data again for prediction demonstration
 #     print("Loading data for prediction demonstration...")
 #     demo_df = detector.load_data(RAW_DATA_FILE_PATH, SENSORS_COLUMN_NAMES)
-    
+
 #     if demo_df is not None:
 #         # # Sample a few random records from each class for demonstration
 #         # demo_samples = []
 #         # for label in demo_df['label'].unique():
 #         #     class_samples = demo_df[demo_df['label'] == label].sample(min(2, len(demo_df[demo_df['label'] == label])), random_state=42)
 #         #     demo_samples.append(class_samples)
-        
+
 #         demo_data = demo_df.reset_index(drop=True)
-        
+
 #         # Add prediction columns
 #         predictions = []
 #         risk_levels = []
 #         fire_probabilities = []
 #         alert_required_list = []
-        
+
 #         print(f"\nTesting {len(demo_data)} real samples from the dataset:")
 #         print("="*80)
-        
+
 #         for idx, row in demo_data.iterrows():
 #             # Prepare sensor data (exclude the label column)
 #             sensor_data = {
 #                 'temperature_reading': row['temperature_reading'],
-#                 'air_quality_reading': row['air_quality_reading'], 
+#                 'air_quality_reading': row['air_quality_reading'],
 #                 'carbon_monoxide_reading': row['carbon_monoxide_reading'],
 #                 'smoke_reading': row['smoke_reading']
 #             }
-            
+
 #             # Get prediction
 #             result = detector.predict_fire_risk(sensor_data)
-            
+
 #             # Store results
 #             predictions.append(result['prediction'])
 #             risk_levels.append(result['risk_level'])
 #             fire_probabilities.append(result['fire_probability'])
 #             alert_required_list.append(result['alert_required'])
-            
+
 #             # Display results
 #             print(f"\nSample {idx + 1} - Actual: {row['label']}")
 #             print(f"Sensor Data: Temp={row['temperature_reading']:.1f}, Air={row['air_quality_reading']:.0f}, CO={row['carbon_monoxide_reading']:.0f}, Smoke={row['smoke_reading']:.0f}")
@@ -898,24 +902,24 @@
 #             print(f"Risk Level: {result['risk_level']}")
 #             print(f"Fire Probability: {result['fire_probability']:.3f}")
 #             print(f"Alert Required: {result['alert_required']}")
-            
+
 #             # Show all class probabilities
 #             print("Class Probabilities:")
 #             for class_name, prob in result['probabilities'].items():
 #                 print(f"  {class_name}: {prob:.3f}")
-                
+
 #             # Check if prediction matches actual
 #             prediction_correct = result['prediction'] == row['label']
 #             print(f"Prediction Correct: {prediction_correct}")
-            
+
 #             if result['alert_required']:
 #                 if result['risk_level'] == 'CRITICAL':
 #                     print("🚨 ACTION: IMMEDIATE EVACUATION AND FIRE DEPARTMENT ALERT")
 #                 else:
 #                     print("⚠️  ACTION: INVESTIGATE AREA AND PREPARE SAFETY MEASURES")
-            
+
 #             print("-" * 80)
-        
+
 #         # Add predictions to the dataframe
 #         demo_data_with_predictions = demo_data.copy()
 #         demo_data_with_predictions['predicted_label'] = predictions
@@ -923,7 +927,7 @@
 #         demo_data_with_predictions['fire_probability'] = fire_probabilities
 #         demo_data_with_predictions['alert_required'] = alert_required_list
 #         demo_data_with_predictions['prediction_correct'] = demo_data_with_predictions['label'] == demo_data_with_predictions['predicted_label']
-        
+
 #         # Summary statistics
 #         accuracy_demo = (demo_data_with_predictions['prediction_correct'].sum() / len(demo_data_with_predictions)) * 100
 #         print(f"\n=== DEMO PREDICTION SUMMARY ===")
@@ -931,13 +935,13 @@
 #         print(f"Correct predictions: {demo_data_with_predictions['prediction_correct'].sum()}")
 #         print(f"Demo accuracy: {accuracy_demo:.1f}%")
 #         print(f"Alerts triggered: {sum(alert_required_list)}")
-        
+
 #         print("\nPrediction breakdown by actual class:")
 #         for actual_class in demo_data_with_predictions['label'].unique():
 #             class_data = demo_data_with_predictions[demo_data_with_predictions['label'] == actual_class]
 #             class_accuracy = (class_data['prediction_correct'].sum() / len(class_data)) * 100
 #             print(f"  {actual_class}: {class_accuracy:.1f}% accuracy ({class_data['prediction_correct'].sum()}/{len(class_data)})")
-        
+
 #         # Save results to CSV (optional)
 #         try:
 #             output_filename = 'seekliyab_predictions_demo.csv'
@@ -945,10 +949,10 @@
 #             print(f"\n✅ Demo results saved to '{output_filename}'")
 #         except Exception as e:
 #             print(f"⚠️ Could not save demo results: {e}")
-            
+
 #         print(f"\nDemo DataFrame shape: {demo_data_with_predictions.shape}")
 #         print("Columns:", list(demo_data_with_predictions.columns))
-    
+
 #     else:
 #         print("Could not load data for demonstration")
 #         # Fallback to manual test scenarios with updated column names
@@ -958,7 +962,7 @@
 #                 'data': {'temperature_reading': 24.5, 'air_quality_reading': 250, 'carbon_monoxide_reading': 350, 'smoke_reading': 180}
 #             },
 #             {
-#                 'name': 'Potential Fire Warning', 
+#                 'name': 'Potential Fire Warning',
 #                 'data': {'temperature_reading': 45.0, 'air_quality_reading': 420, 'carbon_monoxide_reading': 520, 'smoke_reading': 320}
 #             },
 #             {
@@ -1076,22 +1080,22 @@
 #     Example of using the detector with feature engineering enabled
 #     """
 #     print("=== EXAMPLE: SEEKLIYAB WITH FEATURE ENGINEERING ===")
-    
+
 #     # Initialize detector with feature engineering enabled
 #     detector = SeekLiyabFireDetector(apply_feature_engineering=True)
-    
+
 #     # Define sensor column names (update these to match your Excel file columns)
 #     SENSORS_COLUMN_NAMES = ['temperature_reading', 'air_quality_reading', 'carbon_monoxide_reading', 'smoke_reading']
-    
+
 #     # Load and process data
 #     RAW_DATA_FILE_PATH = '/content/sensor_readings_rows-06_12_25.xlsx'
 #     df = detector.load_data(RAW_DATA_FILE_PATH, SENSORS_COLUMN_NAMES)
-    
+
 #     if df is not None:
 #         # Continue with the full pipeline...
 #         X_train, X_val, X_test, y_train, y_val, y_test = detector.split_data(df)
 #         detector.fit_feature_engineering(X_train)
-        
+
 #         print("Feature engineering will be applied during training")
 #         print("This will create additional features like:")
 #         print("- Temperature z-scores and thresholds")
@@ -1099,7 +1103,7 @@
 #         print("- Interaction features")
 #         print("- Fire risk composite scores")
 #         print("- Anomaly indicators")
-    
+
 #     return detector
 
 

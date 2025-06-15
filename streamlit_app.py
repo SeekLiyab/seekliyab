@@ -1,17 +1,10 @@
-"""
-Main application entry point for the SeekLiyab fire detection system.
-
-This module configures the Streamlit application, sets up navigation,
-and manages page routing based on authentication status.
-"""
-
 import streamlit as st
 from services.auth_service import login_page
 import os
 
 # Use forward slashes for paths to ensure compatibility with Docker
 parent_dir = os.path.dirname(os.path.abspath(__file__))
-logo_path = os.path.join(parent_dir, "static", "images", "seekliyab-banner-f.png")
+logo_path = os.path.join(parent_dir, "static", "images", "seekliyab-logo.png")
 css_path = os.path.join(parent_dir, "static", "styles.css")
 
 def configure_app():

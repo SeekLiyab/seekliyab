@@ -3,6 +3,9 @@ from twilio.rest import Client
 from datetime import datetime, timedelta
 from services.database import get_supabase_connection
 import logging
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -280,4 +283,119 @@ def send_sms(area_name, fire_risk):
             "sent": False, 
             "reason": f"Error in SMS service: {str(e)}",
             "blocked_by_cooldown": False
+        }
+
+
+def send_email(area_name, fire_risk):
+    """
+    Send email alerts to emergency contacts as a fallback when SMS fails.
+    
+    Args:
+        area_name (str): The area where fire risk is detected
+        fire_risk (str): The fire risk level ('Fire' or 'Potential Fire')
+    
+    Returns:
+        dict: Contains 'sent' (bool), 'reason' (str)
+    """
+    try:
+        # Get email configuration from secrets
+        smtp_server = st.secrets.get("email", {}).get("smtp_server", "smtp.gmail.com")
+        smtp_port = st.secrets.get("email", {}).get("smtp_port", 587)
+        sender_email = st.secrets.get("email", {}).get("sender_email")
+        sender_password = st.secrets.get("email", {}).get("sender_password")
+        
+        # Get recipient emails from secrets
+        recipient_emails = st.secrets.get("allowed_users", {}).get("emails", [])
+        
+        # Validate configuration
+        if not sender_email or not sender_password:
+            logger.error("Email configuration missing in secrets")
+            return {
+                "sent": False,
+                "reason": "Email configuration missing (sender_email or sender_password)"
+            }
+        
+        if not recipient_emails:
+            logger.error("No recipient emails found in secrets")
+            return {
+                "sent": False,
+                "reason": "No recipient emails configured"
+            }
+        
+        # Ensure recipient_emails is a list
+        if isinstance(recipient_emails, str):
+            recipient_emails = [recipient_emails]
+        
+        # Create email content
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S PHT")
+        
+        if fire_risk == "Fire":
+            subject = f"🚨 SEEKLIYAB EMERGENCY ALERT - FIRE DETECTED in {area_name}"
+            body = f"""
+🚨 SEEKLIYAB EMERGENCY ALERT 🚨
+
+FIRE DETECTED in {area_name} at {current_time}!
+
+IMMEDIATE EVACUATION REQUIRED!
+
+This is an automated alert from the SeekLiyab fire detection system.
+Please respond immediately and ensure all safety protocols are followed.
+
+Location: {area_name}
+Risk Level: {fire_risk}
+Time: {current_time}
+Status: CRITICAL - IMMEDIATE ACTION REQUIRED
+
+Please confirm receipt of this alert and report your response actions.
+            """
+        else:  # Potential Fire
+            subject = f"⚠️ SEEKLIYAB FIRE ALERT - POTENTIAL FIRE in {area_name}"
+            body = f"""
+⚠️ SEEKLIYAB FIRE ALERT ⚠️
+
+POTENTIAL FIRE detected in {area_name} at {current_time}!
+
+Please investigate the area immediately.
+
+This is an automated alert from the SeekLiyab fire detection system.
+Stay alert and prepared for potential evacuation.
+
+Location: {area_name}
+Risk Level: {fire_risk}
+Time: {current_time}
+Status: HIGH PRIORITY - INVESTIGATION REQUIRED
+
+Please confirm receipt of this alert and report your findings.
+            """
+        
+        # Create message
+        msg = MIMEMultipart()
+        msg['From'] = sender_email
+        msg['To'] = ', '.join(recipient_emails)
+        msg['Subject'] = subject
+        
+        # Attach body to email
+        msg.attach(MIMEText(body, 'plain'))
+        
+        # Create SMTP session
+        server = smtplib.SMTP(smtp_server, smtp_port)
+        server.starttls()  # Enable security
+        server.login(sender_email, sender_password)
+        
+        # Send email
+        text = msg.as_string()
+        server.sendmail(sender_email, recipient_emails, text)
+        server.quit()
+        
+        logger.info(f"Email alert sent for {fire_risk} in {area_name} to {len(recipient_emails)} recipients")
+        return {
+            "sent": True,
+            "reason": f"Email sent successfully to {len(recipient_emails)} recipients"
+        }
+        
+    except Exception as e:
+        logger.error(f"Error sending email: {e}")
+        return {
+            "sent": False,
+            "reason": f"Error in email service: {str(e)}"
         }

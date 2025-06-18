@@ -40,6 +40,7 @@ def setup_navigation():
     about_us = st.Page("interfaces/about_us.py", title="About Us")
     dashboard = st.Page("interfaces/dashboard.py", title="Dashboard")
     project = st.Page("interfaces/project.py", title="Project")
+    developer = st.Page("interfaces/developer.py", title="Developer")
 
     # Set up navigation based on authentication status and authorization
     is_authenticated = getattr(st.experimental_user, "is_logged_in", False)
@@ -47,7 +48,7 @@ def setup_navigation():
     
     if not is_authorized:
         # Only show login page if not authenticated or not authorized
-        return st.navigation([login, visitor, about_us, dashboard, project], position="hidden")  
+        return st.navigation([login, visitor, about_us, dashboard, project, developer], position="hidden")  
     else:
         # Show all pages if authenticated and authorized
         return st.navigation([admin, about_us])

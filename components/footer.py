@@ -22,7 +22,7 @@ def display_footer():
         <div class="footer-links">
             <a href="/about_us">About Us</a>
             <a href="/project">Project</a>
-            <a href="/guide">Developer</a>
+            <a href="/developer">Developer</a>
         </div>
         <div class="footer-copyright">©Polytechnic University of the Philippines | SeekLiyab | All Rights Reserved</div>
     </div>

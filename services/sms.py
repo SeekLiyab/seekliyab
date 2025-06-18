@@ -307,7 +307,7 @@ def send_email(area_name, fire_risk):
         dict: Contains 'sent' (bool), 'reason' (str), 'blocked_by_cooldown' (bool)
     """
     # Check if we've sent an email recently for this area/risk combination (15-minute cooldown)
-    if check_recent_email_sent(area_name, fire_risk, cooldown_minutes=15):
+    if check_recent_email_sent(area_name, fire_risk, cooldown_minutes=5):
         logger.info(f"Email blocked by cooldown for {fire_risk} in {area_name}")
         return {
             "sent": False, 

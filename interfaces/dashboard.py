@@ -15,6 +15,9 @@ from datetime import timedelta, datetime
 from services.utils import get_risk_level_style
 from services.database import get_recent_readings_for_area
 from services.sms import check_for_sms, check_if_sent, send_sms, send_email
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def get_area_from_state_or_params():
@@ -71,11 +74,6 @@ if selected_area:
                 if 'area_name' in df.columns:
                     df = df.drop('area_name', axis=1)
                 
-                # Convert timestamp to Philippine Time (PHT)
-                if 'timestamp' in df.columns:
-                    df['timestamp'] = pd.to_datetime(df['timestamp']).dt.tz_localize('UTC').dt.tz_convert('Asia/Manila')
-                    df['timestamp'] = df['timestamp'].dt.strftime('%Y-%m-%d %H:%M:%S PHT')
-                
                 # Get the latest reading for status display
                 latest = df.iloc[0]
                 risk_level = latest['fire_risk']
@@ -93,7 +91,28 @@ if selected_area:
                 
                 # Update data container with the dataframe
                 with data_container:
-                    st.dataframe(df, use_container_width=True, hide_index=True)
+                    # Create a display version with renamed columns (display only, not changing actual data)
+                    display_df = df.copy()
+                    
+                    # Rename columns for better display
+                    column_mapping = {
+                        'timestamp': 'Timestamp',
+                        'temperature_reading': 'Temperature Level',
+                        'air_quality_reading': 'Air Quality Level', 
+                        'carbon_monoxide_reading': 'Carbon Monoxide Level',
+                        'smoke_reading': 'Smoke Level',
+                        'fire_risk': 'Status'
+                    }
+                    
+                    # Apply renaming only to columns that exist
+                    display_columns = {}
+                    for original_col, display_col in column_mapping.items():
+                        if original_col in display_df.columns:
+                            display_columns[original_col] = display_col
+                    
+                    display_df = display_df.rename(columns=display_columns)
+                    
+                    st.dataframe(display_df, use_container_width=True, hide_index=True)
 
                 with st.expander("Notification Logs"):
                     # Check if SMS should be sent using the specified flow
@@ -114,9 +133,18 @@ if selected_area:
                             elif sms_result["blocked_by_cooldown"]:
                                 st.info(f"⏰ {latest_risk} detected! SMS not sent - already notified recently (cooldown active to prevent spam).")
                             else:
-                                send_email(selected_area, latest_risk)
-                                st.error(f"🚨 {latest_risk} detected but SMS failed to send: {sms_result['reason']}")
-                                st.warning("Sent an email to the emergency contacts.")
+                                # SMS failed, try email fallback
+                                email_result = send_email(selected_area, latest_risk)
+                                
+                                if email_result["sent"]:
+                                    st.error(f"🚨 {latest_risk} detected but SMS failed to send: {sms_result['reason']}")
+                                    st.warning("📧 Email sent to emergency contacts as fallback.")
+                                elif email_result.get("blocked_by_cooldown"):
+                                    st.info(f"⏰ {latest_risk} detected! Both SMS and email notifications blocked by cooldown (preventing spam).")
+                                else:
+                                    st.error(f"🚨 {latest_risk} detected but both SMS and email failed!")
+                                    st.error(f"SMS Error: {sms_result['reason']}")
+                                    st.error(f"Email Error: {email_result['reason']}")
                         else:
                             # SMS was already sent within the last hour
                             st.info(f"⏰ {latest_risk} detected! SMS not sent - already notified within the last hour for this area and risk level.")

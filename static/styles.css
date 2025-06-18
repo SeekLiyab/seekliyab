@@ -527,7 +527,6 @@ div[data-testid="stElementContainer"] hr {
   border: 1px solid rgba(128, 0, 0, 0.1) !important;
   border-radius: 10px !important;
   background-color: #ffffff !important;
-  transition: var(--transition-normal) !important;
 }
 
 .stExpander:hover {

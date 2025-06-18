@@ -9,20 +9,29 @@ import pandas as pd
 from datetime import datetime
 
 
-def format_timestamp(timestamp_str, format_str='%b %d, %Y %I:%M:%S %p'):
+def format_timestamp(timestamp_str, format_str='%Y-%m-%d %H:%M:%S PHT'):
     """
-    Format a timestamp string to a human-readable format.
+    Format a timestamp string to a human-readable format in Philippine Time.
     
     Parameters:
         timestamp_str (str): ISO format timestamp string
         format_str (str): Output datetime format string
         
     Returns:
-        str: Formatted timestamp
+        str: Formatted timestamp in Philippine Time
     """
     if isinstance(timestamp_str, str):
-        dt = pd.to_datetime(timestamp_str)
-        return dt.strftime(format_str)
+        try:
+            # Parse the timestamp and convert to Philippine Time
+            dt = pd.to_datetime(timestamp_str)
+            # Assume UTC if no timezone info, then convert to Philippine Time
+            if dt.tz is None:
+                dt = dt.tz_localize('UTC')
+            dt = dt.tz_convert('Asia/Manila')
+            return dt.strftime(format_str)
+        except Exception:
+            # If parsing fails, return original
+            return timestamp_str
     
     return timestamp_str
 

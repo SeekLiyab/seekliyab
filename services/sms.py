@@ -11,6 +11,9 @@ from email.mime.multipart import MIMEMultipart
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# In-memory cache to prevent rapid-fire emails (backup to database check)
+_email_cache = {}
+
 # Initialize Twilio client
 try:
     client = Client(st.secrets["twilio"]["account_sid"], st.secrets["twilio"]["auth_token"])
@@ -61,7 +64,7 @@ def check_for_sms(df, column_name='fire_risk', check_records=20, min_consecutive
     return False
 
 
-def log_notification_to_database(content, classification, sent_to_numbers):
+def log_notification_to_database(content, classification, sent_to_numbers, area_name=None):
     """
     Log notification details to the Supabase notifications table.
     
@@ -69,6 +72,7 @@ def log_notification_to_database(content, classification, sent_to_numbers):
         content (str): The SMS message content
         classification (int): Classification code (0=Potential Fire, 1=Fire)
         sent_to_numbers (list): List of phone numbers the SMS was sent to
+        area_name (str, optional): The area name for exact matching
     
     Returns:
         bool: True if logged successfully, False otherwise
@@ -83,6 +87,10 @@ def log_notification_to_database(content, classification, sent_to_numbers):
             "sent_to": ", ".join(sent_to_numbers),
             "device_alarm_triggered_at": datetime.now().isoformat()
         }
+        
+        # Add area_name if provided for exact matching
+        if area_name:
+            notification_data["area_name"] = area_name
         
         # Insert into notifications table
         result = conn.table("notifications").insert(notification_data).execute()
@@ -99,7 +107,7 @@ def log_notification_to_database(content, classification, sent_to_numbers):
         return False
 
 
-def check_recent_sms_sent(area_name, fire_risk, cooldown_minutes=15):
+def check_recent_sms_sent(area_name, fire_risk, cooldown_minutes=5):
     """
     Check if an SMS has already been sent recently for the same area and fire risk.
     
@@ -262,7 +270,7 @@ def send_sms(area_name, fire_risk):
         
         # Log notification to database if at least one SMS was sent successfully
         if successful_sends:
-            log_notification_to_database(sms_message, classification, successful_sends)
+            log_notification_to_database(sms_message, classification, successful_sends, area_name)
             logger.info(f"SMS alert sent for {fire_risk} in {area_name} to {len(successful_sends)} recipients")
             return {
                 "sent": True, 
@@ -289,14 +297,24 @@ def send_sms(area_name, fire_risk):
 def send_email(area_name, fire_risk):
     """
     Send email alerts to emergency contacts as a fallback when SMS fails.
+    Includes anti-spam protection to prevent duplicate emails.
     
     Args:
         area_name (str): The area where fire risk is detected
         fire_risk (str): The fire risk level ('Fire' or 'Potential Fire')
     
     Returns:
-        dict: Contains 'sent' (bool), 'reason' (str)
+        dict: Contains 'sent' (bool), 'reason' (str), 'blocked_by_cooldown' (bool)
     """
+    # Check if we've sent an email recently for this area/risk combination (15-minute cooldown)
+    if check_recent_email_sent(area_name, fire_risk, cooldown_minutes=15):
+        logger.info(f"Email blocked by cooldown for {fire_risk} in {area_name}")
+        return {
+            "sent": False, 
+            "reason": f"Email already sent recently for {fire_risk} in {area_name}. Cooldown active to prevent spam.",
+            "blocked_by_cooldown": True
+        }
+    
     try:
         # Get email configuration from secrets
         smtp_server = st.secrets.get("email", {}).get("smtp_server", "smtp.gmail.com")
@@ -312,14 +330,16 @@ def send_email(area_name, fire_risk):
             logger.error("Email configuration missing in secrets")
             return {
                 "sent": False,
-                "reason": "Email configuration missing (sender_email or sender_password)"
+                "reason": "Email configuration missing (sender_email or sender_password)",
+                "blocked_by_cooldown": False
             }
         
         if not recipient_emails:
             logger.error("No recipient emails found in secrets")
             return {
                 "sent": False,
-                "reason": "No recipient emails configured"
+                "reason": "No recipient emails configured",
+                "blocked_by_cooldown": False
             }
         
         # Ensure recipient_emails is a list
@@ -336,18 +356,12 @@ def send_email(area_name, fire_risk):
 
 FIRE DETECTED in {area_name} at {current_time}!
 
-IMMEDIATE EVACUATION REQUIRED!
-
-This is an automated alert from the SeekLiyab fire detection system.
-Please respond immediately and ensure all safety protocols are followed.
+EVACUATE IMMEDIATELY!
 
 Location: {area_name}
-Risk Level: {fire_risk}
 Time: {current_time}
-Status: CRITICAL - IMMEDIATE ACTION REQUIRED
-
-Please confirm receipt of this alert and report your response actions.
             """
+            classification = 1  # Fire classification
         else:  # Potential Fire
             subject = f"⚠️ SEEKLIYAB FIRE ALERT - POTENTIAL FIRE in {area_name}"
             body = f"""
@@ -355,18 +369,12 @@ Please confirm receipt of this alert and report your response actions.
 
 POTENTIAL FIRE detected in {area_name} at {current_time}!
 
-Please investigate the area immediately.
-
-This is an automated alert from the SeekLiyab fire detection system.
-Stay alert and prepared for potential evacuation.
+Please investigate.
 
 Location: {area_name}
-Risk Level: {fire_risk}
 Time: {current_time}
-Status: HIGH PRIORITY - INVESTIGATION REQUIRED
-
-Please confirm receipt of this alert and report your findings.
             """
+            classification = 0  # Potential Fire classification
         
         # Create message
         msg = MIMEMultipart()
@@ -387,15 +395,95 @@ Please confirm receipt of this alert and report your findings.
         server.sendmail(sender_email, recipient_emails, text)
         server.quit()
         
+        # Log email notification to database (reuse the SMS logging function)
+        email_content = f"EMAIL ALERT: {subject}"
+        log_notification_to_database(email_content, classification, recipient_emails, area_name)
+        
+        # Update in-memory cache to prevent rapid-fire emails
+        cache_key = f"{area_name}_{fire_risk}"
+        _email_cache[cache_key] = datetime.now()
+        
         logger.info(f"Email alert sent for {fire_risk} in {area_name} to {len(recipient_emails)} recipients")
         return {
             "sent": True,
-            "reason": f"Email sent successfully to {len(recipient_emails)} recipients"
+            "reason": f"Email sent successfully to {len(recipient_emails)} recipients",
+            "blocked_by_cooldown": False
         }
         
     except Exception as e:
         logger.error(f"Error sending email: {e}")
         return {
             "sent": False,
-            "reason": f"Error in email service: {str(e)}"
+            "reason": f"Error in email service: {str(e)}",
+            "blocked_by_cooldown": False
         }
+
+
+def check_recent_email_sent(area_name, fire_risk, cooldown_minutes=15):
+    """
+    Check if an email has already been sent recently for the same area and fire risk.
+    Uses simple datetime difference instead of content pattern matching.
+    
+    Args:
+        area_name (str): The area name
+        fire_risk (str): The fire risk level ('Fire' or 'Potential Fire')
+        cooldown_minutes (int): Cooldown period in minutes (default: 15)
+    
+    Returns:
+        bool: True if email was sent recently (within cooldown), False otherwise
+    """
+    # First check in-memory cache for immediate protection
+    cache_key = f"{area_name}_{fire_risk}"
+    current_time = datetime.now()
+    
+    if cache_key in _email_cache:
+        last_sent_time = _email_cache[cache_key]
+        time_diff = (current_time - last_sent_time).total_seconds() / 60
+        if time_diff < cooldown_minutes:
+            logger.info(f"EMAIL CACHE BLOCK: Last email for {fire_risk} in {area_name} was {time_diff:.1f} minutes ago - BLOCKING EMAIL")
+            return True
+    
+    try:
+        conn = get_supabase_connection()
+        
+        # Calculate the cutoff time
+        cutoff_time = datetime.now() - timedelta(minutes=cooldown_minutes)
+        cutoff_time_iso = cutoff_time.isoformat()
+        
+        # Map fire_risk to classification code
+        classification_code = 1 if fire_risk == "Fire" else 0
+        
+        # Simple query: exact match on area_name and classification within cooldown period
+        logger.info(f"EMAIL COOLDOWN CHECK: Looking for area_name='{area_name}' with classification {classification_code} after {cutoff_time_iso}")
+        
+        # Query recent notifications using exact area_name match (much more efficient)
+        result = conn.table("notifications") \
+            .select("id, content, classification, created_at, area_name") \
+            .eq("classification", classification_code) \
+            .eq("area_name", area_name) \
+            .gte("created_at", cutoff_time_iso) \
+            .order("created_at", desc=True) \
+            .limit(1) \
+            .execute()
+        
+        # DEBUG: Log query result
+        logger.info(f"EMAIL COOLDOWN CHECK: Query returned {len(result.data) if result.data else 0} results")
+        if result.data and len(result.data) > 0:
+            logger.info(f"EMAIL COOLDOWN CHECK: Found recent notification: '{result.data[0]['content'][:100]}...'")
+        
+        if result.data and len(result.data) > 0:
+            last_email_time = datetime.fromisoformat(result.data[0]['created_at'].replace('Z', '+00:00'))
+            time_diff = (datetime.now() - last_email_time.replace(tzinfo=None)).total_seconds() / 60
+            logger.info(f"EMAIL COOLDOWN CHECK: Last notification for {fire_risk} in {area_name} was {time_diff:.1f} minutes ago - BLOCKING EMAIL")
+            
+            # Update cache with the found time
+            _email_cache[cache_key] = last_email_time.replace(tzinfo=None)
+            return True
+        
+        logger.info(f"EMAIL COOLDOWN CHECK: No recent notification found for {fire_risk} in {area_name} - ALLOWING EMAIL")
+        return False
+        
+    except Exception as e:
+        logger.error(f"Error checking recent email: {e}")
+        # If we can't check, allow sending to be safe
+        return False
